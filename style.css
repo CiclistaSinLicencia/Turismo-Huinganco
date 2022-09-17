@@ -89,7 +89,7 @@ padding: 0;
 #dark-theme-btn{
     
    display: inline;
- color:  var(--color-btn-darktheme,#272727);
+ color:  #272727;
  padding: 5px 5px 5px 5px;
  background-color:  var(--background-darktheme-btn,#d3d3d3);
  border-bottom-right-radius:  8px;
@@ -164,7 +164,6 @@ margin-bottom: 50px;
     border-color: var(--greenhover);
     color:var(--greenhover) ;
         background-color: #174e1752;
-    transform: scale(1.05);
 }
 /* end Banner */
 
@@ -214,10 +213,6 @@ margin-bottom: 50px;
     transition: 0.3s ease-in-out;
     }
     
-    .bloque-joyas:hover{
-        background-color: #adff3305;
-
-        }
 
     .bloque-img-joyas{
         width:100%;
@@ -402,30 +397,25 @@ margin-bottom: 50px;
     width: 48%;
     padding-top: 3px;
     padding-bottom: 3px;
-    font-size: 18px;
-    
+    font-size: 1em;
     padding-left: 10px;
     transition: 0.5s;
 }
-.form-input:hover{
-    border: 2px solid green;
+.form-input::placeholder{
+    font-size: 1em;
 }
 
-
 .textarea{
-  font-size: 19px;
+  font-size: 1em;
   width: 100%;
   padding-left: 10px;
   padding-top: 5px;
   resize: none;
   transition: 0.2s;
 }
-.textarea:hover{
-    border: 1px solid green;
-}
 
 .textarea::placeholder{
-    font-size: 19px;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -459,38 +449,33 @@ footer{
     background-color: rgb(39, 39, 39);
 }
 
-.footer-cnt{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-wrap: wrap;
-    background-color: rgb(39, 39, 39);
-        gap: 10%;
-        width: 100%;
-}
-
+        .footer-cnt{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            background-color: rgb(39, 39, 39);
+              
+                width: 100%;
+                flex-direction: row;
+        }
 .footer-caja{
     
-    height: 250px;
     color: floralwhite;
-    display: flex;
-    align-items: flex-start;
-        justify-content: space-between;
+    padding-left: 5em;
 
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 3%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    gap: 10px;
+
 }
-.footer-caja p{
-    font-size: 25px;
+.footer-caja h2{
     color: var(--color-huignanco);
 }
-.footer-caja span{
-    font-weight: 600;
-
-}
-
 .btn-servicios{
     color: floralwhite;
     text-decoration: none;
@@ -500,8 +485,6 @@ footer{
 .btn-servicios:hover{
     color: greenyellow;
 }
-
-
 #mail-turismo{
     color: var(--color-huignanco);
     text-decoration: none;
@@ -511,36 +494,36 @@ footer{
 #mail-turismo:hover{
     color:greenyellow;
 }
-
 .footer-caja-redes{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(39, 39, 39);
     width: 100%;
-    height: 90px;
+    padding: 1em 1em;
     border-top: rgb(133, 133, 133) 1px solid;
-    gap: 40px;
+    gap: 1em;
 }
 
-
+.logo-footer{
+    width: 2.5em;
+    transition: 0.5s linear;
+    filter: invert(100%) sepia(0%) saturate(7421%) hue-rotate(127deg) brightness(118%) contrast(96%);
+}
+.logo-footer:hover{
+    filter: invert(59%) sepia(33%) saturate(1004%) hue-rotate(42deg) brightness(97%) contrast(91%);
+}
 .ctn-rights{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 30px;
+    padding-bottom: 10px;
     background-color: rgb(39, 39, 39);
     color: floralwhite;
 }
-
-.logo-footer{
-    width: 50px;
-    transition: 0.5s ease-in-out;
-    filter: invert(100%) sepia(0%) saturate(7421%) hue-rotate(127deg) brightness(118%) contrast(96%);
-}
-.logo-footer:hover{
-    filter: invert(59%) sepia(33%) saturate(1004%) hue-rotate(42deg) brightness(97%) contrast(91%);
+.ctn-rights p{
+    font-size: 12px;
 }
 /* end Footer */
 
@@ -565,31 +548,16 @@ footer{
 
     /* BANNER */
     .banner{
-        display: flex;
-        align-items: center;
         justify-content: center;
-        margin: 0px;
-        height: 100%;
-        width: 100%;
     }
-
-    
     .content-banner{
-        width: 600px;
         margin: 0px;
-                
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        text-align: center;
         padding-bottom: 120px;
     }
-
-    .content-banner p{
-        display: none;
-    }
-
-    .btn-banner{
+    .content-banner p,.btn-banner{
         display: none;
     }
 /* end banner */
@@ -618,27 +586,31 @@ footer{
 .menu-dropdown{
 position: absolute;
 
-width:  15em;
-        transform: translate(-1000px);
+height: 100%;
+        transform: translate(-300px);
         transition:   0.5s ease-out;
-   margin-left: -12px;
+
    border:0px ;
-   gap: 0px;
-   background-color: white;
+   margin: 0;
+   gap: 0;
+
+   background-color: white; 
 }
 
 .btn-menu-dropdown{
-
-padding: 15px 15px 15px 15px;
-      width: 100%;
+    margin: 0;
+      width: 250px;
+      padding: 1em 2em 1em 2em;
    text-align: left;
-   background-color: var(--mobile-dropdown-background,#f8ffed);
+  background-color: var(--mobile-dropdown-background,white);
    color: var(--mobile-dropdown-color,dark);
    border:none ;
    font-weight: 700;
-   transition: 0.2s ;
-   text-align: center;
-   margin: 0px;
+   transition: 0.5s linear ;
+
+outline-width: 1px;
+outline-color:var(--clr-border-dropdown,white) ;
+outline-style: solid;
 }
 
 .btn-menu-dropdown:hover{
@@ -647,7 +619,7 @@ padding: 15px 15px 15px 15px;
 
 }
 .ctn-dropdown >  .btn-dropdown:focus + .menu-dropdown {
-transform: translate(0px);
+transform: translate(-15px);
 
 }
 
@@ -678,9 +650,6 @@ transform: translate(0px);
     
   
 
-.logo-footer{
-    width: 40px;
-}
 .ctn-rights{
     font-size: 10px;
 }
@@ -714,40 +683,15 @@ transform: translate(0px);
     
 
         /* FOOTER */
-        .footer-cnt{
-            justify-content: center;
-            text-align: center;
-           margin: 0;
-            align-items: center;
-        }
+   
 
-        .footer-caja p{
-            font-size:  19px;
-            color: var(--color-huignanco);
-    
-        }
-       
         .footer-caja{
-            
-            width: 300px;
-            height: 100%;
-            gap: 5px;
-            align-items: center;
-            margin: 0;
+            padding-left: 1.5em;
         }
-    
-/* .footer-caja{;
-    height: 250px;
-    color: floralwhite;
-    display: flex;
-    align-items: flex-start;
-        justify-content: space-between;
+        
 
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 3%;
-} */
-}
+ 
+        
 
 
+       }
