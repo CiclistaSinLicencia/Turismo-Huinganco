@@ -213,6 +213,11 @@ margin-bottom: 50px;
     background-color:  var(--background-color-bloque-joyas,#ececec);
     transition: 0.3s ease-in-out;
     }
+    
+    .bloque-joyas:hover{
+        background-color: #adff3305;
+
+        }
 
     .bloque-img-joyas{
         width:100%;
@@ -593,9 +598,10 @@ footer{
 /* DESPLEGABLE */
 .ctn-dropdown{
    position: absolute;
+    left: 10px;
+
     height: 100%;
-    width: 100%;
-    display: inline-block;
+            display: inline-block;
 }
 
 .btn-dropdown{
@@ -605,42 +611,40 @@ footer{
     color: #659b23;
     font-size: 30px;
     height: 100%;
-    margin-left: 10px;
+
 }
 
 /* DROPDOWN */
 .menu-dropdown{
-position: relative;
+position: absolute;
 
-  
-    display: flex;
-   
-    flex-direction: column;
-width: 100%;
-height: 100%;
-
+width:  15em;
         transform: translate(-1000px);
-        transition:   0.5s ease-in-out;
+        transition:   0.5s ease-out;
+   margin-left: -12px;
    border:0px ;
-   outline: 0px;
+   gap: 0px;
+   background-color: white;
 }
 
 .btn-menu-dropdown{
-      width: 40%;
-      height: 200px;
-      padding: 15px;
-   background-color: var(--mobile-dropdown-background,#ffffff);
-   color: var(--mobile-dropdown-color,dark);
-    border: 1px  ;
-    outline: 0px;
-   font-weight: 700;
 
-   transition: 0.5s ease-in-out ;
+padding: 15px 15px 15px 15px;
+      width: 100%;
+   text-align: left;
+   background-color: var(--mobile-dropdown-background,#f8ffed);
+   color: var(--mobile-dropdown-color,dark);
+   border:none ;
+   font-weight: 700;
+   transition: 0.2s ;
+   text-align: center;
+   margin: 0px;
 }
 
 .btn-menu-dropdown:hover{
     color: black;
    background-color: #dfffae;
+
 }
 .ctn-dropdown >  .btn-dropdown:focus + .menu-dropdown {
 transform: translate(0px);
@@ -694,32 +698,41 @@ transform: translate(0px);
 
 
     .content-banner{
+    
         width: 400px;
         height: 0px;
+       
         font-weight: 500;
         }
 
         .btn-banner{
+            
             background-color: rgb(147, 147, 147);
+            
             border-radius: 30px;    
         }
     
 
         /* FOOTER */
         .footer-cnt{
-                    align-items: center;
-                    justify-content: left;
-                    margin-left: 30px;
+            justify-content: center;
+            text-align: center;
+           margin: 0;
+            align-items: center;
         }
 
         .footer-caja p{
             font-size:  19px;
             color: var(--color-huignanco);
+    
         }
        
         .footer-caja{
+            
+            width: 300px;
             height: 100%;
             gap: 5px;
+            align-items: center;
             margin: 0;
         }
     
