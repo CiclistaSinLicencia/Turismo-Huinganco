@@ -47,47 +47,59 @@ body{
 
 .nav{
     margin-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     
 }
 
+.ctn-bt-theme{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 10px;
+    
+}
 
 .btn-theme{
 
 border: none;
 background: none;
 font-weight: 600;
-font-size: 16px;
-margin-inline: -5px;
+font-size: 12px;
 padding: 0;
 
---padding-dark:5px;
---padding:5px;
+
 }
+
 #light-theme-btn{
   color: white;
-  padding: var(--padding) var(--padding) var(--padding) 10px;
+  padding: 5px 5px 5px 5px;
   background-color:  var(--background-lighttheme-btn,#75b418);
   border-top-left-radius:  8px;
-  border-bottom-left-radius:  8px;
+  border-top-right-radius:  8px;
   margin-inline: 0px;
+  text-align: center;
 
 }
 
-
 #dark-theme-btn{
+    
    display: inline;
  color:  var(--color-btn-darktheme,#272727);
- padding: var(--padding-dark) 10px var(--padding-dark) var(--padding-dark);
+ padding: 5px 5px 5px 5px;
  background-color:  var(--background-darktheme-btn,#d3d3d3);
- border-top-right-radius:  8px;
  border-bottom-right-radius:  8px;
+ border-bottom-left-radius:  8px;
 }
 
 
 
 .btn-nav{
-    gap: 20px;
-    margin-left: 15px;
+   
     text-decoration: none;
     color:  var(--color-btn-nav,black);
     font-weight: 500;
@@ -125,7 +137,7 @@ margin-bottom: 50px;
     width: 400px;
     height: 190px;
     margin-bottom: 250px;
-        margin-right:90px ;
+        margin-right:108px ;
         text-align: right; 
     
 }
@@ -195,7 +207,7 @@ margin-bottom: 50px;
 
 .bloque-joyas{
     border-radius: 10px;
-    border: 2px solid var(--border-color--joyas, gray) ;
+    border: 2px solid var(--border-color--joyas, rgb(191, 191, 191)) ;
     width: 30%;
     height: 520px;
     background-color:  var(--background-color-bloque-joyas,#ececec);
@@ -203,8 +215,8 @@ margin-bottom: 50px;
     }
     
     .bloque-joyas:hover{
-        background-color: #adff3314;
-        scale: 1.02;
+        background-color: #adff3305;
+
         }
 
     .bloque-img-joyas{
@@ -235,7 +247,7 @@ margin-bottom: 50px;
 }
 
 #facil{
-    background-color: rgb(151, 255, 151);
+    background-color: rgb(101, 255, 101);
 }
 #media{
     background-color: rgb(255, 168, 62);
@@ -599,30 +611,34 @@ footer{
     color: #659b23;
     font-size: 30px;
     height: 100%;
-  
+
 }
 
+/* DROPDOWN */
 .menu-dropdown{
 position: absolute;
 
-width: 100vw;
+width:  15em;
         transform: translate(-1000px);
         transition:   0.5s ease-out;
-    margin-left: -15px;
+   margin-left: -12px;
+   border:0px ;
+   gap: 0px;
+   background-color: white;
 }
 
 .btn-menu-dropdown{
 
-padding: 10px 30px 10px 10px;
-      width: 100vw;
+padding: 15px 15px 15px 15px;
+      width: 100%;
    text-align: left;
    background-color: var(--mobile-dropdown-background,#f8ffed);
    color: var(--mobile-dropdown-color,dark);
-   border-top: 1px solid gray ;
-   border-bottom:1px solid gray  ;
+   border:none ;
    font-weight: 700;
    transition: 0.2s ;
    text-align: center;
+   margin: 0px;
 }
 
 .btn-menu-dropdown:hover{
