@@ -313,7 +313,7 @@ margin-bottom: 50px;
 
 .octubre-huignanco{
     text-align: left;
-    border-left: 2px solid white;
+   
     padding: 20px;
     
     background-color:  var(--background-color-octubre ,#272727 );  
@@ -415,7 +415,7 @@ margin-bottom: 50px;
 }
 
 .textarea::placeholder{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 500;
 }
 
