@@ -1,17 +1,24 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 :root{
     --color-huignanco:#75b418;
     --greenhover:greenyellow;
+    --dark-300:#333;
+    --dark-500:#272727;
 
-/* Theme */
-    
 }
+
+::selection {
+    color: white;
+   background: rgba(83, 147, 35, 0.505); 
+ }
 
 body{
     background-color: var(--background-theme, white);
@@ -84,6 +91,7 @@ padding: 0;
   margin-inline: 0px;
   text-align: center;
 
+  
 }
 
 #dark-theme-btn{
@@ -102,10 +110,11 @@ padding: 0;
    
     text-decoration: none;
     color:  var(--color-btn-nav,black);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 17px;
     padding: 5px;
     transition: color 0.2s ease-in-out; 
+    
 }
 .btn-nav:hover {
     color: rgb(117, 180, 24);
@@ -116,7 +125,8 @@ padding: 0;
 
 /* BANNER */
 .banner{
-width: 100%;
+    z-index: 100;
+    width: 100%;
 height: 600px;
     display: flex;
     align-items: center;
@@ -130,7 +140,6 @@ background-position: center;
 margin-bottom: 50px;
 }
 
-
 .content-banner{
     color: floralwhite;
         font-weight: 400;
@@ -139,6 +148,7 @@ margin-bottom: 50px;
     margin-bottom: 250px;
         margin-right:108px ;
         text-align: right; 
+        font-style: italic;
     
 }
 
@@ -146,6 +156,8 @@ margin-bottom: 50px;
     color: floralwhite;
     margin-bottom: 5px;
     font-weight: 500;
+    font-family: 'Poppins' , sans-serif;
+    font-style: italic;
 }
 
 .btn-banner{
@@ -197,18 +209,21 @@ margin-bottom: 50px;
      flex-direction: grid;
      color:  var(--color-texto-joyas, #202020);
      margin-bottom: 50px;
+    
         
 }
 
 .titulo-joyas{
     font-size: 30px;
+ font-style: italic;
+    font-weight: 700;
 }
 
 .bloque-joyas{
     border-radius: 10px;
-    border: 2px solid var(--border-color--joyas, rgb(191, 191, 191)) ;
-    width: 30%;
-    height: 520px;
+     border: 1px solid var(--border-color--joyas, rgb(191, 191, 191)) ; 
+    width: 400px;
+    height: 550px;
     background-color:  var(--background-color-bloque-joyas,#ececec);
     transition: 0.3s ease-in-out;
     }
@@ -326,7 +341,7 @@ margin-bottom: 50px;
     border: 2px solid floralwhite;
     
     border-radius: 5px;
-    padding: 2px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
         transition: 0.5s;
         text-align: center;
    
@@ -404,7 +419,6 @@ margin-bottom: 50px;
 .form-input::placeholder{
     font-size: 1em;
 }
-
 .textarea{
   font-size: 1em;
   width: 100%;
@@ -431,6 +445,7 @@ margin-bottom: 50px;
         border-radius: 3px;
         margin-bottom: 10px;
         margin-top: 10px;
+        font-size: 1em;
 }
 
 .btn-enviar:hover{

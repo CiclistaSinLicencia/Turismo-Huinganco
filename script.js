@@ -1,8 +1,6 @@
 document.getElementById('dark-theme-btn').addEventListener
 ('click' , ( ) => {
     document.documentElement.style.setProperty('--background-theme' , '#333' )
-
-
     document.documentElement.style.setProperty('--background-lighttheme-btn' , '#d3d3d3' )
     document.documentElement.style.setProperty('--background-darktheme-btn' , '#75b418' )
     document.documentElement.style.setProperty('--color-btn-darktheme' , '#272727' )

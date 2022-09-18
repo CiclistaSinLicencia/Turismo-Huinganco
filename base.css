@@ -1,0 +1,75 @@
+.base{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100vw;
+    height: 100vh;
+    color: rebeccapurple;
+    flex-wrap: wrap;
+    text-align: center;
+ 
+}
+
+
+.cake-is-a-lie{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 200px;
+  
+    
+}
+
+
+
+
+
+
+/*/////////////////////////////////////////////////// 
+                                barra separadora                                   
+/////////////////////////////////////////////////// */
+.cake-btn{
+    text-decoration: none;
+    padding: 1;
+
+    background-color: rebeccapurple;
+    color: floralwhite;
+    margin-top: 20px;
+    border-top-left-radius: left 100px  rgba(128, 128, 128, 0);
+}
+
+.caja-medio:hover a{
+    animation: cake-animation 1s  forwards infinite alternate;
+
+}
+
+@keyframes  cake-animation{
+
+        0%{
+            transform: translateY(50%);
+        }
+        25%{
+            transform: translateX(100%);
+        }
+        50%{
+            transform: translateY(100%) translateX(100%);
+      
+        }
+        75%{
+            transform: translateY(-100%) translateX(100%);
+         
+        }
+        80%{
+            transform: translateY(-30%) translateX(70%);
+        }
+        90%{
+            transform: translateY(30%) translateX(40%);
+        }
+        100%
+        {
+            transform: translateY(50%) translateX(100%);
+        }
+   
+        
+}
