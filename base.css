@@ -1,75 +1,103 @@
 .base{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     
     width: 100vw;
     height: 100vh;
     color: rebeccapurple;
     flex-wrap: wrap;
     text-align: center;
- 
+
 }
-
-
 .cake-is-a-lie{
     display: flex;
-    flex-direction: column;
-    width: 33%;
-    height: 200px;
-  
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height:90px;
+    margin-bottom: 300px;
     
 }
-
-
-
-
 
 
 /*/////////////////////////////////////////////////// 
                                 barra separadora                                   
 /////////////////////////////////////////////////// */
+
+.cake-title{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
 .cake-btn{
     text-decoration: none;
     padding: 1;
-
+    height: 30px;
+    width: 200px;
     background-color: rebeccapurple;
     color: floralwhite;
-    margin-top: 20px;
+
     border-top-left-radius: left 100px  rgba(128, 128, 128, 0);
+    padding: 3px 3px;  
+    width: 300px;
+    
+   
 }
 
-.caja-medio:hover a{
-    animation: cake-animation 1s  forwards infinite alternate;
+.cake-pinche{
+    content: '';
+        right: 101%;
+        position: absolute;
+     
+        border-top:10px;
+        border-bottom:10px;
+        border-left: 10px;
+        border-right:2em;
+    
 
+    border-top-color:  transparent;
+    border-bottom-color:  transparent; 
+    border-left-color:  transparent;
+    border-right-color: rgb(102, 51, 153);
+    border-style: solid;
+    
+     
+ 
+}
+
+
+.cake-medio:hover .cake-btn{
+    animation: cake-animation 1s  forwards infinite alternate;
 }
 
 @keyframes  cake-animation{
 
-        0%{
-            transform: translateY(50%);
-        }
-        25%{
-            transform: translateX(100%);
-        }
-        50%{
-            transform: translateY(100%) translateX(100%);
-      
-        }
-        75%{
-            transform: translateY(-100%) translateX(100%);
-         
-        }
-        80%{
-            transform: translateY(-30%) translateX(70%);
-        }
-        90%{
-            transform: translateY(30%) translateX(40%);
-        }
-        100%
-        {
-            transform: translateY(50%) translateX(100%);
-        }
-   
+        0%{ transform: translateY(50%); 
         
+    }
+
+        25%{ transform: translateX(100%); 
+            background-color: red;
+        border-width: 20px;
+  
+        }
+
+        50%{transform: translateY(100%) translateX(100%);}
+        
+        75%{transform: translateY(-100%) translateX(100%);}
+
+        80%{transform: translateY(-30%) translateX(70%); }
+
+        90%{transform: translateY(30%) translateX(40%); }
+
+        100% {transform: translateY(50%) translateX(100%);}
+   
 }
