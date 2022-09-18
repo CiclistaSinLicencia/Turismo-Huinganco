@@ -48,7 +48,8 @@
     border-top-left-radius: left 100px  rgba(128, 128, 128, 0);
     padding: 3px 3px;  
     width: 300px;
-    
+    cursor: not-allowed;
+    font-weight: 700;
    
 }
 
@@ -72,6 +73,9 @@
      
  
 }
+.cake-medio:hover{
+    cursor: not-allowed;
+}
 
 
 .cake-medio:hover .cake-btn{
@@ -86,7 +90,7 @@
 
         25%{ transform: translateX(100%); 
             background-color: red;
-        border-width: 20px;
+            scale: 1.1;
   
         }
 

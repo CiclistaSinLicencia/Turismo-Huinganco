@@ -446,6 +446,7 @@ margin-bottom: 50px;
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 1em;
+        cursor: pointer;
 }
 
 .btn-enviar:hover{
@@ -595,6 +596,7 @@ footer{
     color: #659b23;
     font-size: 30px;
     height: 100%;
+    cursor: pointer;
 
 }
 
@@ -623,6 +625,7 @@ height: 100%;
    border:none ;
    font-weight: 700;
    transition: 0.5s linear ;
+        cursor: pointer;
 
 outline-width: 1px;
 outline-color:var(--clr-border-dropdown,white) ;
