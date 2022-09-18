@@ -127,7 +127,8 @@ padding: 0;
 .banner{
     z-index: 100;
     width: 100%;
-height: 600px;
+/* height: 600px; */
+        height: 85vh;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -136,15 +137,13 @@ box-shadow: 0px 0.1px 1px black;
 background-image: url(huighnanco/Banner.jpg);
 background-size: cover;
 background-position: center;
-
-margin-bottom: 50px;
 }
 
 .content-banner{
     color: floralwhite;
         font-weight: 400;
-    width: 400px;
-    height: 190px;
+    width: 450px;
+    height: 170px;
     margin-bottom: 250px;
         margin-right:108px ;
         text-align: right; 
@@ -161,8 +160,8 @@ margin-bottom: 50px;
 }
 
 .btn-banner{
-        border: 2px solid floralwhite ;
-        padding: 3px 15px 3px 15px;
+        
+        padding: 1px 12px 1px 12px;
         color: floralwhite;
         margin-top: 10px;
         
@@ -170,12 +169,16 @@ margin-bottom: 50px;
             text-decoration: none;
             font-weight: 600;
             border-radius: 8px ;
-            transition: 0.5s;
+            transition: 0.2s;
+            outline: 2px solid white;
+           /*  outline-offset: 0px; */
 }
 .btn-banner:hover{
-    border-color: var(--greenhover);
-    color:var(--greenhover) ;
-        background-color: #174e1752;
+    border-color: rgb(149, 149, 0);
+    color: rgb(155, 155, 0) ;
+        background-color: rgb(255, 250, 240);
+        outline-offset: 3px;
+        
 }
 /* end Banner */
 
@@ -189,7 +192,7 @@ margin-bottom: 50px;
     justify-content: center;
     align-items: center;
     color: var(--color-huignanco);
-    
+    margin: 20px  0px;
     height: 80px;
     flex-direction: column;
 }
@@ -328,7 +331,7 @@ margin-bottom: 50px;
 
 .octubre-huignanco{
     text-align: left;
-   
+   width: 50%;
     padding: 20px;
     
     background-color:  var(--background-color-octubre ,#272727 );  
@@ -337,20 +340,19 @@ margin-bottom: 50px;
 
 .btn-octubre-conocemas{
     text-decoration: none;
-    color: white;
-    border: 2px solid floralwhite;
-    
-    border-radius: 5px;
+    color: floralwhite;
+    border-radius: 8px;
     padding: 5px 10px 5px 10px;
         transition: 0.5s;
         text-align: center;
-   
-    
+        border: 2px solid floralwhite;
+        
+
 }
 .btn-octubre-conocemas:hover{
-    color: var(--greenhover);
+   color: var(--greenhover);
     border-color: var(--greenhover);
-  
+
 }
 
 .octubre-huignanco p{
@@ -422,6 +424,7 @@ margin-bottom: 50px;
 .textarea{
   font-size: 1em;
   width: 100%;
+  height: 100%;
   padding-left: 10px;
   padding-top: 5px;
   resize: none;
