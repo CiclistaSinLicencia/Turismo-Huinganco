@@ -391,14 +391,14 @@ background-position: center;
     top: 50%; /* Para centrar */
     transform: translateY(-50%);
     border: none;
-    font-size: 5.5em;
+    font-size: 5em;
 
-    color: #a9ed578e;
+    color: #577fedd2;
     transition: 0.5s;
 }
 .carousel-button:hover,
 .carousel-button:hover{
-    color: #a9ed57cb;
+    color: #a1baffd2;
 }
 
 .carousel .next{
@@ -812,6 +812,10 @@ transform: translate(-15px);
             margin-bottom: 20px;
            height: 20em;
          
+    }
+
+    .carousel-button{
+        font-size: 3em;
     }
     
 
