@@ -15,6 +15,14 @@
 
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 ::selection {
     color: white;
    background: rgba(83, 147, 35, 0.505); 
