@@ -788,12 +788,26 @@ transform: translate(-15px);
      
        /* CAROUSEL */
        .section-carousel{
-        width: 100%
+        width: 100%;
+       
     }
     
     .octubre-huignanco{
         display: none;
     }
+
+    .carousel{
+        height: 100%;
+    }
+
+    #banner-octubre{
+        
+          
+            margin-bottom: 20px;
+           height: 20em;
+         
+    }
+    
 
 
     }
