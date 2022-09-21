@@ -355,6 +355,7 @@ background-position: center;
         transition: 0.5s;
         text-align: center;
         border: 2px solid floralwhite;
+
 }
 
 .btn-octubre-conocemas:hover{
@@ -453,6 +454,11 @@ background-position: center;
     object-position: center;
 } 
 
+.btn-octubre-conocemas{
+    padding: 2px 7px 2px 7px;
+
+}
+
   .section-carousel{
     width: 100%;
     height: 62vmin;
@@ -462,9 +468,10 @@ background-position: center;
 }
 
 .octubre-huignanco p{
-    margin-bottom: 20px;
+   
    margin-right: 0px;
    margin-top: 10px; 
+   margin-bottom: 15px;
    font-size: 14px;
 }
 
@@ -483,15 +490,7 @@ background-position: center;
 }
 }
  
-/* #banner-octubre{
-    width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 20px;
-       height: 32em;     
-        flex-direction: column;
-} */
+
   
 
 /* END CAROUSEL */
@@ -561,11 +560,15 @@ background-position: center;
     padding-bottom: 3px;
     font-size: 1em;
     padding-left: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
-.form-input::placeholder{
+.form-input ::placeholder{
     font-size: 1em;
 }
+.form-input:focus {
+    outline: 1px solid var(--color-huignanco);
+}
+
 .textarea{
   font-size: 1em;
   width: 100%;
@@ -579,6 +582,10 @@ background-position: center;
 .textarea::placeholder{
     font-size: 1em;
     font-weight: 500;
+}
+
+.textarea:focus{
+    outline: 1px solid var(--color-huignanco);
 }
 
 .btn-enviar{
@@ -844,7 +851,9 @@ transform: translate(-15px);
     height: auto;
     padding-bottom: 20px;
     }
-
+    .bloque-joyas:hover{
+        scale: 1.00;
+    }    
 
         /* FOOTER */
    
@@ -856,16 +865,10 @@ transform: translate(-15px);
             width: 90%;
         }
         
-      
-    
+
     .ctn-rights{
         font-size: 10px;
        }
      
-     
-
-/* Joya */
-.bloque-joyas:hover{
-    scale: 1.00;
-}    
+    
 }
