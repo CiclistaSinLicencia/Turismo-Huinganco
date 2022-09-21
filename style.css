@@ -39,7 +39,7 @@ body{
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 4.5em;
+        height: 4em;
     
         background-color: var(--header-background,#ffffff);
     
@@ -84,24 +84,25 @@ padding: 0;
 
 #light-theme-btn{
   color: white;
-  padding: 5px 5px 5px 5px;
+  padding: 1px 8px 1px 8px;
   background-color:  var(--background-lighttheme-btn,#75b418);
   border-top-left-radius:  8px;
   border-top-right-radius:  8px;
   margin-inline: 0px;
   text-align: center;
-
-  
+  font-size: 15px;
+  font-weight: 800px;
 }
 
 #dark-theme-btn{
     
    display: inline;
  color:  #272727;
- padding: 5px 5px 5px 5px;
+ padding: 1px 8px 1px 8px;
  background-color:  var(--background-darktheme-btn,#d3d3d3);
  border-bottom-right-radius:  8px;
  border-bottom-left-radius:  8px;
+ font-size: 15px;
 }
 
 
@@ -204,14 +205,11 @@ background-position: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
         gap: 30px;
      flex-wrap: wrap;
      flex-direction: grid;
      color:  var(--color-texto-joyas, #202020);
      margin-bottom: 50px;
-    
-        
 }
 
 .titulo-joyas{
@@ -323,7 +321,7 @@ background-position: center;
 }
 
 #banner-octubre img{
-    width: 50%;
+    width: 100%;
     object-fit: cover;
 
 }
@@ -361,6 +359,81 @@ background-position: center;
     margin-right: 20px;
     margin-top: 20px; 
 }
+
+
+/* CAROUSEL */
+.section-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 50%;
+   
+    flex-wrap: wrap; /* funca? */
+}
+
+
+
+.carousel{
+    height: 30em;
+    width: 100%;
+    position: relative;
+    background-color: gray;
+}
+
+.carousel >ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.carousel-btn{
+    background: none;
+    z-index: 2; /* para ponerlo sobre los otros elementos */
+    position: absolute;
+    top: 50%; /* Para centrar */
+    transform: translateY(-50%);
+    border: none;
+    font-size: 5.5em;
+
+    color: rgba(255, 255, 255, 0.646);
+    transition: 0.2s;
+}
+.carousel-btn:hover{
+    color: #aaed57b4;
+}
+
+.carousel .next{
+    right: 20px;
+}
+
+.preview{
+    left: 20px;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;  /* Top bot right left 0 */
+    /* opacity: 0; */
+    list-style: none;
+}
+.slide [data-active]{
+    opacity: 1;
+}
+.slide > img{
+   /*  display: block; */ 
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* END CAROUSEL */
+
+
+
+
+
+
+
 
 
 /* DEJA TU COMENTARIO */
@@ -546,10 +619,6 @@ footer{
     font-size: 12px;
 }
 /* end Footer */
-
-
-
-
 
 
 

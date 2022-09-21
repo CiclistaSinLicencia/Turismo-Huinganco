@@ -72,8 +72,7 @@ document.getElementById('light-theme-btn').addEventListener
     document.documentElement.style.setProperty('--color-btn-nav' , '#ffffff' )
     document.documentElement.style.setProperty('--background-color-octubre' , '#272727' )
                      /*  */
-    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#272727' )
-    document.documentElement.style.setProperty('--background-color-bloque-joyas-hover' , ' #adff332f' )
+    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#272727' ) 
     document.documentElement.style.setProperty('--border-color--joyas' , 'gray' )
     document.documentElement.style.setProperty('--color-texto-joyas' , 'floralwhite' )
 
@@ -116,3 +115,9 @@ document.getElementById('light-theme-mobile-btn').addEventListener
 
 /* windows.getComputedStyle(document.documentElement)
 .getPropertyValue('--dark-theme') */
+
+
+
+
+/* Carousel */
+
