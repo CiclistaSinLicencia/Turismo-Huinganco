@@ -317,11 +317,9 @@ background-position: center;
         text-align: center;
         justify-content: center;
         margin-bottom: 20px;
-       height: 32em;
-     
+       height: 32em;     
+        
 }
-
-
 
 .octubre-huignanco{
     text-align: left;
@@ -333,8 +331,6 @@ background-position: center;
     color:floralwhite;
 }
 
-   
-
 .btn-octubre-conocemas{
     text-decoration: none;
     color: floralwhite;
@@ -343,13 +339,11 @@ background-position: center;
         transition: 0.5s;
         text-align: center;
         border: 2px solid floralwhite;
-        
-
 }
+
 .btn-octubre-conocemas:hover{
    color: var(--greenhover);
     border-color: var(--greenhover);
-
 }
 
 .octubre-huignanco p{
@@ -358,19 +352,10 @@ background-position: center;
     margin-top: 20px; 
 }
 
-
 /* CAROUSEL */
 .section-carousel{
-/*     display: flex;
-    align-items: center;
-    justify-content: center;
-    */
     width: 50%; /* ancho imagen */
-
 }
-
-
-
 
 .carousel{
     height: 32em;
@@ -380,10 +365,10 @@ background-position: center;
 
 .carousel >ul{
     margin: 0;
-  
     padding: 0;
     list-style: none;
 }
+
 .carousel-button{
     background: none;
     z-index: 2; /* para ponerlo sobre los otros elementos */
@@ -418,17 +403,64 @@ background-position: center;
 }
 .slide[data-active] {
     opacity: 1;
-
 }
 
  .slide > img{
-
     width:100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 } 
+
+ /* Mobile */
+ @media  (max-width:750px){
+    #banner-octubre{
+        margin-bottom: 20px;
+ /*       height: 20em; */
+            flex-direction: column;
+        
+            box-shadow: 0px 0.1px 1px black;
+            height: 100%;
+}
+
+.slide > img{
+    
+    object-fit: contain cover;
+    object-position: center;
+} 
+
+  .section-carousel{
+    width: 100%;
+}
+
+.carousel{
+     min-height: 23em;
+     max-height: 25em;
+}
+
+.carousel-button{
+    font-size: 3em;
+}
+.octubre-huignanco{
+    width: 100%;
+}
+}
+ 
+/* #banner-octubre{
+    width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+       height: 32em;     
+        flex-direction: column;
+} */
+  
+
 /* END CAROUSEL */
+
+
+
 
 
 
@@ -792,32 +824,7 @@ transform: translate(-15px);
         font-size: 10px;
        }
      
-       /* CAROUSEL */
-       .section-carousel{
-        width: 100%;
-       
-    }
-    
-    .octubre-huignanco{
-        display: none;
-    }
-
-    .carousel{
-        height: 100%;
-    }
-
-    #banner-octubre{
-        
-          
-            margin-bottom: 20px;
-           height: 20em;
-         
-    }
-
-    .carousel-button{
-        font-size: 3em;
-    }
-    
+     
 
 
     }
