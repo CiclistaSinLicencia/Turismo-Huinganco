@@ -212,6 +212,8 @@ background-position: center;
      margin-bottom: 50px;
 }
 
+
+
 .titulo-joyas{
     font-size: 30px;
  font-style: italic;
@@ -224,9 +226,13 @@ background-position: center;
     width: 400px;
     height: 550px;
     background-color:  var(--background-color-bloque-joyas,#ececec);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
+  
     }
-    
+    .bloque-joyas:hover{
+        scale: 1.02;
+        background-color: #ebf5d9;
+    }
 
     .bloque-img-joyas{
         width:100%;
@@ -236,6 +242,7 @@ background-position: center;
         border-bottom-right-radius: 0px;
         margin-bottom: 10px;
     }
+
 
     .ctn-altura-dificultad{
         width: 100%;
@@ -291,17 +298,17 @@ background-position: center;
     margin-bottom: 10px;
     text-align: center;
     margin-top: 10px;
-    color: darkgreen;
+    
 }
-
 .anchor-titulo-bloque-joyas{
     text-decoration: none;
-    color: var(--color-anchor-titulo-joyas,darkgreen);
+    color: var(--color-anchor-titulo-joyas,rgb(81, 117, 13));
     transition: 0.5s ease-in-out;
+
 }
 
 .anchor-titulo-bloque-joyas:hover{
-    color:rgb(11, 163, 11) ;
+    color: rgb(128, 211, 72) ;
 
 }
 /* End Joyas */
@@ -377,21 +384,29 @@ background-position: center;
     transform: translateY(-50%);
     border: none;
     font-size: 5em;
-
-    color: #577fedd2;
-    transition: 0.5s;
+    cursor: pointer;
+    color: #ffffffbf;
+    transition: 0.5s all;
 }
 .carousel-button:hover,
 .carousel-button:hover{
-    color: #a1baffd2;
+    color: #dfffae;
+    scale: 1.01;
 }
 
 .carousel .next{
     right: 20px;
 }
 
+.carousel .next:hover{
+    right: 15px;
+}
+
 .prev{
     left: 20px;
+}
+.prev:hover{
+    left: 15px;
 }
 
 .slide{
@@ -826,5 +841,8 @@ transform: translate(-15px);
      
      
 
-
-    }
+/* Joya */
+.bloque-joyas:hover{
+    scale: 1.00;
+}    
+}
