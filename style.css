@@ -653,8 +653,14 @@ footer{
 }
 .header img{
     margin: 0px;
-
+    width: 250px;
+    padding-top: 7px;
 }
+
+/* .header img{
+    margin-left: 20px;
+    width: 270px; 
+} */
 
 .nav{
     display:none;
