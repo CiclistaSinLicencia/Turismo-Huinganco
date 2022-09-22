@@ -239,7 +239,7 @@ background-position: center;
     }
     .bloque-joyas:hover{
         scale: 1.02;
-        background-color: #ebf5d9;
+       
     }
 
     .bloque-img-joyas{
@@ -332,8 +332,9 @@ background-position: center;
         text-align: center;
         justify-content: center;
         margin-bottom: 20px;
-       height: 32em;     
-       box-shadow: 0px 0.1px 5px rgb(49, 49, 49);
+       /* height: 32em;   */   
+       height: 70vmin;
+  
         
 }
 
@@ -374,8 +375,10 @@ background-position: center;
     width: 50%; /* ancho imagen */
 }
 
+
 .carousel{
-    height: 32em;
+    /* height: 32em; */
+    height: 70vmin;
     width: 100%;
     position: relative;
 }
@@ -446,6 +449,7 @@ background-position: center;
         flex-wrap: wrap-reverse;
             
             height: 100%;
+            box-shadow: 0px 1px 5px rgb(49, 49, 49);
 }
 
 .slide > img{
@@ -463,9 +467,6 @@ background-position: center;
     width: 100%;
     height: 62vmin;
 }
-.octubre-huignanco{
-
-}
 
 .octubre-huignanco p{
    
@@ -475,10 +476,8 @@ background-position: center;
    font-size: 14px;
 }
 
-
 .carousel{
      height: 100%;
-
 }
 
 .carousel-button{
@@ -853,6 +852,7 @@ transform: translate(-15px);
     }
     .bloque-joyas:hover{
         scale: 1.00;
+  
     }    
 
         /* FOOTER */
