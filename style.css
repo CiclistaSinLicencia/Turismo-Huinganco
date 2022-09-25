@@ -49,6 +49,7 @@ body{
         justify-content: space-between;
         width: 100%;
         height: 3.5em;
+        box-shadow:  1px 1px 4px  rgba(51, 51, 51, 0.578);
     
         background-color: var(--header-background,#ffffff);
     
@@ -135,13 +136,14 @@ padding: 0;
 
 
 /* BANNER */
+
 .banner{
     width: 100%;
         height: 85vh;
      display: flex;
      align-items: center;
     justify-content: right;
-box-shadow: 0px 0.1px 1px black;
+        box-shadow: 0px 2px 5px #333333ab;
 
 background-image: url(huighnanco/Banner.webp);
 background-size: cover;
@@ -157,6 +159,7 @@ background-position: center;
         margin-right:122px ;
         text-align: right; 
         font-style: italic;
+        z-index: 60;
     
 }
 
@@ -220,6 +223,9 @@ background-position: center;
      flex-direction: grid;
      color:  var(--color-texto-joyas, #202020);
      margin-bottom: 50px;
+
+     padding-right: 20px;
+     padding-left: 20px ;
 }
 
 
@@ -232,18 +238,15 @@ background-position: center;
 
 .bloque-joyas{
     border-radius: 10px;
-     border: 1px solid var(--border-color--joyas, rgb(191, 191, 191)) ; 
+   
+     
     width: 400px;
     height: 550px;
     background-color:  var(--background-color-bloque-joyas,#ececec);
-    transition: 0.2s ease-in-out;
+    box-shadow:  3px 2px 5px  rgba(51, 51, 51, 0.322);
   
     }
-    .bloque-joyas:hover{
-        scale: 1.02;
-       
-    }
-
+  
     
     .bloque-img-joyas{
         width:100%;
@@ -310,18 +313,27 @@ background-position: center;
     margin-bottom: 10px;
     text-align: center;
     margin-top: 10px;
+    transition: 5s text-decoration ease-in-out;
     
 }
+.bloque-joyas:hover > .titulo-bloque-joyas{
+    
+
+    text-decoration: underline;
+    
+}
+
+
 .anchor-titulo-bloque-joyas{
     text-decoration: none;
     color: var(--color-anchor-titulo-joyas,rgb(81, 117, 13));
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 
 }
 
 .anchor-titulo-bloque-joyas:hover{
-    color: rgb(128, 211, 72) ;
-
+    
+    color: rgb(104, 183, 51) ;
 }
 /* End Joyas */
 
@@ -403,7 +415,7 @@ background-position: center;
     font-size: 5em;
     cursor: pointer;
     color: #ffffffbf;
-    transition: 0.5s all;
+    transition: 0.1s  linear;
 }
 .carousel-button:hover,
 .carousel-button:hover{
@@ -413,14 +425,18 @@ background-position: center;
 
 .carousel .next{
     right: 20px;
+    
+    width: 60px;
 }
 
 .carousel .next:hover{
     right: 15px;
+    
 }
 
 .prev{
     left: 20px;
+    width: 60px;
 }
 .prev:hover{
     left: 15px;
@@ -453,7 +469,7 @@ background-position: center;
         flex-wrap: wrap-reverse;
             
             height: 100%;
-            box-shadow: 0px 1px 5px rgb(49, 49, 49);
+            
 }
 
 .slide > img{
@@ -681,11 +697,13 @@ footer{
 
 .logo-footer{
     width: 2.5em;
-    transition: 0.5s linear;
+    transition: 0.5s filter linear;
+    transition: 0.2s transform linear;
     filter: invert(100%) sepia(0%) saturate(7421%) hue-rotate(127deg) brightness(118%) contrast(96%);
 }
 .logo-footer:hover{
     filter: invert(59%) sepia(33%) saturate(1004%) hue-rotate(42deg) brightness(97%) contrast(91%);
+    transform: translateY(-3px);
 }
 .ctn-rights{
     display: flex;
@@ -695,9 +713,15 @@ footer{
     padding-bottom: 10px;
     background-color: rgb(39, 39, 39);
     color: floralwhite;
+    gap: 0.3%;
 }
 .ctn-rights p{
     font-size: 12px;
+}
+.c{
+  padding-bottom: 0.2%;
+   scale:  1.5;
+    color: var(--greenhover);
 }
 /* end Footer */
 
