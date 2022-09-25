@@ -114,8 +114,14 @@ document.getElementById('light-theme-mobile-btn').addEventListener
 })
 
 
-/* Carousel */
 
+
+
+
+
+
+
+/* Carousel */
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 buttons.forEach(button => {

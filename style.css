@@ -143,7 +143,7 @@ padding: 0;
     justify-content: right;
 box-shadow: 0px 0.1px 1px black;
 
-background-image: url(huighnanco/Banner.jpg);
+background-image: url(huighnanco/Banner.webp);
 background-size: cover;
 background-position: center;
 }
@@ -244,10 +244,12 @@ background-position: center;
        
     }
 
+    
     .bloque-img-joyas{
         width:100%;
-        object-fit: cover;
+        
         border-radius: 8px;
+        object-fit: cover;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         margin-bottom: 10px;
