@@ -33,10 +33,11 @@ body{
 }
 
 /* Mobile */
-.ctn-dropdown{
+.dropdown{
     display: none;
 }
-/*  */
+
+
 
 
 /* HEADER */
@@ -772,42 +773,36 @@ footer{
     
 
 /* DESPLEGABLE */
-.ctn-dropdown{
-   position: absolute;
-    left: 10px;
 
-    height: 100%;
-            display: inline-block;
-}
+.dropdown{
+    position: absolute;
+   width: 100%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.btn-dropdown{
-    text-decoration: none;
-    border: none;
-    background: none ;
-    color: #659b23;
-    font-size: 30px;
-    height: 100%;
-    cursor: pointer;
 
-}
-
-.menu-dropdown{
+.dropdown-menu{
 position: absolute;
-
+    background-color: gray;
 height: 100%;
-        transform: translate(-300px);
+        transform: translate(-400px);
         transition:   0.5s ease-out;
-
+    top: calc(100% + 1em);
    border:0px ;
-   margin: 0;
-   gap: 0;
+   display: flex;
+   flex-direction: column;
 
-   background-color: white; 
 }
+.dropdown >  .burger.active + .dropdown-menu{
+    transform: translate(-32px);
+    }
 
 .btn-menu-dropdown{
     margin: 0;
       width: 250px;
+    
       padding: 1em 2em 1em 2em;
    text-align: left;
   background-color: var(--mobile-dropdown-background,white);
@@ -825,13 +820,7 @@ outline-style: solid;
 .btn-menu-dropdown:hover{
     color: black;
    background-color: #dfffae;
-
 }
-.ctn-dropdown >  .btn-dropdown:focus + .menu-dropdown {
-transform: translate(-15px);
-
-}
-
 #dark-theme-mobile-btn{
     background-color:  #272727;
     color: white;
@@ -842,6 +831,108 @@ transform: translate(-15px);
 }
 
 /* end Desplegable */
+
+  .burger {
+    position: relative;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: none;
+  }
+  
+  .burger .bar {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #84c948;
+    border-radius: 8px;
+    position: absolute;
+    top: calc(70% - 6px);
+    left: 0;
+    transition: all 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .burger span:first-child {
+    transform: translateY(-31.5px);
+    animation-name: rotate-base-1;
+  }
+  .burger.active span:first-child {
+    animation-name: rotate-1;
+  }
+  
+  .burger span:last-child {
+    transform: translateY(31.5px);
+    animation-name: rotate-base-2;
+  }
+  .burger.active span:last-child {
+    animation-name: rotate-2;
+  }
+  
+  .burger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  /* ANIMACION */
+  @keyframes rotate-1 { /* X */
+    0% {
+      transform: translateY(-6px);
+      
+    }
+    50% {
+      transform: translateY(0);
+     
+    }
+    100% {
+      transform: rotate(-45deg);
+      background-color: #ff6294;
+    }
+  }
+  @keyframes rotate-base-1 { /* Y */
+    0% {
+      transform: translateY(0) rotate(-45deg);
+      background-color: #ff6294;
+    }
+    50% {
+      transform: rotate(0deg);
+     
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  @keyframes rotate-2 { /* X */
+    0% {
+      transform: translateY(6px);
+  
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: rotate(45deg);
+      background-color: #ff6294;
+    }
+  }
+  @keyframes rotate-base-2 { /* Y */
+    0% {
+      transform: translateY(0) rotate(45deg);
+      background-color: #ff6294;
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: translateY(6px);
+     
+    }
+  }
+
+/*  */
 
 
 /* joyas */

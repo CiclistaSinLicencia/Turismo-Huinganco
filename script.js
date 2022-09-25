@@ -113,17 +113,11 @@ document.getElementById('light-theme-mobile-btn').addEventListener
     document.documentElement.style.setProperty('--clr-border-dropdown' , ' white' )
 })
 
-/* windows.getComputedStyle(document.documentElement)
-.getPropertyValue('--dark-theme') */
-
-
-
 
 /* Carousel */
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
-
 buttons.forEach(button => {
     button.addEventListener("click", ( ) => {
             const offset = button.dataset.carouselButton === "next" ? 1 : -1
@@ -140,3 +134,11 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 });
+
+
+/* ANIMACION boton dropdown */
+$(document).ready(function () {
+    $(".burger").on("click", function () {
+      $(this).toggleClass("active");
+    });
+  });
