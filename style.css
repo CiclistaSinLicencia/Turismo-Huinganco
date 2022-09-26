@@ -777,12 +777,12 @@ footer{
     }
     .content-banner{
         
-        width: 100%;
+        
         margin: auto;
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        padding-top: 10px;
+      
         background-position: right;
         background-size: auto;
         
@@ -794,6 +794,7 @@ footer{
     .content-banner h1{
         font-family: 'Dancing Script', cursive;
         font-size: 35px;
+        color: black;
     }
  
     
