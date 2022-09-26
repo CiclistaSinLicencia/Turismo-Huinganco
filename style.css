@@ -814,7 +814,7 @@ footer{
 position: absolute;
     background-color: gray;
 height: 100%;
-        transform: translate(-400px);
+        transform: translate(-280px);
         transition:   0.5s ease-out;
     top: calc(100% + 1em);
    border:0px ;
