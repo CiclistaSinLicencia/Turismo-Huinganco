@@ -179,16 +179,17 @@ background-position: center;
         
         display: inline-block;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 800;
             border-radius: 8px ;
             transition: 0.2s;
-            outline: 2px solid white;
+            outline: 2px solid floralwhite;
            /*  outline-offset: 0px; */
 }
 .btn-banner:hover{
-    border-color: rgb(149, 149, 0);
-    color: rgb(155, 155, 0) ;
-        background-color: rgb(255, 250, 240);
+  
+    color: var(--color-huignanco) ;
+    
+        background-color: floralwhite;
         outline-offset: 3px;
         
 }
