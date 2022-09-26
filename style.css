@@ -878,7 +878,7 @@ outline-style: solid;
     top: calc(70% - 6px);
     left: 0;
     transition: all 0.5s;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
   }
   
