@@ -663,9 +663,9 @@ footer{
             display: flex;
             align-items: center;
             justify-content: start;
-            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
             background-color: rgb(39, 39, 39);
-              
+            padding-top: 3em;
                 width: 100%;
                 flex-direction: row;
         }
@@ -678,7 +678,7 @@ footer{
             align-items: flex-start;
             justify-content: center;
         flex-direction: column;
-    padding-top: 3em;
+   
     padding-bottom: 3em;
     gap: 10px;
 
