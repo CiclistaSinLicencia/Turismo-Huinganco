@@ -120,28 +120,24 @@ iframe{
     box-shadow: 1px 2px 5px #333;
     width: 200px;
     height: 50px;
-    left: -200px;
+    left: -199px;
 /*     border-radius: 20px; */
         border-radius: 20px 0px 20px 20px;
      opacity: 0; 
-    
-    transition: opacity 0.4s  ease-in-out;
-    scale: 0.5; 
-
-  
+    transition: opacity 0.5s  ease-in-out ;
+    transition: scale 0.2s ease-in-out;
+    scale: 0.1;      
+    transform-origin:top right;   
 }
 
 .ctn-github-btn:hover .github-a+ #git-text-pop{
     opacity: 1;
     scale: 1;
-    bottom: 0px;
-    
+    bottom: 5px;
  }
-
 .github-a{
    width: 100%;
    height: 100%;
-
    transition: 0.2s linear;
    fill: rebeccapurple;
 
@@ -152,7 +148,6 @@ iframe{
     scale: 1.1;
     fill: rgb(149, 75, 223);
  }
- 
  
 
 .ctn-bt-theme{
