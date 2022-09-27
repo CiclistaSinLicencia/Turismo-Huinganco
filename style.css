@@ -32,6 +32,22 @@ a {
    background: rgba(83, 147, 35, 0.505); 
  }
 
+ ::-webkit-scrollbar{
+    background-color: #333;
+    width: 15px;
+} 
+
+::-webkit-scrollbar-thumb{
+   border-radius: 100vw;
+    background-color: #aaaaaa;
+ border: 3.2px solid #333;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+     background-color: #777;
+ }
+
+
 body{
     background-color: var(--background-theme, white);
 }
