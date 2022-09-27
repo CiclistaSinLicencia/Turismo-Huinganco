@@ -13,7 +13,7 @@
     --dark-300:#333;
     --dark-500:#272727;
 
-    --font-title:28px;
+    --font-title:30px;
     --font-normal:14px;
     --fs-text-16:16px;
     --font-subtitle: 24px;
@@ -634,6 +634,18 @@ background-position: center;
 .btn-enviar:hover{
     background-color:rgb(125, 196, 70) ;
 }
+
+@media  (max-width:891px){
+    .ctn-input{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-input{
+        width: 100%;
+    }
+}
+
+
 /* End Comentario */
 
 
@@ -760,9 +772,10 @@ footer{
 
 :root{
     --font-title:24px;
+    --font-sub-title:22px;
     --font-normal:13px;
     --fs-text-16:14px
-    --font-sub-title:22px;
+    
 }
 
 /* HEADER */
