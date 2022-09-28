@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="style.css">
 
 <script defer src="script.js"></script>
- 
 
+<script defer src="script-form.js"></script>
 </head>
 <link rel="shortcut icon" type="image/x-icon" href="/huighnanco/favi-con.ico" />
 <body>
@@ -242,17 +242,19 @@
             <a href="base.html" class="btn-servicios">El Clima</a>
             
         </div>
-            <!-- div3 -->
+            <!-- NEWS -->
         <div class="footer-caja">
             <h2 id="titulo-news"><b>Newsletter</b></h2>
             <p>¡Suscribite y recibi todas <br> las nuevas noticias  en tu Email!
             </p>
-            <form action="" id="form-news">
-                <input type="mail" placeholder="ejemplo@mail.com" class="input-news" required>
-                <input type="submit" class="btn-submit-news" value="Suscribirme"  title="Tu informacion puede que sea manipulada por el gobierno chino">
+            <form action=""  id="form-news">
+                <input type="text" placeholder="ejemplo@mail.com" class="input-news" required id="email-news" onkeydown="validation()">
+
+                <input type="submit" class="btn-submit-news" value="Suscribirme"  title="Tu informacion puede que sea manipulada por el gobierno chino" id="submit-news">
+                <p id="text"></p>
             </form>
         </div>
-
+        <!-- THEMES -->
         <div class="footer-caja" id="btn-mobile-theme">
         <div class="ctn-bt-theme">
             <h2><b>Themes!</b></h2>
@@ -283,6 +285,6 @@
  <script  defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
  <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
- <script defer src="script-form.js"></script>
+
 </body>
 </html>

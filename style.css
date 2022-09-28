@@ -9,7 +9,7 @@
 
 :root{
     --color-huignanco:#75b418;
-    --greenhover:greenyellow;
+    --greenhover:#b8ff5c;
     --color-btn-hover:#7dc446;
     --dark-300:#333;
     --dark-500:#272727;
@@ -780,8 +780,21 @@ footer{
     justify-content: center;
     flex-direction: row;
     height: 30px;
-    width: 300px;
-            
+    width: 300px;   
+}
+
+#text{
+    position: absolute;
+   transform: translateY(30px);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 30px;
+    width: 250px;
+   
+    text-align: center;
+
 }
 
 #titulo-news{
@@ -803,6 +816,9 @@ footer{
 .input-news:focus{
     background-color: rgb(246, 255, 233);
 }
+
+
+
 
 
 .btn-submit-news{
@@ -1120,7 +1136,7 @@ outline-style: solid;
         }
 
         #form-news{
-            width: 250px;
+            width: 270px;
            
         }
             
