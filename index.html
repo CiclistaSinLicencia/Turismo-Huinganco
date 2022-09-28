@@ -201,18 +201,22 @@
     <p class="texto-comentario">responderemos a la brevedad</p>
 </div>
 
-<form action="" class="form">
+<form action="" class="form" id="form-consul">
+    <p id="text-consul"></p>
     <div class="ctn-form">
     <div class="ctn-input">
     <input type="text" placeholder="nombre *" class="form-input" required> 
-    <input type="email" placeholder="example@Mail.com *" class="form-input" required>
+    
+    <input type="text" placeholder="example@Mail.com *" class="form-input"  id="email-consul"  oninput="validationConsul()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
     </div>
-
-
+  
+    
     <textarea name="" class="textarea" cols="100%"
     rows="100%" placeholder ="hay bandurrias?" required minlength="8"></textarea>
 
     <input type="submit" class="btn-enviar" title="Tu informacion puede que sea manipulada por el gobierno chino">
+    
+
 </div>
 </form>
 <!--END-CONSULTA  -->

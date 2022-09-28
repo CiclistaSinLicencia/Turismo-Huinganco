@@ -595,7 +595,7 @@ background-position: center;
 
 
 
-/* DEJA TU COMENTARIO */
+/* DEJA TU CONSULTA */
 
 .ctn-comentario{
         display: flex;
@@ -634,6 +634,20 @@ background-position: center;
         flex-direction: column;
     
 }
+#text-consul{
+    position: absolute;
+  color: #fa73737b;
+    transform: translateY(-30px);
+   right:28em ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 30px;
+    width: 250px;
+   
+    text-align: center;
+
+}
 
 .ctn-input{
     width: 100%;
@@ -655,7 +669,7 @@ background-position: center;
     font-size: 1em;
 }
 .form-input:focus {
-    outline: 1px solid var(--color-huignanco);
+ outline: 0px;
 }
 
 .textarea{
