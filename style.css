@@ -854,7 +854,7 @@ footer{
     width: 100%;
     padding: 1em 1em;
     border-top: rgb(133, 133, 133) 1px solid;
-    gap: 1em;
+    gap: 3em;
 }
 
 .logo-footer{
@@ -881,9 +881,8 @@ footer{
     font-size: 12px;
 }
 .c{
-  padding-bottom: 0.2%;
-   scale:  1.5;
     color: var(--greenhover);
+    font-size: 14px;
 }
 /* end Footer */
 
