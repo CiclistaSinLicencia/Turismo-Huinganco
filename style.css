@@ -781,12 +781,13 @@ footer{
     flex-direction: row;
     height: 30px;
     width: 300px;   
+  
 }
 
 #text{
     position: absolute;
-   transform: translateY(30px);
-
+  
+    transform: translateY(30px);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -822,7 +823,7 @@ footer{
 
 
 .btn-submit-news{
-    background-color: var(--color-huignanco);    
+    background-color: var(--color-blue-huinganco);    
     border-bottom-right-radius: 8px ;
     border-top-right-radius: 8px;
     border: none;

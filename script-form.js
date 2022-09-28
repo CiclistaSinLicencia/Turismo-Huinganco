@@ -31,6 +31,6 @@ function validation()
                     form.classList.remove("invalid");
                     text.innerHTML = "";
                     text.style.color = "#b8ff5c"
-                    submit.style.backgroundColor = " #75b418";
+                    submit.style.backgroundColor = " #2596be";
                 }
 }
