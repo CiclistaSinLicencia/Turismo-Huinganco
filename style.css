@@ -634,20 +634,7 @@ background-position: center;
         flex-direction: column;
     
 }
-#text-consul{
-    position: absolute;
-  color: #fa73737b;
-    transform: translateY(-30px);
-   right:28em ;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    height: 30px;
-    width: 250px;
-   
-    text-align: center;
 
-}
 
 .ctn-input{
     width: 100%;
@@ -854,7 +841,9 @@ footer{
 }
 
 .btn-submit-news:hover{
-    background-color: var(--color-btn-hover);
+   /*  border-bottom-right-radius: 0px ;
+    border-top-right-radius: 0px; */
+    width: 160px;
 }
 
 .footer-caja-redes{
