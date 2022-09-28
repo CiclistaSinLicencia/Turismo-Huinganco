@@ -7,7 +7,7 @@ function validation()
                 var submit = document.getElementById("submit-news");
 
                  var text = document.getElementById("text"); 
-                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
                 if (email.match(pattern))
                 {
