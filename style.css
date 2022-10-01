@@ -712,7 +712,31 @@ background-position: center;
 /* End Comentario */
 
 
+.footer-wave{
+    position: relative;
+    margin-top: 50px;
+}
 
+.custom-shape-divider-bottom-1664583424 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664583424 svg {
+    position: relative;
+    display: block;
+    width: calc(240% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1664583424 .shape-fill {
+    fill: #272727;
+}
 
 
 /* FOOTER */
@@ -728,7 +752,7 @@ footer{
             justify-content: flex-start;
             flex-wrap: wrap-reverse;
             background-color: rgb(39, 39, 39);
-            padding-top: 3em;
+            padding-top: 1em;
                 width: 100%;
                 flex-direction: row;
                     gap: 5vw;
@@ -837,7 +861,7 @@ footer{
     font-weight: 800;
     color: #333;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s ease-out;
 }
 
 .btn-submit-news:hover{
