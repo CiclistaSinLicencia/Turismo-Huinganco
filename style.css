@@ -714,7 +714,7 @@ background-position: center;
 
 .footer-wave{
     position: relative;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .custom-shape-divider-bottom-1664583424 {
@@ -878,18 +878,23 @@ footer{
     width: 100%;
     padding: 1em 1em;
     border-top: rgb(133, 133, 133) 1px solid;
-    gap: 3em;
+    gap: 2em;
+   
 }
 
 .logo-footer{
     width: 2.5em;
     transition: 0.5s filter linear;
     transition: 0.2s transform linear;
+
     filter: invert(100%) sepia(0%) saturate(7421%) hue-rotate(127deg) brightness(118%) contrast(96%);
+
+
 }
 .logo-footer:hover{
     filter: invert(59%) sepia(33%) saturate(1004%) hue-rotate(42deg) brightness(97%) contrast(91%);
     transform: translateY(-3px);
+
 }
 .ctn-rights{
     display: flex;
