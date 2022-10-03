@@ -671,6 +671,7 @@ background-position: center;
 .footer-wave{
     position: relative;
     margin-top: 55px;
+    outline: 2px solid #272727;
 }
 
 .custom-shape-divider-bottom-1664583424 {

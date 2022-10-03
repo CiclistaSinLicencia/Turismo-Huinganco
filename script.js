@@ -66,10 +66,7 @@ function validation()
                     submit.style.backgroundColor = " #2596be";
                 }
 }
-
-
 /* FORMULARIO CONSULTA */
-
 function validationConsul()
 {
                 var formConsul = document.getElementById("form-consul");
