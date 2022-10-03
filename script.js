@@ -70,26 +70,20 @@ function validation()
 function validationConsul()
 {
                 var formConsul = document.getElementById("form-consul");
-            
                 var emailConsul = document.getElementById("email-consul").value;
                 var emailConsul2 = document.getElementById("email-consul");
-
-
+                var btnConsul = document.getElementById("btn-submit-consul");
                 var submitConsul = document.getElementById("submit-consul");
-
-              
                 var patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
-                if (emailConsul.match(patternConsul))
+                if (emailConsul.match(patternConsul,))
                 {
                     formConsul.classList.add("valid");
                     formConsul.classList.remove("invalid");
-    
-                    emailConsul2.style.border = "1.5px solid #2596be";
-                    emailConsul2.style.outline = "1.5px solid #2596be";
-                    
-                  
-                   
+
+                    emailConsul2.style.border = "1.5px solid #75b418";
+                    emailConsul2.style.outline = "1.5px solid #75b418"
+                    btnConsul.style.backgroundColor = " #75b418";;
                 }
                 else
                 {
@@ -98,8 +92,7 @@ function validationConsul()
                    
                     emailConsul2.style.border = "1.5px solid #fa7373";
                     emailConsul2.style.outline = "1.5px solid #fa7373";
-                
-                 
+                    btnConsul.style.backgroundColor = " #fa7373";
                 }
                 if (emailConsul == "")
                 {
@@ -109,6 +102,6 @@ function validationConsul()
                     emailConsul2.style.backgroundColor = "#ffff";
                     emailConsul2.style.outline = "1px solid #999";
                     emailConsul2.style.border = "1px solid #999";
-                  
+                 
                 }
 }

@@ -1306,7 +1306,17 @@ body:has(input[value="theme"]:checked) .github-a:hover
 body:has(input[value="theme"]:checked) #btn-th
 {
     background-color: #272727;
+  
+    transition: 0.5s;
+    outline-color:#333 ;
+}
+body:has(input[value="theme"]:checked) .btn-menu-dropdown
+{
+    background-color: #333;
+    outline-color:#333 ;
+   
     
+    color: white;
 }
 
 
