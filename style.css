@@ -1187,7 +1187,8 @@ height: 100%;
 .sun-icon{
     font-size: 24px;
     transition: 1s  ease-in-out;
- 
+    margin-top: 2px;
+    margin-right: 5px;
     color: var(--color-blue-huinganco);
 }
 .sun-icon:hover{
@@ -1195,6 +1196,8 @@ height: 100%;
 }
 
 .moon-icon{
+        margin-top: 2px;
+        margin-right: 5px;
     fill: var(--color-blue-huinganco);
     color: var(--color-blue-huinganco);
     width: 50px;
@@ -1296,13 +1299,8 @@ body:has(input[value="theme"]:checked) .anchor-titulo-bloque-joyas:hover
 /* github */
 body:has(input[value="theme"]:checked) .github-a
 {
-    fill: rgb(186, 118, 255);
+    fill: rgb(148, 66, 230);
 }
-body:has(input[value="theme"]:checked) .github-a:hover
-{
-    fill: rgb(205, 155, 254);
-}
-
 body:has(input[value="theme"]:checked) #btn-th
 {
     background-color: #272727;
