@@ -150,12 +150,6 @@ iframe{
  }
  
 
-.ctn-bt-theme{
-
-    display: flex;
-    flex-direction: column;    
-}
-
 
 .btn-nav{
    
@@ -980,60 +974,67 @@ height: 100%;
     transform: translate(-32px);
     }
 
-.btn-menu-dropdown{
-    margin: 0;
-      width: 250px;
-    
-      padding: 1em 2em 1em 2em;
-   text-align: left;
-  background-color: white;
-   color: dark;
-   border:none ;
-   font-weight: 700;
-   transition: 0.5s linear ;
-        cursor: pointer;
 
-outline-width: 1px;
-outline-color:white ;
-outline-style: solid;
+.btn-menu-dropdown{
+    
+            width: 250px;
+
+            font-size: 14px;
+            padding: 1em 2em 1em 2em;
+
+        background-color: white;
+        color: black;
+        border:none ;
+        font-weight: 700;
+        transition: 0.5s linear ;
+                cursor: pointer;
+        outline-width: 1px;
+        outline-color:white ;
+        outline-style: solid;
+            text-decoration: none;
+
 }
+
+#btn-th{
+        padding:0.5em 2em;
+        width: 250px;
+        height: 100px;
+        font-size: 14px;
+        background-color: white;
+        transition: 0.5s linear ;
+        text-decoration: none;
+    
+    }
 
 .btn-menu-dropdown:hover{
     color: black;
-   background-color: #dfffae;
+   background-color: #e3fcbe;
 }
-#dark-theme-mobile-btn{
-    background-color:  #272727;
-    color: white;
-}
-#dark-theme-mobile-btn:hover{
-    background-color:  rgb(154, 190, 94);
-    color: black;
-}
+
 
 /* end Desplegable */
 
   .burger {
-    position: relative;
-    width: 20px;
-    height: 25px;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0);
-    border: none;
+            position: relative;
+            width: 20px;
+            height: 25px;
+            cursor: pointer;
+            background-color: rgba(0,0,0,0);
+            border: none;
   }
   
   .burger .bar {
-    display: inline-block;
-    width: 100%;
-    height: 3px;
-    background-color: #84c948;
-    border-radius: 8px;
-    position: absolute;
-    top: calc(70% - 6px);
-    left: 0;
-    transition: all 0.5s;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+            display: inline-block;
+            width: 100%;
+            height: 3px;
+            background-color: #84c948;
+            border-radius: 8px;
+            position: absolute;
+            top: calc(70% - 6px);
+            left: 0;
+            transition: all 0.5s;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
   }
   
   .burger span:first-child {
@@ -1159,7 +1160,11 @@ outline-style: solid;
         height: 50px;
     }
     
-    
+
+
+    .label-theme{
+        width: 100%;
+    }
 }
 
 
@@ -1173,6 +1178,9 @@ outline-style: solid;
     justify-content: center;
     cursor: pointer;
    transition: 0.2s;
+   
+   height: 100%;
+ 
 }
 
 .sun-icon{
@@ -1293,4 +1301,12 @@ body:has(input[value="theme"]:checked) .github-a:hover
 {
     fill: rgb(205, 155, 254);
 }
+
+body:has(input[value="theme"]:checked) #btn-th
+{
+    background-color: #272727;
+    
+}
+
+
 
