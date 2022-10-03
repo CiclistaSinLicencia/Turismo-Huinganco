@@ -603,8 +603,6 @@ background-position: center;
 .ctn-input{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
@@ -1176,13 +1174,11 @@ outline-style: solid;
     cursor: pointer;
    transition: 0.2s;
 }
-.label-theme:hover{
-    scale: 1.05;
-}
 
 .sun-icon{
     font-size: 24px;
-    transition: 0.2s ease-in-out;
+    transition: 1s  ease-in-out;
+ 
     color: var(--color-blue-huinganco);
 }
 .sun-icon:hover{
@@ -1190,9 +1186,18 @@ outline-style: solid;
 }
 
 .moon-icon{
-    font-size: 22px;
+    fill: var(--color-blue-huinganco);
+    color: var(--color-blue-huinganco);
+    width: 50px;
     opacity: 0;
+    scale: 0.5;
+    transition: 0.2s ease-in-out;
     position: absolute;
+    color: var(--color-blue-huinganco);
+   
+}
+.moon-icon:hover{
+    fill: #46ceff;
 }
 
 .theme{
@@ -1204,33 +1209,58 @@ outline-style: solid;
 body:has(input[value="theme"]:checked)
 {
     background-color: #333;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 body:has(input[value="theme"]:checked) .moon-icon
 {
     opacity: 1;
-    transition: 0.2s color ease-in-out;
+    scale: 1;
+    transition: 1s ease-in-out ;
     color: var(--color-blue-huinganco);
+    animation: 2s moon-rotate;
 }
+@keyframes moon-rotate{
+    0%{
+        transform: rotate(360deg);     
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }}
+
+
 
 body:has(input[value="theme"]:checked) .sun-icon
 {
+    scale: 0.5;
     opacity: 0;
+    animation: 1s sun-rotate;
 }
-
+@keyframes sun-rotate{
+    0%{
+        transform: rotate(0deg);     
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }}
 
 
 body:has(input[value="theme"]:checked) .header
 {
     background-color: #272727;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s linear;
 }
 
 body:has(input[value="theme"]:checked) .btn-nav
 {
   color: white;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s linear;
 }
 body:has(input[value="theme"]:checked) .btn-nav:hover
 {

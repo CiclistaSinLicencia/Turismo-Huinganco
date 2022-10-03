@@ -1,8 +1,10 @@
 /* LOCAL STORAGE THEME */
 var themeValue = document.querySelectorAll('input[value="theme"]');
 
-if(document.querySelectorAll.conteins('theme')){
+if(document.themeValue.conteins('theme').checked){
+
     localStorage.setItem('dark-theme', 'true');
+    alert("checked");
 }
 
 
