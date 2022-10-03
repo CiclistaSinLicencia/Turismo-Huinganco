@@ -1,127 +1,4 @@
-document.getElementById('dark-theme-btn').addEventListener
-('click' , ( ) => {
-    document.documentElement.style.setProperty('--background-theme' , '#333' )
-    document.documentElement.style.setProperty('--background-lighttheme-btn' , '#d3d3d3' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#75b418' )
-    document.documentElement.style.setProperty('--color-btn-darktheme' , '#272727' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#75b418' )
-
-
-    document.documentElement.style.setProperty('--header-background' , '#272727' )
-    document.documentElement.style.setProperty('--color-btn-nav' , '#ffffff' )
-    document.documentElement.style.setProperty('--background-color-octubre' , '#272727' )
-                     /*  */
-    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#272727' )
-    document.documentElement.style.setProperty('--border-color--joyas' , 'gray' )
-    document.documentElement.style.setProperty('--color-texto-joyas' , 'floralwhite' )
-
-    document.documentElement.style.setProperty('--color-anchor-titulo-joyas' , ' #75b418' )
-    
-    
-   /* PADDING BOTON */
-   document.documentElement.style.setProperty('--padding-dark' , '8px' )
-   document.documentElement.style.setProperty('--padding' , '6px' )
-   
-   
-   document.documentElement.style.setProperty('--clr-border-dropdown' , ' #272727' )
-   
-   
-})
-
-document.getElementById('light-theme-btn').addEventListener
-('click', ( ) => {
-    document.documentElement.style.setProperty('--background-theme', '#ffffff' )
-    
-    document.documentElement.style.setProperty('--background-lighttheme-btn' , '#75b418' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#d3d3d3 ' )
-    
-    document.documentElement.style.setProperty('--header-background' , '#ffffff' )
-    document.documentElement.style.setProperty('--color-btn-nav' , 'dark' )
-    document.documentElement.style.setProperty('--background-color-octubre' , '#272727' )
-    /*  */
-    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#ececec' )
-    document.documentElement.style.setProperty('--border-color--joyas' , 'gray' )
-    document.documentElement.style.setProperty('--color-texto-joyas' , '#202020' )
-    
-    document.documentElement.style.setProperty('--color-anchor-titulo-joyas' , ' darkgreen' )
-    
-})
-
-   /* PADDING BOTON */
-   document.documentElement.style.setProperty('--padding-dark', '6px' )
-   
-   document.documentElement.style.setProperty('--padding' , '8px' )
-   
-
-   
-   
-   /* BOTONES MOBILE */
-   
-   document.getElementById('dark-theme-mobile-btn').addEventListener
-   ('click' , ( ) => {
-    document.documentElement.style.setProperty('--background-theme' , '#333' )
-
-
-    document.documentElement.style.setProperty('--background-lighttheme-btn' , '#d3d3d3' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#75b418' )
-    document.documentElement.style.setProperty('--color-btn-darktheme' , '#272727' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#75b418' )
-
-
-    document.documentElement.style.setProperty('--header-background' , '#272727' )
-    document.documentElement.style.setProperty('--color-btn-nav' , '#ffffff' )
-    document.documentElement.style.setProperty('--background-color-octubre' , '#272727' )
-                     /*  */
-    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#272727' ) 
-    document.documentElement.style.setProperty('--border-color--joyas' , 'gray' )
-    document.documentElement.style.setProperty('--color-texto-joyas' , 'floralwhite' )
-
-    document.documentElement.style.setProperty('--color-anchor-titulo-joyas' , ' #75b418' )
-   
- 
-    document.documentElement.style.setProperty('--clr-border-dropdown' , ' #272727' )
-
-
-    /* DROPDOWN */
-    document.documentElement.style.setProperty('--mobile-dropdown-background' , ' #333' )
-    document.documentElement.style.setProperty('--mobile-dropdown-color' , ' white' )
-
-    
-    
-})
-
-document.getElementById('light-theme-mobile-btn').addEventListener
-('click', ( ) => {
-    document.documentElement.style.setProperty('--background-theme', '#ffffff' )
-
-    document.documentElement.style.setProperty('--background-lighttheme-btn' , '#75b418' )
-    document.documentElement.style.setProperty('--background-darktheme-btn' , '#d3d3d3 ' )
-
-    document.documentElement.style.setProperty('--header-background' , '#ffffff' )
-    document.documentElement.style.setProperty('--color-btn-nav' , 'dark' )
-    document.documentElement.style.setProperty('--background-color-octubre' , '#272727' )
-                     /*  */
-    document.documentElement.style.setProperty('--background-color-bloque-joyas' , '#ececec' )
-    document.documentElement.style.setProperty('--border-color--joyas' , 'gray' )
-    document.documentElement.style.setProperty('--color-texto-joyas' , '#202020' )
-
-    document.documentElement.style.setProperty('--color-anchor-titulo-joyas' , ' darkgreen' )
-
-    /* DROPDOWN */
-    document.documentElement.style.setProperty('--mobile-dropdown-background' , ' white' )
-    document.documentElement.style.setProperty('--mobile-dropdown-color' , ' #272727' )
-    document.documentElement.style.setProperty('--clr-border-dropdown' , ' white' )
-})
-
-
-
-
-
-
-
-
-
-/* Carousel */
+/* IMAGENES Carousel */
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
 buttons.forEach(button => {
@@ -148,3 +25,93 @@ $(document).ready(function () {
       $(this).toggleClass("active");
     });
   });
+
+
+
+  /* FORMULARIO NEWS */
+function validation()
+{
+                var form = document.getElementById("form-news");
+                var email = document.getElementById("email-news").value;
+
+
+                var submit = document.getElementById("submit-news");
+
+                 var text = document.getElementById("text"); 
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
+
+                if (email.match(pattern))
+                {
+                    form.classList.add("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "eMail valido";
+                    text.style.color = "#b8ff5c"
+                    submit.style.backgroundColor = " #75b418";
+                }
+                else
+                {
+                    form.classList.remove("valid");
+                    form.classList.add("invalid");
+                    text.innerHTML = "el eMail es Invalido";
+                    text.style.color = "#fa7373";
+                    submit.style.backgroundColor = "#fa7373";
+                    
+                }
+                if (email == "")
+                {
+                    form.classList.remove("valid");
+                    form.classList.remove("invalid");
+                    text.innerHTML = "";
+                    text.style.color = "#b8ff5c"
+                    submit.style.backgroundColor = " #2596be";
+                }
+}
+
+
+/* FORMULARIO CONSULTA */
+
+function validationConsul()
+{
+                var formConsul = document.getElementById("form-consul");
+            
+                var emailConsul = document.getElementById("email-consul").value;
+                var emailConsul2 = document.getElementById("email-consul");
+
+
+                var submitConsul = document.getElementById("submit-consul");
+
+              
+                var patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
+
+                if (emailConsul.match(patternConsul))
+                {
+                    formConsul.classList.add("valid");
+                    formConsul.classList.remove("invalid");
+    
+                    emailConsul2.style.border = "1.5px solid #2596be";
+                    emailConsul2.style.outline = "1.5px solid #2596be";
+                    
+                  
+                   
+                }
+                else
+                {
+                    formConsul.classList.remove("valid");
+                    formConsul.classList.add("invalid");
+                   
+                    emailConsul2.style.border = "1.5px solid #fa7373";
+                    emailConsul2.style.outline = "1.5px solid #fa7373";
+                
+                 
+                }
+                if (emailConsul == "")
+                {
+                    formConsul.classList.remove("valid");
+                    formConsul.classList.remove("invalid");
+               
+                    emailConsul2.style.backgroundColor = "#ffff";
+                    emailConsul2.style.outline = "1px solid #999";
+                    emailConsul2.style.border = "1px solid #999";
+                  
+                }
+}

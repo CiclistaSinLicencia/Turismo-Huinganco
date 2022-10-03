@@ -51,7 +51,7 @@ a {
 
 
 body{
-    background-color: var(--background-theme, white);
+    background-color: white;
 }
 
 /* Mobile */
@@ -75,7 +75,7 @@ iframe{
         height: 3.5em;
         box-shadow:  1px 1px 4px  rgba(51, 51, 51, 0.578);
     
-        background-color: var(--header-background,#ffffff);
+        background-color: #ffffff;
     
         
 }
@@ -156,47 +156,11 @@ iframe{
     flex-direction: column;    
 }
 
-.btn-theme{
-
-border: none;
-background: none;
-font-weight: 600;
-font-size: 12px;
-padding: 0;
-cursor: pointer;
-}
-
-#light-theme-btn{
-  color: white;
-  padding: 2px 7px 2px 7px;
-  background-color:  var(--background-lighttheme-btn,#75b418);
-  border-top-left-radius:  8px;
-  border-top-right-radius:  8px; 
-  
-  margin-inline: 0px;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 800px;
-}
-
-#dark-theme-btn{
-    
- 
- color:  #272727;
- padding: 2px 8px 2px 8px;
- background-color:  var(--background-darktheme-btn,#d3d3d3);
-  border-bottom-left-radius:  8px;
- border-bottom-right-radius:  8px; 
-/*  border-radius: 100px; */
- font-size: 14px;
-}
-
-
 
 .btn-nav{
    
     text-decoration: none;
-    color:  var(--color-btn-nav,black);
+    color:  black;
     font-weight: 400;
     font-size: 17px;
     padding: 5px;
@@ -300,7 +264,7 @@ background-position: center;
         gap: 30px;
      flex-wrap: wrap;
      flex-direction: grid;
-     color:  var(--color-texto-joyas, #202020);
+     color:  #202020;
      margin-bottom: 50px;
 
      padding-right: 20px;
@@ -319,7 +283,7 @@ background-position: center;
     border-radius: 10px;
     width: 400px;
     height: 550px;
-    background-color:  var(--background-color-bloque-joyas,#ececec);
+    background-color:  #ececec;
     box-shadow:  3px 2px 5px  rgba(51, 51, 51, 0.322);
   
     }
@@ -351,7 +315,7 @@ background-position: center;
     border-radius: 5px;
     padding: 2px 6px 2px 6px;
     display: inline-block;
-    color:  var(--color-dificultad,black);
+    color:  black;
 }
 
 #facil{
@@ -396,7 +360,7 @@ background-position: center;
 
 .anchor-titulo-bloque-joyas{
     text-decoration: none;
-    color: var(--color-anchor-titulo-joyas,rgb(81, 117, 13));
+    color: rgb(81, 117, 13);
     transition: 0.2s ease-in-out;
 
 }
@@ -429,7 +393,7 @@ background-position: center;
    height: 100%;
     padding: 20px;
    
-    background-color:  var(--background-color-octubre ,#272727 );  
+    background-color:  #272727;  
     color:floralwhite;
 }
 
@@ -730,7 +694,7 @@ background-position: center;
 .custom-shape-divider-bottom-1664583424 svg {
     position: relative;
     display: block;
-    width: calc(240% + 1.3px);
+    width: calc(240% + .3px);
     height: 60px;
 }
 
@@ -877,7 +841,8 @@ footer{
     background-color: rgb(39, 39, 39);
     width: 100%;
     padding: 1em 1em;
-    border-top: rgb(133, 133, 133) 1px solid;
+    border-top: #858585 1px solid;
+ 
     gap: 2em;
    
 }
@@ -1023,15 +988,15 @@ height: 100%;
     
       padding: 1em 2em 1em 2em;
    text-align: left;
-  background-color: var(--mobile-dropdown-background,white);
-   color: var(--mobile-dropdown-color,dark);
+  background-color: white;
+   color: dark;
    border:none ;
    font-weight: 700;
    transition: 0.5s linear ;
         cursor: pointer;
 
 outline-width: 1px;
-outline-color:var(--clr-border-dropdown,white) ;
+outline-color:white ;
 outline-style: solid;
 }
 
@@ -1189,5 +1154,109 @@ outline-style: solid;
         display: none;
        }
      
+
+/* WAVE */
+       .custom-shape-divider-bottom-1664583424 svg {
+        width: calc(240% + 500.3px);
+        height: 50px;
+    }
+    
     
 }
+
+
+
+
+/*  --------------------------DARK LIGHTTHEMES---------------------------- */
+
+.label-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   transition: 0.2s;
+}
+.label-theme:hover{
+    color: var(--color-blue-huinganco);
+}
+
+.sun-icon{
+    font-size: 24px;
+    transition: 0.2s ease-in-out;
+    color: var(--color-blue-huinganco);
+}
+.moon-icon{
+    font-size: 24px;
+    opacity: 0;
+    position: absolute;
+}
+
+.theme{
+    opacity: 0;
+    position: absolute;
+}
+
+/* nav */
+body:has(input[value="theme"]:checked)
+{
+    background-color: #333;
+    transition: 0.2s ease-in-out;
+}
+
+body:has(input[value="theme"]:checked) .moon-icon
+{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+    color: var(--color-blue-huinganco);
+}
+body:has(input[value="theme"]:checked) .sun-icon
+{
+    opacity: 0;
+    
+  
+}
+
+
+body:has(input[value="theme"]:checked) .header
+{
+    background-color: #272727;
+    transition: 0.2s ease-in-out;
+}
+
+body:has(input[value="theme"]:checked) .btn-nav
+{
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+body:has(input[value="theme"]:checked) .btn-nav:hover
+{
+  color: #c5ff6e;
+}
+
+
+/* JOYAS */
+body:has(input[value="theme"]:checked)  .bloque-joyas
+{
+    background-color: #272727;
+    color: white;
+}
+body:has(input[value="theme"]:checked) .anchor-titulo-bloque-joyas 
+{
+    color: #75b418;
+}
+body:has(input[value="theme"]:checked) .anchor-titulo-bloque-joyas:hover
+{
+    color: #c5ff6e;
+}
+
+
+/* github */
+body:has(input[value="theme"]:checked) .github-a
+{
+    fill: rgb(186, 118, 255);
+}
+body:has(input[value="theme"]:checked) .github-a:hover
+{
+    fill: rgb(205, 155, 254);
+}
+
