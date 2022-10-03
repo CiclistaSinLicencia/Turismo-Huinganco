@@ -1177,7 +1177,7 @@ outline-style: solid;
    transition: 0.2s;
 }
 .label-theme:hover{
-    color: var(--color-blue-huinganco);
+    scale: 1.05;
 }
 
 .sun-icon{
@@ -1185,8 +1185,12 @@ outline-style: solid;
     transition: 0.2s ease-in-out;
     color: var(--color-blue-huinganco);
 }
+.sun-icon:hover{
+    color: #0a485f;
+}
+
 .moon-icon{
-    font-size: 24px;
+    font-size: 22px;
     opacity: 0;
     position: absolute;
 }
@@ -1206,15 +1210,15 @@ body:has(input[value="theme"]:checked)
 body:has(input[value="theme"]:checked) .moon-icon
 {
     opacity: 1;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s color ease-in-out;
     color: var(--color-blue-huinganco);
 }
+
 body:has(input[value="theme"]:checked) .sun-icon
 {
     opacity: 0;
-    
-  
 }
+
 
 
 body:has(input[value="theme"]:checked) .header

@@ -1,3 +1,11 @@
+/* LOCAL STORAGE THEME */
+var themeValue = document.querySelectorAll('input[value="theme"]');
+
+if(document.querySelectorAll.conteins('theme')){
+    localStorage.setItem('dark-theme', 'true');
+}
+
+
 /* IMAGENES Carousel */
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
