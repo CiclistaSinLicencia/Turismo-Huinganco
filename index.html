@@ -71,7 +71,7 @@
 <nav class="nav">
 
     <div class="ctn-bt-theme">
-         <label for="theme" class="label-theme" title="theme">
+         <label for="theme" class="label-theme" title="theme" onclick="audio.play()">
          <input type="checkbox" value="theme" class="theme" id="theme">
          <ion-icon name="sunny-outline" class="sun-icon"></ion-icon>
 
@@ -229,9 +229,10 @@
 <form action="" class="form" id="form-consul">
     <div class="ctn-form">
     <div class="ctn-input">
-    <input type="text" placeholder="nombre *" class="form-input" required pattern="[a-zA-Z]{1,}"> 
+    <input type="text" placeholder="Nombre" class="form-input" required pattern="[a-zA-Z]{2,}" class="email-consul" id="nombre"> 
     
-    <input type="text" placeholder="example@Mail.com *" class="form-input"  id="email-consul"  oninput="validationConsul()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    <input type="text" placeholder="eMail" class="form-input "  id="email-consul"  oninput="validationConsul()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required attribute="value" >
+
     </div>
   
     

@@ -1,5 +1,8 @@
-/* IMAGENES Carousel */
+/* btn sound */
+const audio = new Audio();
+audio.src = "./audio/click.wav";
 
+/* IMAGENES Carousel */
 const buttons = document.querySelectorAll("[data-carousel-button]")
 buttons.forEach(button => {
     button.addEventListener("click", ( ) => {
@@ -18,15 +21,12 @@ buttons.forEach(button => {
     })
 });
 
-
 /* ANIMACION boton dropdown */
 $(document).ready(function () {
     $(".burger").on("click", function () {
       $(this).toggleClass("active");
     });
   });
-
-
 
   /* FORMULARIO NEWS */
 function validation()
@@ -70,13 +70,17 @@ function validation()
 function validationConsul()
 {
                 var formConsul = document.getElementById("form-consul");
-                var emailConsul = document.getElementById("email-consul").value;
+
+                 var emailConsul = document.getElementById("email-consul").value;  
+
+
                 var emailConsul2 = document.getElementById("email-consul");
                 var btnConsul = document.getElementById("btn-submit-consul");
                 var submitConsul = document.getElementById("submit-consul");
                 var patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
-                if (emailConsul.match(patternConsul,))
+                if 
+                (emailConsul.match(patternConsul))
                 {
                     formConsul.classList.add("valid");
                     formConsul.classList.remove("invalid");
@@ -102,6 +106,7 @@ function validationConsul()
                     emailConsul2.style.backgroundColor = "#ffff";
                     emailConsul2.style.outline = "1px solid #999";
                     emailConsul2.style.border = "1px solid #999";
+                    btnConsul.style.backgroundColor = " #75b418";;
                  
                 }
 }
