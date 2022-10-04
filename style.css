@@ -72,7 +72,7 @@ iframe{
 /* HEADER */
 .header{
     position: fixed;
-    z-index: 1;
+    z-index: 9;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -441,7 +441,7 @@ background-position: center;
 
 .carousel-button{
     background: none;
-  
+    z-index: 2; /* para ponerlo sobre los otros elementos */
     position: absolute;
     top: 50%; /* Para centrar */
     transform: translateY(-50%);
