@@ -72,7 +72,7 @@ iframe{
 /* HEADER */
 .header{
     position: fixed;
-    z-index: 999;
+    z-index: 1;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -191,15 +191,15 @@ background-position: center;
 
 .content-banner{
     color: floralwhite;
-        font-weight: 400;
+        
     width: 450px;
-    height: 170px;
-    margin-top: 0px;
-        margin-right:122px ;
-        margin-bottom: 50px;
+
+ 
+        margin-right: 8% ;
+        margin-bottom: 5%;
         text-align: right; 
         font-style: italic;
-        z-index: 60;
+   
         font-size: var(--fs-text-16); 
         
 }
@@ -441,7 +441,7 @@ background-position: center;
 
 .carousel-button{
     background: none;
-    z-index: 2; /* para ponerlo sobre los otros elementos */
+  
     position: absolute;
     top: 50%; /* Para centrar */
     transform: translateY(-50%);
@@ -1258,7 +1258,7 @@ body:has(input[value="theme"]:checked) .sun-icon
 
 body:has(input[value="theme"]:checked) .header
 {
-    background-color: #0e141b;
+    background-color: #272727;
     transition: 0.2s linear;
 }
 
