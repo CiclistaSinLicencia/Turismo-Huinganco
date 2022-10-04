@@ -31,14 +31,11 @@ $(document).ready(function () {
   /* FORMULARIO NEWS */
 function validation()
 {
-                var form = document.getElementById("form-news");
-                var email = document.getElementById("email-news").value;
-
-
-                var submit = document.getElementById("submit-news");
-
-                 var text = document.getElementById("text"); 
-                var pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
+                let form = document.getElementById("form-news");
+                let email = document.getElementById("email-news").value;
+                let submit = document.getElementById("submit-news");
+                 let text = document.getElementById("text"); 
+                let pattern = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
                 if (email.match(pattern))
                 {
@@ -69,22 +66,19 @@ function validation()
 /* FORMULARIO CONSULTA */
 function validationConsul()
 {
-                var formConsul = document.getElementById("form-consul");
-
-                 var emailConsul = document.getElementById("email-consul").value;  
-
-
-                var emailConsul2 = document.getElementById("email-consul");
-                var btnConsul = document.getElementById("btn-submit-consul");
-                var submitConsul = document.getElementById("submit-consul");
-                var patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
+                let formConsul = document.getElementById("form-consul");
+                 let emailConsul = document.getElementById("email-consul").value;  
+                let emailConsul2 = document.getElementById("email-consul");
+                let btnConsul = document.getElementById("btn-submit-consul");
+                let submitConsul = document.getElementById("submit-consul");
+                let patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
                 if 
                 (emailConsul.match(patternConsul))
                 {
                     formConsul.classList.add("valid");
                     formConsul.classList.remove("invalid");
-
+                    
                     emailConsul2.style.border = "1.5px solid #75b418";
                     emailConsul2.style.outline = "1.5px solid #75b418"
                     btnConsul.style.backgroundColor = " #75b418";;
@@ -93,7 +87,7 @@ function validationConsul()
                 {
                     formConsul.classList.remove("valid");
                     formConsul.classList.add("invalid");
-                   
+                  
                     emailConsul2.style.border = "1.5px solid #fa7373";
                     emailConsul2.style.outline = "1.5px solid #fa7373";
                     btnConsul.style.backgroundColor = " #fa7373";
