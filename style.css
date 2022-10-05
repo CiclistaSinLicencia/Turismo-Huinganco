@@ -1,4 +1,4 @@
-
+   /* comentario de prueba */
 *{
     margin: 0;
     padding: 0;
@@ -204,6 +204,8 @@ background-position: center;
         
 }
 
+
+
 .banner-titulo{
     color: floralwhite;
     margin-bottom: 5px;
@@ -260,7 +262,8 @@ background-position: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-        gap: 20px;
+        row-gap: 20px;
+        column-gap: 30px;
      flex-direction: grid;
      color:  #202020;
      margin-bottom: 50px;
@@ -392,7 +395,7 @@ background-position: center;
    min-height: 100%;
 
     padding: 20px;
-    
+
     background-color:  #272727;  
     color:floralwhite;
     
@@ -639,14 +642,13 @@ background-position: center;
     background-color: rgb(103, 168, 54);
     color: white;
     font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0.5em 0em;
     transition: 0.2s;
         border: 0;
         border-radius: 3px;
         margin-bottom: 10px;
         margin-top: 10px;
-        font-size: 1em;
+        font-size: 1rem;
         cursor: pointer;
 }
 
