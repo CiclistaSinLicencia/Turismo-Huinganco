@@ -15,11 +15,12 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px ;
-  font-size: 30px;
+
 }
 .title-reserva{
-    color: var(--color-blue-huinganco);
+    color: var(--clr-darkGreen-huin);
     text-align: center;
+    font-size: 50px ;
 }
 /* -------------------Card-------------------  */
 .ctn-reserva{
@@ -47,7 +48,7 @@
 }
 .km-reserva{
     color: var(--color-blue-huinganco);
-    font-size: 60px;
+    font-size: 40px;
     padding-top: 10px;
 }
 
