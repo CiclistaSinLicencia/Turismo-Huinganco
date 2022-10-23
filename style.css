@@ -14,6 +14,8 @@
     --dark-300:#333;
     --dark-500:#272727;
     --color-blue-huinganco:#2596be;
+    --clr-darkGreen-huin:#689f16;
+--clr-sweetRed:#ff6294;
 
     --font-title:30px;
     --font-normal:14px;
@@ -218,7 +220,7 @@ background-position: center;
         margin-top: 10px;
         background-color: rgba(0, 0, 0, 0.55);
         
-        font-weight: 500;
+        font-weight: 800;
         display: inline-block;
             text-decoration: none;
             border-radius: 8px ;
@@ -226,23 +228,25 @@ background-position: center;
             outline: 2px solid floralwhite;
            /*  outline-offset: 0px; */
 }
-#btn-reserva{
-    color: var(--color-btn-hover);
-    outline-color: var(--color-huignanco);
-    margin-left: 10px;
-    
-}
-#btn-reserva:hover{
-    background-color: var(--color-btn-hover);
-    color: floralwhite;
-}
-
 .btn-banner:hover{
-    color: var(--color-huignanco) ;
- 
+    color: #222;
      background-color: floralwhite;
     outline-offset: 3px;  
 }
+#btn-reserva{
+    color: var(--greenhover);
+    
+    outline-color: var(--greenhover);
+    margin-left: 10px;
+    font-weight: 800;
+}
+#btn-reserva:hover{
+    background-color: var(--greenhover);
+    color: #333;
+
+}
+
+
 /* end Banner */
 
 
