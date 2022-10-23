@@ -297,8 +297,8 @@ background-position: center;
     flex-grow: 0.2;
 
     min-height: 550px;
-    background-color:  #ececec;
-    box-shadow:  3px 2px 5px  rgba(51, 51, 51, 0.322);
+    background-color:  white;
+    box-shadow:  1px 1px 10px 1px  rgba(51, 51, 51, 0.137);
     
     }
     .texto-bloque-joyas{
@@ -621,12 +621,14 @@ background-position: center;
     font-size: 1em;
     padding-left: 10px;
     transition: 0.2s;
+    border-radius: 8px;
+    border: 1px solid  #c1c1c1;
 }
 .form-input ::placeholder{
     font-size: 1em;
 }
 .form-input:focus {
- outline: 0px;
+ outline: 1px solid var(--color-huignanco);
 }
 
 .textarea{
@@ -637,6 +639,8 @@ background-position: center;
   padding-top: 5px;
   resize: none;
   transition: 0.2s;
+  border-radius: 8px;
+    border: 1px solid  #c1c1c1;
 }
 
 .textarea::placeholder{

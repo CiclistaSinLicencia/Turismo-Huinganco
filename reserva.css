@@ -21,6 +21,7 @@
     color: var(--clr-darkGreen-huin);
     text-align: center;
     font-size: 50px ;
+    font-weight: 400;
 }
 /* -------------------Card-------------------  */
 .ctn-reserva{
@@ -50,6 +51,24 @@
     color: var(--color-blue-huinganco);
     font-size: 40px;
     padding-top: 10px;
+    font-weight: 500;
+}
+
+.div-kmPrecio-line{
+    width: 80%;
+    height: 1px;
+    background-color: #888;
+}
+
+.precio-reserva{
+    font-size: 22px;
+    color: var(--clr-darkGreen-huin) ;
+    font-weight: 500;
+
+}
+#precio-reserva-200{
+    font-size: 25px;
+    font-weight: 800;
 }
 
 .precio-oferta-reserva{
@@ -91,15 +110,7 @@
     font-weight: 500;
     color: #333;
 }
-.precio-reserva{
-    font-size: 22px;
-    color: var(--clr-darkGreen-huin) ;
-    font-weight: 500;
-}
-#precio-reserva-200{
-    font-size: 25px;
-    font-weight: 800;
-}
+
 
 .txt-info-card-reserva{
     font-size: 16px;
