@@ -29,14 +29,9 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-
-.prueba{
-    --prueba: pink;
-}
-
 ::selection {
     color: white;
-   background: pink; 
+   background:#2595be80 ; 
  }
 
  ::-webkit-scrollbar{
