@@ -216,6 +216,17 @@ outline-offset: 2px;
     cursor: pointer;
 }
 
+/* txt a pagar */
+#totalPagar{
+background-color: var(--color-blue-huinganco);
+width: 100%;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 800;
+color: floralwhite;
+}
 /* submit */
 #btn-submit-reserva{
     background-color: var(--color-huignanco);
