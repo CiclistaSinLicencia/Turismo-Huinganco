@@ -128,7 +128,7 @@ width: 100%;
 
 .ctn-form-reserva{
     width: 100%;
-    max-width: 700px;
+    max-width:800px;
    display: flex;
    align-items: top;
    justify-content: top;
@@ -238,7 +238,8 @@ color: floralwhite;
     border-radius: 3px;
     padding: 0.5em 0px;
     transition: 0.2s;
-    margin: 0.2em 0em;
+  
+    margin-bottom: 30px;
 
 }
 #btn-submit-reserva:hover{
