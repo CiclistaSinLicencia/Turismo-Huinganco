@@ -36,7 +36,7 @@ a {
 
 ::selection {
     color: white;
-   background: rgba(83, 147, 35, 0.505); 
+   background: pink; 
  }
 
  ::-webkit-scrollbar{
@@ -57,6 +57,7 @@ a {
 
 body{
     background-color: white;
+    
 }
 
 /* Mobile */
@@ -79,7 +80,7 @@ iframe{
         width: 100%;
         height: 3.5em;
         box-shadow:  1px 1px 4px  rgba(20, 20, 20, 0.578);
-    
+        top: 0;
         background-color: #ffffff;
     
         
@@ -230,6 +231,17 @@ background-position: center;
             outline: 2px solid floralwhite;
            /*  outline-offset: 0px; */
 }
+#btn-reserva{
+    color: var(--color-btn-hover);
+    outline-color: var(--color-huignanco);
+    margin-left: 10px;
+    
+}
+#btn-reserva:hover{
+    background-color: var(--color-btn-hover);
+    color: floralwhite;
+}
+
 .btn-banner:hover{
     color: var(--color-huignanco) ;
  
@@ -703,6 +715,7 @@ footer{
     width: 100%;
     height: 300px;
     background-color: rgb(39, 39, 39);
+
 }
 
         .footer-cnt{

@@ -1,0 +1,256 @@
+/* -------------------Title-------------------  */
+:root{
+    --color-huignanco:#75b418;
+--greenhover:#b8ff5c;
+--color-btn-hover:#7dc446;
+--clr-darkGreen-huin:#689f16;
+--clr-sweetRed:#ff6294;
+}
+
+.separador-header{
+    height: 3.5em;
+}
+.ctn-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px ;
+  font-size: 30px;
+}
+.title-reserva{
+    color: var(--color-blue-huinganco);
+    text-align: center;
+}
+/* -------------------Card-------------------  */
+.ctn-reserva{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px 20px;
+        padding-top: 50px;
+}
+.card-reserva{
+    height: 350px;
+    width: 300px;
+        border-radius: 8px;
+    background-color: #333;
+  box-shadow: 2px 5px 5px gray;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+   flex-direction: column;
+   color: white;
+}
+.km-reserva{
+    color: var(--color-blue-huinganco);
+    font-size: 50px;
+    padding-top: 10px;
+}
+.check-card-reserva{
+    opacity: 1; /* hide cuando termine */
+    position: absolute;
+    appearance: none;
+    transition: 0.5s;
+    
+}
+.check-card-reserva:checked{
+    border: 5px solid rgb(0, 128, 0);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.1);
+    outline: 5px solid rgba(0, 128, 0, 0.379);
+
+}
+
+.label-card{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.info-card-reserva{
+    text-align: left;
+    width: 100%;
+    padding: 20px 20px;
+}
+.precio-reserva{
+    font-size: 20px;
+    color: var(--greenhover) ;
+    font-weight: 500;
+}
+
+.txt-info-card-reserva{
+    font-size: 16px;
+}
+.symbol-info-reserva-yes{
+    color: greenyellow;
+    font-weight: 800;
+}
+.symbol-info-reserva-no{
+    color: #ff6294;
+    font-weight: 800;
+}
+
+/* -------------------DESCUENTOS-------------------  */
+.ctn-descuentos{
+    height: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+.dto-residentes{
+
+color: var(--clr-darkGreen-huin);
+}
+.dto-extrangeros{
+
+}
+
+/* -------------------FORM-------------------  */
+.form-reserva{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+
+.ctn-form-reserva{
+    width: 100%;
+    max-width: 700px;
+   display: flex;
+   align-items: top;
+   justify-content: top;
+   flex-direction: column;
+    padding: 20px;
+   height: 100%;
+gap: 15px;
+}
+
+.ctn-form-doble{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.input-form-reserva{
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2px 8px;
+    width: 100%;
+    
+ }
+
+
+#nombre-form-reserva{
+
+width: 48%;
+}
+#apellido-form-reserva{
+
+    width: 48%;
+}
+
+/* number mail */
+#number-form-reserva{
+    width: 100%;
+}
+
+#mail-form-reserva{
+  
+    width: 100%;
+}
+
+/* date */
+.ctn-label{
+  position: relative;
+    width: 48%;
+}
+#label-date{
+position: absolute;
+bottom: 35px;
+left: 5px;
+
+}
+#date-form-reserva{
+    width: 100%
+}
+
+/* submit */
+#btn-submit-reserva{
+    background-color: var(--color-huignanco);
+    color: floralwhite;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 0px;
+    transition: 0.2s;
+    margin: 0.2em 0em;
+
+}
+#btn-submit-reserva:hover{
+    background-color: var(--color-btn-hover);
+}
+
+
+.radio-celiaco{
+background-color: #689f16;
+padding: 20px;
+color: green;
+border-radius: 3px;
+}
+
+/*  */
+.required
+{
+    color: red;
+}
+
+@media  (max-width:650px){
+
+    .card-reserva{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ctn-form-doble{
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+    #nombre-form-reserva{
+        width: 100%;
+        }
+        #apellido-form-reserva{
+        
+            width: 100%;
+        }
+
+        .ctn-title{
+            font-size: 21px;
+        }
+        .ctn-descuentos{
+            font-size: 18px;
+        }
+        .ctn-label{
+            width: 100%;
+        }
+}
