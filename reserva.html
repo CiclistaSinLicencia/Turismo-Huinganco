@@ -210,22 +210,28 @@
 <input type="text" class="input-form-reserva"  id="apellido-form-reserva" placeholder="Apellido">
 </div>
 
+<!-- email -->
 <input type="mail" class="input-form-reserva"  id="mail-form-reserva" placeholder="eMail">
 
+<!-- telefono -->
 <div class="ctn-form-doble">
     <div class="ctn-label">
-        <label id="label-date" for="date-form-reserva">Telefono <span class="required"> *</span></label>
-<input type="number" class="input-form-reserva" id="number-form-reserva"  placeholder="Telefono" >
+        <label >Telefono <span class="required"> *</span></label>
+<input type="number" class="input-form-reserva"  placeholder="Telefono" >
 </div>
+
+<!-- Fcha nacimiento -->
 <div class="ctn-label">
-<label id="label-date" for="date-form-reserva">Fecha de nacimiento <span class="required"> *</span></label>
-<input type="date" class="input-form-reserva" id="date-form-reserva"  placeholder="Fecha de nacimiento" >
+<label >Fecha de nacimiento <span class="required"> *</span></label>
+<input type="date" class="input-form-reserva">
 </div>
 </div>
+
+<!-- pais -->
 <div class="ctn-form-doble">
     <div class="ctn-label">
-        <label id="label-date" for="date-form-reserva">País <span class="required"> *</span></label>
-        <select type="text" class="input-form-reserva" id="pais-form-reserva"  placeholder="Tipo de sangre" > 
+        <label >País <span class="required"> *</span></label>
+        <select type="text" class="input-form-reserva"> 
         <option value="argentina">Argentina</option>
         <option value="chile">Chile</option>
         <option value="brasil">Brasil</option>
@@ -234,9 +240,10 @@
         <option value="otro">Otro</option>
         </select>
         </div>
+  <!-- tipo de sangre -->
 <div class="ctn-label">
-<label id="label-date" for="date-form-reserva">Tipo de sangre <span class="required"> *</span></label>
-<select type="text" class="input-form-reserva" id="date-form-reserva"  placeholder="Tipo de sangre" > 
+<label >Tipo de sangre <span class="required"> *</span></label>
+<select class="input-form-reserva"> 
 <option value="Tipo de sangre">Tipo A +</option>
 <option value="Tipo de sangre">Tipo A -</option>
 <option value="Tipo de sangre">Tipo B +</option>
@@ -252,8 +259,8 @@
 <div class="ctn-form-doble">
 
 <div class="ctn-label">
-<label id="label-date" for="date-form-reserva">Provincia <span class="required"> *</span></label>
-<select type="text" class="input-form-reserva" id="date-form-reserva"  placeholder="Tipo de sangre" > 
+<label>Provincia <span class="required"> *</span></label>
+<select class="input-form-reserva"> 
 <option value="Provincia">Buenos Aires</option>
 <option value="Provincia"> Si Buenos Aires</option>
 <option value="Provincia"> Neuqu... Buenos Aires</option>
@@ -264,19 +271,22 @@
 
 <div>
     <p>¿Es celíaco/a?<span class="required"> *</span></p>
-<label class="label-celiaco" for="">Si</label>
-<input class="radioCheckStyle" type="radio" name="celiaco" class="">
-<label for="">No</label>
-<input class="radioCheckStyle" type="radio" name="celiaco">
+<label  for="celiaco-si">Si</label>
+<input  id="celiaco-si" class="radioCheckStyle" type="radio" name="celiaco" class="">
+
+<label for="celiaco-no">No</label>
+<input id="celiaco-no" class="radioCheckStyle" type="radio" name="celiaco">
 </div>
 
 <div>
     <p>¿Tiene alguna enfermedad crónica o alergia? <span class="required">*</span></p>
-<label class="label-celiaco" for="">Si</label>
-<input class="radioCheckStyle" type="radio" name="enfermedad" class="">
 
-<label for="">No</label>
-<input class="radioCheckStyle" type="radio" name="enfermedad"><div>
+<label  for="enfermedad-si">Si</label>
+<input id="enfermedad-si" class="radioCheckStyle" type="radio" name="enfermedad" class="">
+
+<label for="enfermedad-no">No</label>
+<input id="enfermedad-no" class="radioCheckStyle" type="radio" name="enfermedad"><div>
+
 <input class="input-form-reserva" type="text" placeholder="Especifique" id="form-especifique">
 </div>
 </div>
