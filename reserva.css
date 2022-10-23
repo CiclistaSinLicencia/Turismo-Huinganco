@@ -146,11 +146,14 @@ gap: 15px;
     flex-wrap: wrap;
     padding-top: 20px;
 }
+#ctn-form-doble-nombre{
+    gap: 15px;
+}
 
 .input-form-reserva{
     font-size: 18px;
     border-radius: 3px;
-    border: 1px solid black;
+    border: 1px solid #444;
     padding: 2px 8px;
     width: 100%;
     
@@ -189,6 +192,28 @@ left: 5px;
 }
 #date-form-reserva{
     width: 100%
+}
+#form-especifique{
+    margin-top: 10px;
+}
+/* rights */
+.radioCheckStyle{
+    cursor: pointer;
+    appearance: none;
+    background-color: floralwhite;
+    outline: 2px solid #75b418;
+    padding: 6px;
+    border-radius: 50%;
+    transition: 0.2s;
+    margin-inline: 5px;
+  
+}
+.radioCheckStyle:checked{
+outline-offset: 2px;
+    background-color: #75b418;
+}
+.label-rights{
+    cursor: pointer;
 }
 
 /* submit */
