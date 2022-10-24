@@ -161,7 +161,7 @@ scale: 1.1;
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
 }
 .info-card-reserva{
     text-align: left;
