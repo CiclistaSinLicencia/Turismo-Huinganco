@@ -52,7 +52,7 @@
 
 .km-reserva{    
      color: var(--color-blue-huinganco); 
-    font-size: 45px;
+    font-size: 50px;
     padding-top: 10px;
     font-weight: 500;
     transition: 0.5s;
@@ -89,7 +89,7 @@
     font-weight: 700;
     width: 100%;
     border-radius: 1px 8px 0px 0px;
-    background-color: #555;
+    background-color: #999;
     
 }
 
