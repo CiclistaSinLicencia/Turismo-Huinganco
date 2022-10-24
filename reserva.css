@@ -6,6 +6,14 @@
 --clr-darkGreen-huin:#689f16;
 --clr-sweetRed:#ff6294;
 --clr-sweetBlue:#2596be;
+
+/* fontSize */
+--fs-14:14px;
+--fs-16:16px;
+--fs-18:18px;
+--fs-20:20px;
+--fs-25:25px;
+
 }
 
 .separador-header{
@@ -184,9 +192,7 @@ scale: 1.1;
 
 /* -------------------DESCUENTOS-------------------  */
 .ctn-descuentos{
-    height: 100px;
-    padding-top: 20px;
-
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,11 +201,13 @@ scale: 1.1;
     font-weight: 700;
 }
 .dto-residentes{
-    font-size: 25px;
+    font-size: var(--fs-25);
 color: var(--clr-darkGreen-huin);
 }
 .dto-extrangeros{
     color: #666;
+    padding: 0px 20px;
+
 }
 
 /* -------------------FORM-------------------  */
@@ -279,6 +287,11 @@ left: 5px;
     margin-top: 10px;
 }
 /* rights */
+.ctn-rights-reserva{
+    padding-top: 40px;
+
+}
+
 .radioCheckStyle{
     cursor: pointer;
     appearance: none;
@@ -298,19 +311,28 @@ outline-offset: 2px;
     cursor: pointer;
 }
 
+.ctn-celiaco-reserva{
+    padding: 10px 0px;
+}
+
 /* txt a pagar */
 
 .ctn-cod-totalPagar{
     display: flex;
+    width: 100%;
 }
 
-#txtTotalPagar{
-background-color: #2595be71;
-width: 100%;
-border-radius: 0px 8px 8px 0px;
-display: flex;
+.ctn-TotalPagar-Reserva{
+    background-color: #2596be;
+    border-radius: 0px 8px 8px 0px;
+    width: 100%;
+    display: flex;
 align-items: center;
 justify-content: center;
+}
+#txtTotalPagar{
+background-color: #2595be71;
+
 font-weight: 800;
 color: floralwhite;
 }
@@ -326,7 +348,7 @@ color: floralwhite;
     width: 100%;
     height: 40px;
     background-color: gray;
-    position: relative;
+
 }
 
 #btn-submit-reserva{
@@ -455,6 +477,10 @@ styled-select
 
 @media  (max-width:650px){
 
+    :root{
+        --fs-25:25px;
+    }
+
     .card-reserva{
         width: 80%;
         height: 100%;
@@ -484,4 +510,22 @@ styled-select
         .ctn-label{
             width: 100%;
         }
+        .ctn-TotalPagar-Reserva{
+            border-radius: 0px 0px 8px 8px;
+            height: 40px;
+           
+        }
+        .ctn-cod-totalPagar{
+            display: block;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+   
+            
+            #cod-descuento-reserva{
+                width: 100%;
+                border-radius: 8px 8px 0px 0px;
+                outline: 0;
+                text-align: center;
+            }
 }
