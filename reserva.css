@@ -5,6 +5,7 @@
 --color-btn-hover:#7dc446;
 --clr-darkGreen-huin:#689f16;
 --clr-sweetRed:#ff6294;
+--clr-sweetBlue:#2596be;
 }
 
 .separador-header{
@@ -29,17 +30,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        gap: 20px;
+        gap: 35px;
         flex-wrap: wrap;
         padding: 20px 20px;
         padding-top: 50px;
 }
 .card-reserva{
     height: 350px;
-    width: 300px;
+    width: 280px;
         border-radius: 8px;
-    background-color: #ffffff;
-  box-shadow: 1px 5px 8px rgb(182, 182, 182);
+  box-shadow: 1px 3px 8px 2px #d0d0d0;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -47,8 +47,10 @@
    flex-direction: column;
     
 }
-.km-reserva{
-    color: var(--color-blue-huinganco);
+
+
+.km-reserva{    
+     color: var(--color-blue-huinganco); 
     font-size: 40px;
     padding-top: 10px;
     font-weight: 500;
@@ -75,12 +77,42 @@
     text-decoration: line-through;
     display: block;
     text-align: center;
-    color: #888;
+    color: floralwhite;
     font-size: 16px;
+    height: 1.4em;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #555;
+    
 }
+
+
+.usd-reserva{
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    background-color: var(--color-huignanco);
+    width: 5em;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.usd-reserva p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-weight: 800;
+}
+
 .txt-ahorre-oferta-reserva{
     color: #689f16;
     font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .check-card-reserva{
@@ -102,6 +134,7 @@
     top: 0;
     left: 0;
     position: absolute;
+    z-index: 10;
 }
 .info-card-reserva{
     text-align: left;
@@ -246,8 +279,8 @@ outline-offset: 2px;
     display: flex;
 }
 
-#totalPagar{
-background-color: var(--color-blue-huinganco);
+#txtTotalPagar{
+background-color: #2595be71;
 width: 100%;
 border-radius: 0px 8px 8px 0px;
 display: flex;
@@ -264,21 +297,32 @@ color: floralwhite;
 }
 
 /* submit */
+.ctn-submit{
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    position: relative;
+}
+
 #btn-submit-reserva{
     background-color: var(--color-huignanco);
     color: floralwhite;
     font-size: 17px;
     font-weight: 800;
+    width: 100%;
     cursor: pointer;
     border: none;
     border-radius: 3px;
     padding: 0.5em 0px;
     transition: 0.2s;
     margin-bottom: 30px;
+
 }
 #btn-submit-reserva:hover{
     background-color: var(--color-btn-hover);
+
 }
+
 
 
 .radio-celiaco{
@@ -336,6 +380,7 @@ select:focus{
 
 option{
 border-radius: 8px;
+
 }
 styled-select
 {
@@ -386,8 +431,10 @@ styled-select
 @media  (max-width:650px){
 
     .card-reserva{
-        width: 100%;
+        width: 80%;
         height: 100%;
+        padding-bottom: 80px;
+        
     }
 
     .ctn-form-doble{

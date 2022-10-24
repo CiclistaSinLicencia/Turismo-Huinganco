@@ -1226,7 +1226,7 @@ height: 100%;
 /* nav */
 body:has(input[value="theme"]:checked)
 {
-    background-color: #333;
+    background-color: #2b2b2d;
     transition: 0.3s ease-in-out;
 }
 

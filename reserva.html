@@ -114,13 +114,16 @@
     <div class="card-reserva">
         <label for="5km" class="label-card"></label>
         <input type="radio" class="check-card-reserva" id="5km" name="reserva">
-        <h2 class="km-reserva">5km</h2>
-        <div class="div-kmPrecio-line"></div>
-    <p class="precio-reserva">25 usd</p>
+
+  <!--       <h2 class="km-reserva">5km</h2> -->
+      <h2 class="km-reserva">5km</h2>
+      
+
+    <div class="usd-reserva" > <p>usd 25</p></div>
 
        <div class="info-card-reserva">
             <p class="txt-info-card-reserva"><span class="symbol-info-reserva-yes">✔</span> Dificultad baja</p>
-            <p><span class="symbol-info-reserva-yes">✔</span> Noob firendly</p>
+            <p><span class="symbol-info-reserva-yes">✔</span> Noob friendly</p>
             <p><span class="symbol-info-reserva-yes">✔</span> Manzana oxidada</p>
             <p> <span class="symbol-info-reserva-no">✘</span> Apoyo moral</p>
             
@@ -134,8 +137,10 @@
         <label for="10km" class="label-card"></label>
         <input type="radio" class="check-card-reserva" id="10km" name="reserva">
         <h2 class="km-reserva">10km</h2>
-        <div class="div-kmPrecio-line"></div>
-        <p class="precio-reserva">85 usd</p>
+
+        
+    <div class="usd-reserva" > <p>usd 85</p></div>
+
 
 
         <div class="info-card-reserva">
@@ -143,7 +148,7 @@
 
             <p class="txt-info-card-reserva"><span class="symbol-info-reserva-yes">✔</span> Papaya</p>
         
-            <p><span class="symbol-info-reserva-no">✘</span> Noob firendly</p>
+            <p><span class="symbol-info-reserva-no">✘</span> Noob friendly</p>
             <p> <span class="symbol-info-reserva-no">✘</span> Apoyo moral</p>
            
         </div>
@@ -155,8 +160,10 @@
         <label for="25km" class="label-card"></label>
         <input type="radio" class="check-card-reserva" id="25km"name="reserva">
         <h2 class="km-reserva">25km</h2>
-        <div class="div-kmPrecio-line"></div>
-        <p class="precio-reserva">125 usd</p>
+        
+        
+    <div class="usd-reserva" > <p>usd 125</p></div>
+
      
         <div class="info-card-reserva">
             <p class="txt-info-card-reserva"><span class="symbol-info-reserva-yes">✔</span> Dificultad Alta</p>
@@ -164,7 +171,7 @@
             <p> <span class="symbol-info-reserva-yes">✔</span> Apoyo moral</p>
             <p> <span class="symbol-info-reserva-yes">✔</span> Banana</p>
 
-            <p><span class="symbol-info-reserva-no">✘</span> Noob firendly</p>
+            <p><span class="symbol-info-reserva-no">✘</span> Noob friendly</p>
 
         
             
@@ -174,12 +181,20 @@
 
     <!-- 50km -->
     <div class="card-reserva">
+
         <label for="50km" class="label-card"></label>
         <input type="radio" class="check-card-reserva" id="50km"name="reserva">
         <h2 class="km-reserva">50km</h2>
-        <div class="div-kmPrecio-line"></div>
-        <p class="precio-reserva" id="precio-reserva-200"> <span class="precio-oferta-reserva">200 usd</span>199  usd  </p>
-        <p class="txt-ahorre-oferta-reserva">ahorre 1 usd!</p>
+     
+
+        
+    <div class="usd-reserva" >
+        <p>
+            <span class="precio-oferta-reserva">200 usd</span>
+            usd 199
+        </p>
+    </div>
+    
 
         <div class="info-card-reserva">
             <p class="txt-info-card-reserva"><span class="symbol-info-reserva-yes">✔</span> Dificultad Saitama</p>
@@ -187,7 +202,7 @@
             <p><span class="symbol-info-reserva-yes">✔</span> Gloria y honor</p>
 
             <p><span class="symbol-info-reserva-no">✘</span> Debiles e indecisos</p>
-
+            <p class="txt-ahorre-oferta-reserva">Ahorre 1 usd!</p>
         </div>
     </div>
 
@@ -307,11 +322,15 @@
 
 <div class="ctn-cod-totalPagar">
     <input id="cod-descuento-reserva" type="text" class="input-form-reserva" placeholder="Codigo de descuento 123">
-<p id="totalPagar"> <span id="descuento"></span></p>
+<p id="txtTotalPagar"><span id="descuento"></span></p>
 
 </div>
 
-<input type="submit" id="btn-submit-reserva" title="Reservar" value="Reservar" >
+<div class="ctn-submit">
+<input type="submit" id="btn-submit-reserva" title="Reservar" value="Reservar ➤ " >
+
+</div>
+
 </div>
 
 

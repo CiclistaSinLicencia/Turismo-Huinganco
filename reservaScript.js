@@ -1,35 +1,21 @@
 
 
-let cinco = document.getElementById("5km").addEventListener("change" , funCinco)
-let  diez = document.getElementById("10km").addEventListener("change" ,funDiez)
-let  veintiCinco = document.getElementById("25km").addEventListener("change" , funveintiCinco)
-let  cincuenta = document.getElementById("50km").addEventListener("change", funCincuenta)
+let cinco = document.getElementById("5km").addEventListener("change" )
+let  diez = document.getElementById("10km").addEventListener("change" )
+let  veintiCinco = document.getElementById("25km").addEventListener("change" )
+let  cincuenta = document.getElementById("50km").addEventListener("change")
 
-let totalPagar = document.getElementById("totalPagar")
-let descuento = document.getElementById("descuento")
+let txtTotalPagar = document.getElementById("txtTotalPagar")
 
 let montoPagar = 0
+let
 
 
-function funCinco(){
-    montoPagar = 25
-    console.log(montoPagar)
-    totalPagar.textContent =  "El monto total a pagar es $" + montoPagar
-}
 
-function funDiez(){
-    montoPagar = 85
-    console.log(montoPagar)
-    totalPagar.textContent = "El monto total a pagar es $" + montoPagar
-}
-
-function funveintiCinco(){
-    montoPagar = 125
-    console.log(montoPagar)
-    totalPagar.textContent = "El monto total a pagar es $" + montoPagar
-}
-function funCincuenta(){
-    montoPagar = 199
-    console.log(montoPagar)
-    totalPagar.textContent = "El monto total a pagar es $" + montoPagar
-}
+//elegir precio por input
+/* 
+5 25$
+10 85$
+25 125$
+50 199$
+*/
