@@ -24,6 +24,7 @@
     font-size: 50px ;
     font-weight: 400;
 }
+
 /* -------------------Card-------------------  */
 .ctn-reserva{
     height: 100%;
@@ -34,12 +35,13 @@
         flex-wrap: wrap;
         padding: 20px 20px;
         padding-top: 50px;
+            
 }
 .card-reserva{
     height: 350px;
     width: 280px;
         border-radius: 8px;
-  box-shadow: 1px 3px 8px 2px #d0d0d0;
+  box-shadow: 1px 3px 8px 2px #d0d0d0; 
     display: flex;
     align-items: center;
     justify-content: start;
@@ -48,12 +50,16 @@
     
 }
 
-
 .km-reserva{    
      color: var(--color-blue-huinganco); 
-    font-size: 40px;
+    font-size: 45px;
     padding-top: 10px;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+.txt-km{
+    font-size: 20px;
 }
 
 .div-kmPrecio-line{
@@ -82,7 +88,7 @@
     height: 1.4em;
     font-weight: 700;
     width: 100%;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 1px 8px 0px 0px;
     background-color: #555;
     
 }
@@ -95,7 +101,8 @@
     background-color: var(--color-huignanco);
     width: 5em;
     font-size: 20px;
-    border-radius: 8px;
+    border-radius: 2px 8px 8px 2px;
+    transition: 0.5s;
 }
 .usd-reserva p{
     width: 100%;
@@ -110,9 +117,11 @@
 .txt-ahorre-oferta-reserva{
     color: #689f16;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
     bottom: 20px;
+    left: 30px;
+    transition: 0.5s;
 }
 
 .check-card-reserva{
@@ -120,12 +129,22 @@
     position: absolute;
     appearance: none;
     transition: 0.5s;
-}
-.check-card-reserva:checked{
     width: 100%;
     height: 100%;
+}
+.check-card-reserva:checked{
   box-shadow: 0px 0px 10px 1px var(--color-huignanco);
 }
+.check-card-reserva:checked ~ .usd-reserva {
+scale: 1.1;
+}
+.check-card-reserva:checked ~ .txt-ahorre-oferta-reserva {
+    scale: 1.1;
+    }
+.check-card-reserva:checked ~ h2{
+scale: 1.1;
+}
+
 
 .label-card{
     height: 100%;
@@ -142,11 +161,17 @@
     padding: 20px 20px;
     font-weight: 500;
     color: #333;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.txt-info-card-reserva{
+.info-card-reserva > p{
     font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .symbol-info-reserva-yes{
     color: var(--clr-darkGreen-huin);
