@@ -36,7 +36,7 @@ function funPaisOrigen(porcentajeDto,porcentajeSuma){
     }
     if(paisOrigen === "Otro")
     {
-            montoPagar = montoPagar * porcentajeSuma / 100  + montoPagar
+            montoPagar = montoPagar
             msjDto = " "    
     }
 }
