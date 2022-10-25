@@ -34,6 +34,11 @@ function funPaisOrigen(porcentajeDto,porcentajeSuma){
             montoPagar = montoPagar * porcentajeSuma / 100  + montoPagar
             msjDto = " + 180% x chileno = "    
     }
+    if(paisOrigen === "Otro")
+    {
+            montoPagar = montoPagar * porcentajeSuma / 100  + montoPagar
+            msjDto = " "    
+    }
 }
 
 
