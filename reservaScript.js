@@ -1,5 +1,3 @@
-
-
 let cinco = document.getElementById("5km")
 cinco.addEventListener("change", five )
 
@@ -14,12 +12,13 @@ cincuenta.addEventListener("change",fifty )
 
 let txtTotalPagar = document.getElementById("txtTotalPagar")
 
-var montoPagar
-let paisOrigen = "Argentina"
-var km = 1
+let montoPagar
+/* posicion inicial */
+let paisOrigen = "Argentina" 
+let km = 1
+/*  */
 
-
-/* funcionresumen */
+/* funciones resumidas */
 
 function funPaisOrigen(porcentajeDto,porcentajeSuma){
 
@@ -41,7 +40,9 @@ function funPaisOrigen(porcentajeDto,porcentajeSuma){
     }
 }
 
-
+function txtMontoPagar(){
+    txtTotalPagar.textContent = "Total "+ msjDto +  montoPagar + " Usd"
+}
 
 /* select pais */
 document.getElementsByTagName('select')[0].onchange = function() {
@@ -67,52 +68,28 @@ document.getElementsByTagName('select')[0].onchange = function() {
     }
   }
 
-/* condicion dto */
-
-
 /* 1 */
 function five(){   
  montoPagar = 25
     km = 1
-    console.log(km)
-
-  
     funPaisOrigen(30,180)
-
     txtMontoPagar()
-    function txtMontoPagar(){
-        txtTotalPagar.textContent = "Total "+ msjDto +  montoPagar + " Usd"
-    }
 }
 /* 2 */
 function ten()
 {
     montoPagar =  85
     km = 2
-    console.log(km)
-
-
-
     funPaisOrigen(30,180)
-
-        txtMontoPagar()
-        function txtMontoPagar(){
-            txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
-        }
-    
+    txtMontoPagar()
 }
 /* 3 */
 function twentyFive()
 {
-    montoPagar =   125
+    montoPagar =  125
     km = 3
-
     funPaisOrigen(30,180)
-
     txtMontoPagar()
-    function txtMontoPagar(){
-        txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
-    }
 }
 
 /* 4 */
@@ -120,13 +97,8 @@ function fifty()
 {
     montoPagar =  199
     km = 4
-
     funPaisOrigen(30,180)
-
     txtMontoPagar()
-    function txtMontoPagar(){
-        txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
-    }
 }
 
 
