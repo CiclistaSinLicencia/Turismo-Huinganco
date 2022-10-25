@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
 
 <script defer src="script.js"></script>
-<script defer src="script-form.js"></script>
 
 <!-- scriptreserva -->
 <script defer src="reservaScript.js"></script>
 
 <!-- LOGOS -->
 <script  defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
 <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <link rel="shortcut icon" type="image/x-icon" href="/huighnanco/favi-con.ico" />
@@ -64,7 +64,7 @@
 
                           <!-- Logo -->
     
-<a href="https://menucsl.netlify.app/" name="Logo Huignanco" alt="logo huinganco" id="logoDesktop">
+<a href="index.html" name="Logo Huignanco" alt="logo huinganco" id="logoDesktop">
     <img src="huighnanco/Logov3.png" alt="logo huinganco" >
 </a>
 
@@ -285,7 +285,7 @@
 <div class="ctn-form-doble">
     <div class="ctn-label">
         <label >País <span class="required"> *</span></label>
-        <select type="text" class="input-form-reserva"> 
+        <select type="text" class="input-form-reserva" id="mySelect"> 
         <option value="argentina">Argentina</option>
         <option value="chile">Chile</option>
         <option value="brasil">Brasil</option>
@@ -354,7 +354,7 @@
     <input id="cod-descuento-reserva" type="text" class="input-form-reserva" placeholder="Codigo de descuento 123">
     
     <div class="ctn-TotalPagar-Reserva">
-<p id="txtTotalPagar">Total a pagar: 300 Usd</p>
+<p id="txtTotalPagar"></p>
 </div>
 </div>
 

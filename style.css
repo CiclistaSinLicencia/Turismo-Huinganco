@@ -238,14 +238,14 @@ background-position: center;
     outline-offset: 3px;  
 }
 #btn-reserva{
-    color: var(--greenhover);
+    color: greenyellow;
     
-    outline-color: var(--greenhover);
+    outline-color: greenyellow;
     margin-left: 10px;
     font-weight: 800;
 }
 #btn-reserva:hover{
-    background-color: var(--greenhover);
+    background-color: white;
     color: #333;
 
 }
@@ -620,8 +620,7 @@ background-position: center;
 }
 .form-input{
     width: 48%;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 0.4em 0em;
     font-size: 1em;
     padding-left: 10px;
     transition: 0.2s;
