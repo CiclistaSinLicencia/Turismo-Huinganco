@@ -347,7 +347,6 @@ color: floralwhite;
 .ctn-submit{
     width: 100%;
     height: 40px;
-    background-color: gray;
 
 }
 
@@ -359,7 +358,7 @@ color: floralwhite;
     width: 100%;
     cursor: pointer;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     padding: 0.5em 0px;
     transition: 0.2s;
     margin-bottom: 30px;
