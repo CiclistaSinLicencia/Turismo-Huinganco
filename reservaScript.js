@@ -14,9 +14,30 @@ cincuenta.addEventListener("change",fifty )
 
 let txtTotalPagar = document.getElementById("txtTotalPagar")
 
-let montoPagar
+var montoPagar
 let paisOrigen = "Argentina"
 var km = 1
+
+
+/* funcionresumen */
+
+function funPaisOrigen(porcentajeDto,porcentajeSuma){
+
+    if(paisOrigen === "Argentina"){
+    
+            montoPagar = montoPagar * -porcentajeDto  /100 + montoPagar
+            console.log("Dto por ser Argentino " + montoPagar)
+             msjDto = " + dto 30% = " 
+    }
+    if(paisOrigen === "Chile")
+    {
+            montoPagar = montoPagar * porcentajeSuma / 100  + montoPagar
+            msjDto = " + 180% x chileno = "    
+    }
+}
+
+
+
 /* select pais */
 document.getElementsByTagName('select')[0].onchange = function() {
     var index = this.selectedIndex;
@@ -31,36 +52,34 @@ document.getElementsByTagName('select')[0].onchange = function() {
     {
         ten()
     }
+    if(km===3)
+    {
+        twentyFive()
+    }
+    if(km===4)
+    {
+        fifty()
+    }
   }
 
 /* condicion dto */
 
-/* cards */
+
+/* 1 */
 function five(){   
  montoPagar = 25
     km = 1
     console.log(km)
 
   
-    let msjDto = ""
-    if(paisOrigen === "Argentina"){
-    
-            montoPagar = montoPagar * -30  /100 + montoPagar
-            console.log("Dto por ser Argentino " + montoPagar)
-            msjDto = " + dto 30% = "
-    }
-    if(paisOrigen === "Chile")
-        {
-                montoPagar = montoPagar * 180 / 100  + montoPagar
-                msjDto = " + 180% x chileno = "    
-        }
+    funPaisOrigen(30,180)
 
     txtMontoPagar()
     function txtMontoPagar(){
         txtTotalPagar.textContent = "Total "+ msjDto +  montoPagar + " Usd"
     }
 }
-
+/* 2 */
 function ten()
 {
     montoPagar =  85
@@ -68,19 +87,8 @@ function ten()
     console.log(km)
 
 
-        let msjDto = ""
-        if(paisOrigen === "Argentina"){
-        
-                montoPagar = montoPagar * -30  /100 + montoPagar
-                console.log("Dto por ser Argentino " + montoPagar)
-                 msjDto = " + dto 30% = " 
-        }
-        if(paisOrigen === "Chile")
-        {
-                montoPagar = montoPagar * 180 / 100  + montoPagar
-                msjDto = " + 180% x chileno = "    
-        }
-        
+
+    funPaisOrigen(30,180)
 
         txtMontoPagar()
         function txtMontoPagar(){
@@ -88,28 +96,37 @@ function ten()
         }
     
 }
+/* 3 */
 function twentyFive()
 {
     montoPagar =   125
-    let txtAlert =  txtTotalPagar.textContent = "Total a pagar: " +  montoPagar+ " Usd"
-    console.log("Total a pagar: " +montoPagar);
+    km = 3
 
-  
+    funPaisOrigen(30,180)
+
+    txtMontoPagar()
+    function txtMontoPagar(){
+        txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
+    }
 }
+
+/* 4 */
 function fifty()
 {
     montoPagar =  199
-    let txtAlert =  txtTotalPagar.textContent = "Total a pagar: " +  montoPagar+ " Usd"
-    console.log("Total a pagar: " + montoPagar);
+    km = 4
+
+    funPaisOrigen(30,180)
+
+    txtMontoPagar()
+    function txtMontoPagar(){
+        txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
+    }
 }
 
 
 
 
-//elegir precio por input
-/* 
-5 25$
-10 85$
-25 125$
-50 199$
-*/
+
+
+
