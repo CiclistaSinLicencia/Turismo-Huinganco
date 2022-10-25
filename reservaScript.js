@@ -16,66 +16,75 @@ let txtTotalPagar = document.getElementById("txtTotalPagar")
 
 let montoPagar
 let paisOrigen = "Argentina"
-
+var km = 1
 /* select pais */
 document.getElementsByTagName('select')[0].onchange = function() {
     var index = this.selectedIndex;
     var inputText = this.children[index].innerHTML.trim();
 
     paisOrigen = inputText
+    if(km===1)
+    {
+        five()
+    }
+    if(km===2)
+    {
+        ten()
+    }
   }
- 
 
 /* condicion dto */
-
 
 /* cards */
 function five(){   
  montoPagar = 25
-    
- txtTotalPagar.textContent = "Total a pagar: " +  montoPagar + " Usd"
+    km = 1
+    console.log(km)
 
-/*     console.log("el pais de origen es " + paisOrigen); */
-    console.log("Total a pagar: " +montoPagar);
-
+  
+    let msjDto = ""
     if(paisOrigen === "Argentina"){
-        
-            montoPagar = montoPagar * -30  / 100 + montoPagar
+    
+            montoPagar = montoPagar * -30  /100 + montoPagar
             console.log("Dto por ser Argentino " + montoPagar)
-        
+            msjDto = " + dto 30% = "
     }
     if(paisOrigen === "Chile")
         {
-            
                 montoPagar = montoPagar * 180 / 100  + montoPagar
-                alert("Chileno weon pagas mas caro " + montoPagar)
-        
+                msjDto = " + 180% x chileno = "    
         }
 
     txtMontoPagar()
     function txtMontoPagar(){
-        txtTotalPagar.textContent = "Total a pagar: " +  montoPagar + " Usd"
+        txtTotalPagar.textContent = "Total "+ msjDto +  montoPagar + " Usd"
     }
 }
 
 function ten()
 {
     montoPagar =  85
-    let txtAlert =  txtTotalPagar.textContent = "Total a pagar: " +  montoPagar + " Usd"
-    /*     console.log("el pais de origen es " + paisOrigen); */
-        console.log("Total a pagar: " +montoPagar);
-        msjDto = ""
+    km = 2
+    console.log(km)
+
+
+        let msjDto = ""
         if(paisOrigen === "Argentina"){
         
                 montoPagar = montoPagar * -30  /100 + montoPagar
                 console.log("Dto por ser Argentino " + montoPagar)
-                msjDto = " tenes descuento de " + montoPagar
+                 msjDto = " + dto 30% = " 
+        }
+        if(paisOrigen === "Chile")
+        {
+                montoPagar = montoPagar * 180 / 100  + montoPagar
+                msjDto = " + 180% x chileno = "    
         }
         
 
         txtMontoPagar()
         function txtMontoPagar(){
-            txtTotalPagar.textContent = "Total a pagar: " +  montoPagar + " Usd" + msjDto
+            txtTotalPagar.textContent = "Total  " + msjDto +  montoPagar + " Usd"
         }
     
 }
