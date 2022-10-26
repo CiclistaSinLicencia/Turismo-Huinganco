@@ -214,6 +214,9 @@ color: var(--clr-darkGreen-huin);
 }
 
 /* -------------------FORM-------------------  */
+
+
+
 .form-reserva{
 display: flex;
 align-items: center;
@@ -248,15 +251,43 @@ width: 100%;
     border: 0.05px solid rgb(215, 215, 215);
     padding: 9px 8px;
     width: 100%;
-
+    background-color: #ffffff;
  }
  .input-form-reserva:focus-visible{
     outline: 2px solid var(--color-huignanco);
  }
 
+
+ .input-toolkit{
+    position: absolute;
+    transform: translateX(10px) ;
+
+    pointer-events: none;
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 0px 5px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 #nombre-form-reserva{
 width: 48%;
+
 }
+#nombre-form-reserva:focus-visible + span,
+#nombre-form-reserva:valid + span
+{
+    font-size: 14px;
+    transform: translateX(15px) translateY(-25px) ;
+    color: #333;
+    background-color: white;
+    border-left: 2px solid #cdcdcd;
+    border-right: 2px solid #cdcdcd
+    }
+
 #apellido-form-reserva{
     width: 48%;
 }
