@@ -5,6 +5,7 @@
 --color-btn-hover:#7dc446;
 --clr-darkGreen-huin:#689f16;
 --clr-sweetRed:#ff6294;
+--clr-sweetRed:#ff629483;
 --clr-sweetBlue:#2596be;
 
 /* fontSize */
@@ -47,9 +48,9 @@ padding: 0px 20px;
             
 }
 .card-reserva{
-    height: 350px;
+    height: 360px;
     max-width: 300px;
-    width: 280px;
+    width: 270px;
         border-radius: 8px;
   box-shadow: 1px 3px 8px 2px #d0d0d0; 
     display: flex;
@@ -69,7 +70,7 @@ padding: 0px 20px;
 }
 
 .txt-km{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .div-kmPrecio-line{
@@ -230,7 +231,7 @@ width: 100%;
    flex-direction: column;
     padding: 20px;
    height: 100%;
-gap: 15px;
+    gap: 20px;
 }
 
 .ctn-form-doble{
@@ -238,13 +239,14 @@ gap: 15px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+  
 }
 
 .input-form-reserva{
     font-size: 18px;
     border-radius: 8px;
     border: 0.05px solid rgb(215, 215, 215);
-    padding: 8px 8px;
+    padding: 9px 8px;
     width: 100%;
 
  }
@@ -253,11 +255,9 @@ gap: 15px;
  }
 
 #nombre-form-reserva{
-
 width: 48%;
 }
 #apellido-form-reserva{
-
     width: 48%;
 }
 
@@ -290,7 +290,7 @@ left: 5px;
 }
 /* rights */
 .ctn-rights-reserva{
-    padding-top: 40px;
+    padding-top: 20px;
 
 }
 
@@ -328,13 +328,14 @@ outline-offset: 2px;
     background-color: #2596be;
     border-radius: 0px 8px 8px 0px;
     width: 100%;
+    border: 3px solid #46beea;
     display: flex;
 align-items: center;
 justify-content: center;
 }
 #txtTotalPagar{
 background-color: #2595be71;
-
+color: #fa73733f;
 font-weight: 800;
 color: floralwhite;
 }
@@ -343,7 +344,22 @@ color: floralwhite;
     width: 60%;
     border-radius: 8px 0px 0px 8px;
     outline: 0;
+    text-align: center;
+    font-weight: 800;
+    border: 3px solid #d0d0d0;
+    color: #666;
 }
+#txt-cod-descuento{
+
+    font-weight: 800;
+    color: #ff6294;
+    height: 10px;
+    padding-left: 10px;
+
+    margin: 0;
+
+}
+
 
 /* submit */
 .ctn-submit{
@@ -492,7 +508,7 @@ styled-select
     .ctn-form-doble{
         flex-direction: column;
         width: 100%;
-        gap: 40px;
+        gap: 20px;
     }
     #nombre-form-reserva{
         width: 100%;
@@ -527,6 +543,9 @@ styled-select
                 width: 100%;
                 border-radius: 8px 8px 0px 0px;
                 outline: 0;
+                text-align: center;
+            }
+            #txt-cod-descuento{
                 text-align: center;
             }
 }

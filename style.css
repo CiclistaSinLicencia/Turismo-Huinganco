@@ -219,15 +219,15 @@ background-position: center;
 
 .btn-banner{
         
-        padding: 1px 12px 1px 12px;
+        padding: 0.1em 0.8em;
         color: floralwhite;
         margin-top: 10px;
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color:#000000d2;
         
-        font-weight: 800;
+        font-weight: 600;
         display: inline-block;
             text-decoration: none;
-            border-radius: 8px ;
+            border-radius: 4px ;
             transition: 0.2s;
             outline: 2px solid floralwhite;
            /*  outline-offset: 0px; */
@@ -235,7 +235,8 @@ background-position: center;
 .btn-banner:hover{
     color: #222;
      background-color: floralwhite;
-    outline-offset: 3px;  
+     
+    outline-offset: 2px;  
 }
 #btn-reserva{
     color: greenyellow;
@@ -245,9 +246,10 @@ background-position: center;
     font-weight: 800;
 }
 #btn-reserva:hover{
-    background-color: white;
+    background-color: greenyellow;
     color: #333;
-
+    outline-offset: -2px;  
+    outline: 4px solid #333;
 }
 
 
