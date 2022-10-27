@@ -863,20 +863,6 @@ footer{
    
 }
 
-.logo-footer{
-    width: 2.5em;
-    transition: 0.5s filter linear;
-    transition: 0.2s transform linear;
-
-    filter: invert(100%) sepia(0%) saturate(7421%) hue-rotate(127deg) brightness(118%) contrast(96%);
-
-
-}
-.logo-footer:hover{
-    filter: invert(59%) sepia(33%) saturate(1004%) hue-rotate(42deg) brightness(97%) contrast(91%);
-    transform: translateY(-3px);
-
-}
 .ctn-rights{
     display: flex;
     align-items: center;
@@ -895,7 +881,6 @@ footer{
     font-size: 14px;
 }
 /* end Footer */
-
 
 
 

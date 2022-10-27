@@ -144,13 +144,15 @@ padding: 0px 20px;
     height: 100%;
 }
 .check-card-reserva:checked{
-  box-shadow: 0px 0px 10px 1px var(--color-huignanco);
+    box-shadow: 0px 0px 5px 1px var(--color-huignanco);
 }
 .check-card-reserva:checked ~ .usd-reserva {
 scale: 1.1;
+box-shadow: 0px 0px 5px 1px var(--color-huignanco);
 }
 .check-card-reserva:checked ~ .txt-ahorre-oferta-reserva {
     scale: 1.1;
+  
     }
 .check-card-reserva:checked ~ h2{
 scale: 1.1;
