@@ -267,7 +267,7 @@ width: 100%;
     pointer-events: none;
     border-radius: 8px;
     transition: 0.5s;
-    padding: 0px 5px;
+    padding: 0px 3px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -285,11 +285,11 @@ width: 48%;
 {
 
     font-size: 14px;
-    transform: translateX(8px) translateY(-23px) ;
+    transform: translateX(10px) translateY(-24px) ;
     color: var(--clr-darkGreen-huin);
     background-color: white;
-    border-left: 2px solid #cdcdcd;
-    border-right: 2px solid #cdcdcd
+ /*    border-left: 2px solid #cdcdcd;
+    border-right: 2px solid #cdcdcd */
     }
 
 #apellido-form-reserva{
