@@ -72,7 +72,6 @@ function calcKm (){
 document.getElementsByTagName('select')[0].onchange = function() {
     var index = this.selectedIndex;
     var inputText = this.children[index].innerHTML.trim();
-
     paisOrigen = inputText
     calcKm()
   }
@@ -128,24 +127,24 @@ function funDescuento(){
  
     if(inputValue === "Ciclista" || inputValue === "ciclista"){
  
-        inputDescuento.style.border = "3px solid #76b41850"
+        inputDescuento.style.border = "3px solid var(--form-valid-border)"
         dtoTrue = true
         dtoCodigo = -2
         txtCodDescuento.innerHTML = "tenes 2 Usd de descuento aplicado!" 
-        txtCodDescuento.style.color = "#689f16"
+        txtCodDescuento.style.color = " var(--form-valid-txt) "
         calcKm()
     }
     else if(inputValue=== ""){
-        inputDescuento.style.backgroundColor = "white"
+        
         dtoTrue = false
         dtoCodigo = 0 
         txtCodDescuento.innerHTML = "Metele un Ciclista "
-        inputDescuento.style.border = "3px solid #d0d0d0"
-        calcKm()
+        inputDescuento.style.border = "3px solid var( --form-input-border)"
+        calcKm() 
 
     }
     else{
-        inputDescuento.style.backgroundColor = "white"
+       
         dtoTrue = false
         dtoCodigo = 0 
         txtCodDescuento.innerHTML = " No es un codigo valido"

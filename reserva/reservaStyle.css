@@ -17,6 +17,67 @@
 
 }
 
+/* -------------------Themes-------------------  */
+body{
+    background-color: var(--backG-clr);
+    /* variables */
+    --backG-clr:  #f9fbfd;
+     --card-backG-clr: #ffff;
+
+    /* titles */
+    --title-color:#75b418 ;
+
+
+   /* card */
+   --card-km-txt: black;
+   --card-km-boxShadow: #d0d0d0;
+
+   /* form */
+      --form-input-backG:#fff;
+      --form-input-txt: black;
+      --form-label-txt:black;;
+      --form-input-border:#d7d7d7;
+      --form-total-backG:#2596be;
+      --form-total-border-backG:##46beea;
+
+      --form-inputToolkit-txt:#999;
+      --form-inputToolkit-FOCUS-txt:#689f16;
+/* formJava */
+--form-valid-txt:#689f16;
+--form-valid-border:#76b41850
+}
+
+
+body.dark{
+
+    --backG-clr: #333;
+
+    /* titles */
+    --title-color:#7dc446 ;
+    /* card */
+    --card-backG: #222;
+    --card-km-txt:white;
+    --card-km-boxShadow: #222;
+    /* form */
+    --form-txt-dtochile:#bab9b9;
+
+    --form-input-backG:#222;
+    --form-input-txt:#fff;
+    --form-label-txt:#fff;
+    --form-input-border:#666;
+
+    --form-total-backG:#02465f;
+    --form-total-border-backG:#1b7c9f;
+    --form-inputToolkit-txt:#bab9b9;
+    --form-right-outline:#7dc446;
+
+    --form-inputToolkit-FOCUS-txt:#7dc446;
+    /* formJava */
+--form-valid-txt: #7dc446;
+--form-valid-border: #abff6a71;
+}
+/* -------------------endThemes-------------------  */
+
 .separador-header{
     height: 3.5em;
 }
@@ -28,7 +89,7 @@
 
 }
 .title-reserva{
-    color: var(--clr-darkGreen-huin);
+    color: var(--title-color);
     text-align: center;
     font-size: 50px ;
     font-weight: 400;
@@ -52,8 +113,9 @@ padding: 0px 20px;
     max-width: 300px;
     width: 270px;
         border-radius: 8px;
-  box-shadow: 1px 3px 8px 2px #d0d0d0; 
+  box-shadow: 1px 3px 8px 2px var(--card-km-boxShadow); 
     display: flex;
+    background-color: var(--card-backG);
     align-items: center;
     justify-content: start;
     position: relative;
@@ -71,6 +133,34 @@ padding: 0px 20px;
 
 .txt-km{
     font-size: 25px;
+}
+
+
+.info-card-reserva{
+    text-align: left;
+    width: 100%;
+    padding: 20px 20px;
+    font-weight: 500;
+    color: #333;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    color: var(--card-km-txt);
+}
+
+.info-card-reserva > p{
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.symbol-info-reserva-yes{
+    color: var(--clr-darkGreen-huin);
+    font-weight: 800;
+}
+.symbol-info-reserva-no{
+    color: #ff6294;
+    font-weight: 800;
 }
 
 .div-kmPrecio-line{
@@ -95,13 +185,12 @@ padding: 0px 20px;
     display: block;
     text-align: center;
     color: floralwhite;
-    font-size: 16px;
+    font-size: 14px;
     height: 1.4em;
     font-weight: 700;
     width: 100%;
-    border-radius: 1px 8px 0px 0px;
+    border-radius: 1px 2px 0px 0px;
     background-color: #999;
-    
 }
 
 
@@ -112,7 +201,7 @@ padding: 0px 20px;
     background-color: var(--color-huignanco);
     width: 5em;
     font-size: 20px;
-    border-radius: 2px 8px 8px 2px;
+    border-radius: 2px;
     transition: 0.5s;
 }
 .usd-reserva p{
@@ -126,7 +215,7 @@ padding: 0px 20px;
 }
 
 .txt-ahorre-oferta-reserva{
-    color: #689f16;
+    color: var(--title-color);
     font-weight: 800;
     font-size: 17px;
     position: absolute;
@@ -148,16 +237,15 @@ padding: 0px 20px;
 }
 .check-card-reserva:checked ~ .usd-reserva {
 scale: 1.1;
-box-shadow: 0px 0px 5px 1px var(--color-huignanco);
+border-radius: 8px;
 }
 .check-card-reserva:checked ~ .txt-ahorre-oferta-reserva {
     scale: 1.1;
-  
+    border-radius: 8px;
     }
 .check-card-reserva:checked ~ h2{
 scale: 1.1;
 }
-
 
 .label-card{
     height: 100%;
@@ -167,32 +255,6 @@ scale: 1.1;
     left: 0;
     position: absolute;
     z-index: 1;
-}
-.info-card-reserva{
-    text-align: left;
-    width: 100%;
-    padding: 20px 20px;
-    font-weight: 500;
-    color: #333;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.info-card-reserva > p{
-    font-size: 16px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.symbol-info-reserva-yes{
-    color: var(--clr-darkGreen-huin);
-    font-weight: 800;
-}
-.symbol-info-reserva-no{
-    color: #ff6294;
-    font-weight: 800;
 }
 
 /* -------------------DESCUENTOS-------------------  */
@@ -207,18 +269,15 @@ scale: 1.1;
 }
 .dto-residentes{
     font-size: var(--fs-25);
-color: var(--clr-darkGreen-huin);
+color: var(--title-color);
 }
 .dto-extrangeros{
-    color: #666;
+    color: var( --form-txt-dtochile);
     padding: 0px 20px;
 
 }
 
 /* -------------------FORM-------------------  */
-
-
-
 .form-reserva{
 display: flex;
 align-items: center;
@@ -238,6 +297,9 @@ width: 100%;
    height: 100%;
     gap: 20px;
 }
+.ctn-form-reserva label{
+    color: var(--form-label-txt);
+}
 
 .ctn-form-doble{
     display: flex;
@@ -249,27 +311,28 @@ width: 100%;
 
 .ctn-input{
     width: 48%;
-
 }
 
 .input-form-reserva{
     font-size: 18px;
     border-radius: 8px;
-    border: 1px solid rgb(215, 215, 215);
+    border: 1px solid var(--form-input-border);
     padding: 9px 8px;
     width: 100%;
-    background-color: #ffffff;
-    transition: 0.1s;
+    background-color: var(--form-input-backG);
+    color: var(--form-input-txt);
+    transition: 0.2s;
  }
  .input-form-reserva:focus-visible{
-    outline: 2px solid var(--color-huignanco);
+    outline: 0px solid var(--color-huignanco);
+    border: 1px solid var(--color-huignanco);
+    box-shadow: 0px 0px 2px 1px   var(--color-huignanco);
  }
-
 
  .input-toolkit{
     position: absolute;
     transform: translateX(10px)translateY(10px) ;
-    color: #777;
+    color: var(--form-inputToolkit-txt);
     font-weight: 500;
     font-size: 18px;
     pointer-events: none;
@@ -284,8 +347,8 @@ width: 100%;
 {
     font-size: 14px;
     transform: translateX(15px) translateY(-10px) ;
-    color: var(--clr-darkGreen-huin);
-    background-color: white
+    color: var(--form-inputToolkit-FOCUS-txt);
+    background-color: var(--form-input-backG);
     }
     .input-form-reserva ~  span span{
         transition: 0.2s ;
@@ -310,7 +373,6 @@ width: 100%;
 position: absolute;
 bottom: calc(35px + 10px);
 left: 5px;
-
 }
 #date-form-reserva{
     width: 100%
@@ -321,26 +383,26 @@ left: 5px;
 /* rights */
 .ctn-rights-reserva{
     padding-top: 20px;
-
 }
 
 .radioCheckStyle{
     cursor: pointer;
     appearance: none;
-    background-color: floralwhite;
-    outline: 2px solid #75b418;
+    background-color: rgba(255, 250, 240, 0);
+    outline: 2px solid var(--form-right-outline);
     padding: 6px;
-    border-radius: 50%;
+    border-radius: 20%;
     transition: 0.2s;
-    margin-inline: 5px;
-  
+    margin-inline: 5px; 
 }
 .radioCheckStyle:checked{
 outline-offset: 2px;
-    background-color: #75b418;
+    background-color: var(--form-right-outline);
+    border-radius: 50%;
 }
 .label-rights{
     cursor: pointer;
+    color: var( --form-label-txt);
 }
 
 .ctn-celiaco-reserva{
@@ -352,19 +414,20 @@ outline-offset: 2px;
 .ctn-cod-totalPagar{
     display: flex;
     width: 100%;
+
 }
 
 .ctn-TotalPagar-Reserva{
-    background-color: #2596be;
+    background-color: var(--form-total-backG) ;
     border-radius: 0px 8px 8px 0px;
     width: 100%;
-    border: 3px solid #46beea;
+    border: 3px solid var( --form-total-border-backG);
     display: flex;
 align-items: center;
 justify-content: center;
+
 }
 #txtTotalPagar{
-background-color: #2595be71;
 color: #fa73733f;
 font-weight: 800;
 color: floralwhite;
@@ -376,26 +439,25 @@ color: floralwhite;
     outline: 0;
     text-align: center;
     font-weight: 800;
-    border: 3px solid #d0d0d0;
-    color: #666;
+    border: 3px solid var(--form-input-border);
+    color: var( --form-input-txt);
+    font-size: 18px;
+    padding: 9px 8px;
+    transition: 0.2s;
+    background-color: var(--form-input-backG);
 }
 #txt-cod-descuento{
-
     font-weight: 800;
     color: #ff6294;
     height: 10px;
     padding-left: 10px;
-
     margin: 0;
-
 }
-
 
 /* submit */
 .ctn-submit{
     width: 100%;
     height: 40px;
-
 }
 
 #btn-submit-reserva{
@@ -417,12 +479,10 @@ color: floralwhite;
 
 }
 
-
-
 .radio-celiaco{
 background-color: #689f16;
 padding: 20px;
-color: green;
+
 border-radius: 3px;
 }
 
@@ -466,49 +526,8 @@ select:focus{
   5px 5px,
   1px 1.5em;
   background-repeat: no-repeat;
-
   transition: 0.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media  (max-width:650px){
@@ -572,7 +591,5 @@ select:focus{
             .ctn-input{
                 width: 100%;
             }
-
-
 
 }

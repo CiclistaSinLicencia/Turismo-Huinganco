@@ -6,7 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 :root{
     --color-huignanco:#75b418;
     --greenhover:#b8ff5c;
@@ -22,7 +21,6 @@
     --fs-text-16:16px;
     --font-subtitle: 24px;
 }
-
 input,
 textarea,
 button,
@@ -35,12 +33,10 @@ a {
     color: white;
    background:#2595be80 ; 
  }
-
  ::-webkit-scrollbar{
     background-color: #333;
     width: 15px;
 } 
-
 ::-webkit-scrollbar-thumb{
    border-radius: 100vw;
     background-color: #aaaaaa;
@@ -51,23 +47,50 @@ a {
      background-color: #777;
  }
 
-
+/* -------------------Themes-------------------  */
 body{
-    background-color:  #f9fbfd;
-   
+    /* fondo */
+    --backG:  #f9fbfd;
+    background-color: var(--backG);
+    /* Header */
+    --header-backG:#ffffff;
+    --header-txtColor: black;
+    --header-gitHub:rebeccapurple;
+    /* joyas */
+    --joyas-card-backG:#fff;
+    --joyas-txt:#222;
+        /* form */
+        --form-input-backG:#fff;
+
+
 }
+body.dark{
+    /* fondo */
+    --backG: #333;
+    /* header */
+    --header-backG:#272727;
+    --header-txtColor:#ffff;
+    --header-gitHub:#9442e6;
+    /* joyas */
+    --joyas-card-backG:#222;
+    --joyas-txt:#fff;
+    --joyas-title-btn:var(--color-btn-hover);
+    --joyas-title-btn-hover:#c5ff6e;
+    /* form */
+    --form-input-backG:#333;
+
+}
+/* -------------------endThemes-------------------  */
 
 /* Mobile */
 .dropdown{
     display: none;
 }
-
-
 iframe{
     border-radius: 20px;
 }
 
-/* HEADER */
+/* -------------------HEADER-------------------  */
 .logo-mobile{
     display: none;
 }
@@ -81,7 +104,7 @@ iframe{
         height: 3.5em;
         box-shadow:  1px 1px 4px  rgba(20, 20, 20, 0.578);
         top: 0;
-        background-color: #ffffff;
+        background-color: var(--header-backG);
     
         
 }
@@ -91,7 +114,7 @@ iframe{
     width: 240px;  /* ORIGINAL 160px */
     margin-top: 5px;
 }
-/* NAV */
+/* -------------------NAV-------------------  */
 
 .nav{
     margin-right: 20px;
@@ -100,23 +123,19 @@ iframe{
     align-items: center;
     justify-content: center;
     gap: 20px;
- 
     
 }
+/* githubLogo */
 .ctn-github-btn{
     margin: 0;
     padding: 0;
     width: 30px;
     height: 30px;
     text-decoration: none;
-  
     border-radius: 50%;
 }
-
-
 #git-text-pop{
     position: relative;
-   
     text-align: center;
     bottom: 140px;
     font-size: 20px;
@@ -128,15 +147,13 @@ iframe{
     width: 120px;
     height: 50px;
     left: -110px;
-/*     border-radius: 20px; */
-        border-radius: 20px 0px 20px 20px;
-     opacity: 1; 
+    border-radius: 20px 0px 20px 20px;
+    opacity: 1; 
     transition: opacity 0.5s  ease-in-out ;
     transition: scale 0.2s ease-in-out;
     scale: 0.1;      
     transform-origin:top right;   
 }
-
 .ctn-github-btn:hover .github-a+ #git-text-pop{
     opacity: 1;
     scale: 1;
@@ -146,67 +163,49 @@ iframe{
    width: 100%;
    height: 100%;
    transition: 0.2s linear;
-   fill: rebeccapurple;
-
+   fill: var(--header-gitHub);
 }
 
 .ctn-github-btn:hover .github-a{
-   
     scale: 1.1;
     fill: rgb(149, 75, 223);
  }
  
-
-
 .btn-nav{
-   
     text-decoration: none;
-    color:  black;
+    color:  var(--header-txtColor);
     font-weight: 400;
     font-size: 17px;
     padding: 5px;
     transition: color 0.2s ease-in-out; 
-    
 }
 .btn-nav:hover {
     color: rgb(117, 180, 24);
 }
 
 
-
-
-/* BANNER */
-
+/* -------------------BANNER-------------------  */
 .banner{
-    
     width: 100%;
         height: 85vh;
      display: flex;
      align-items: flex-end;
     justify-content: right;
         box-shadow: 0px 2px 5px #333333ab;
-
 background-image: url(huighnanco/Banner.webp);
 background-size: cover;
 background-position: center;
 }
 
 .content-banner{
-    color: floralwhite;
-        
+    color: floralwhite;  
     width: 450px;
-
- 
         margin-right: 8% ;
         margin-bottom: 5%;
         text-align: right; 
         font-style: italic;
-   
         font-size: var(--fs-text-16); 
-        
 }
-
-
 
 .banner-titulo{
     color: floralwhite;
@@ -223,7 +222,6 @@ background-position: center;
         color: floralwhite;
         margin-top: 10px;
         background-color:#000000d2;
-        
         font-weight: 600;
         display: inline-block;
             text-decoration: none;
@@ -235,12 +233,10 @@ background-position: center;
 .btn-banner:hover{
     color: #222;
      background-color: floralwhite;
-     
     outline-offset: 2px;  
 }
 #btn-reserva{
     color: greenyellow;
-    
     outline-color: greenyellow;
     margin-left: 10px;
     font-weight: 800;
@@ -251,14 +247,10 @@ background-position: center;
     outline-offset: -2px;  
     outline: 4px solid #333;
 }
-
-
 /* end Banner */
 
 
-
-/* JOYAS DE HUIGNANCO */
-
+/* -------------------JOYAS-------------------  */
 #cnt-titulo-joyas{
     width: 100%;
     display: flex;
@@ -269,12 +261,8 @@ background-position: center;
     height: 80px;
     flex-direction: column;
 }
-
-
 /* ImAGENES */
-
 .ctn-joyas{
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,30 +277,27 @@ background-position: center;
      flex-wrap: wrap;
 
 }
-
 .titulo-joyas{
     font-size: var(--font-title);
  font-style: italic; 
     font-weight: 700;
+
 }
 
 .bloque-joyas{
     border-radius: 10px;
-   
     flex-basis: 400px;
     flex-grow: 0.2;
-
     min-height: 550px;
-    background-color:  white;
+    background-color:  var(--joyas-card-backG);
     box-shadow:  1px 1px 10px 1px  rgba(51, 51, 51, 0.137);
-    
     }
     .texto-bloque-joyas{
         /* font-size: var(--fs-text-16);  */
         font-size: var(--fs-text-16);
+        color: var(--joyas-txt);
        margin-left: 30px; 
        margin-right: 30px;
-       
    }
    
    .titulo-bloque-joyas{
@@ -322,10 +307,8 @@ background-position: center;
        text-align: center;
        margin-top: 10px;
        transition: 0.2s ease-in-out;
-       
+      
    }
-  
-    
     .bloque-img-joyas{
         width: 100%;
         border-radius: 8px;
@@ -334,8 +317,6 @@ background-position: center;
         border-bottom-right-radius: 0px;
         margin-bottom: 10px;
     }
-
-
     .ctn-altura-dificultad{
         width: 100%;
         display: flex;
@@ -345,7 +326,6 @@ background-position: center;
         gap: 10px;
         font-size: var(--font-normal);
     }
-
 .dificultad{
     font-weight: 700;
     border-radius: 5px;
@@ -353,7 +333,6 @@ background-position: center;
     display: inline-block;
     color:  black;
 }
-
 #facil{
     background-color: #b6ff85;
 }
@@ -364,8 +343,6 @@ background-position: center;
     background-color: #fa7373
 }
 
-
-
 .altura{
     font-weight: 700;
     border-radius: 5px;
@@ -373,18 +350,14 @@ background-position: center;
     display: inline-block;
     background-color:#d6d6d6;
     color: black;
-
-    text-align: center;
-    
+    text-align: center;  
 }
-
-
 
 .anchor-titulo-bloque-joyas{
     text-decoration: none;
     color: rgb(81, 117, 13);
     transition: 0.2s ease-in-out;
-
+    color: var(--joyas-title-btn);
 }
 .anchor-titulo-bloque-joyas:hover{
     
@@ -393,10 +366,7 @@ background-position: center;
 /* End Joyas */
 
 
-
-
-
-/* BANNER OCTUBRE*/
+/* -------------------BANNER OCTUBRE-------------------  */
 #banner-octubre{
     width: 100%;
         display: flex;
@@ -433,11 +403,10 @@ background-position: center;
     padding-top: 20px;
 }
 
-/* CAROUSEL */
+/* -------------------CAROUSEL-------------------  */
 .section-carousel{
     width: 50%; /* ancho imagen */
 }
-
 
 .carousel{
     /* height: 32em; */
@@ -556,24 +525,11 @@ background-position: center;
     text-align: center;
 }
 }
- 
-
-  
-
 /* END CAROUSEL */
 
 
 
-
-
-
-
-
-
-
-
-
-/* DEJA TU CONSULTA */
+/* -------------------FORM--CONSULTA-------------------  */
 
 .ctn-comentario{
         display: flex;
@@ -601,18 +557,15 @@ background-position: center;
     gap: 10px;
 }
 
-.ctn-form{
-               
+.ctn-form{    
     width: 50%; /* 800px */
     height: 280px;
     margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        flex-direction: column;
-    
+        flex-direction: column; 
 }
-
 
 .ctn-input{
     width: 100%;
@@ -628,6 +581,7 @@ background-position: center;
     transition: 0.2s;
     border-radius: 8px;
     border: 1px solid  #c1c1c1;
+    background-color: var(--form-input-backG);
 }
 .form-input ::placeholder{
     font-size: 1em;
@@ -645,7 +599,8 @@ background-position: center;
   resize: none;
   transition: 0.2s;
   border-radius: 8px;
-    border: 1px solid  #c1c1c1;
+border: 1px solid  #c1c1c1;
+background-color: var(--form-input-backG);
 }
 
 .textarea::placeholder{
@@ -656,7 +611,6 @@ background-position: center;
 .textarea:focus{
     outline: 1px solid var(--color-huignanco);
 }
-
 .btn-enviar{
     width: 100%;
     background-color: rgb(103, 168, 54);
@@ -685,10 +639,7 @@ background-position: center;
         width: 100%;
     }
 }
-
-
 /* End Comentario */
-
 
 .footer-wave{
     position: relative;
@@ -717,7 +668,6 @@ background-position: center;
     fill: #272727;
 }
 
-
 /* FOOTER */
 footer{
     width: 100%;
@@ -725,7 +675,6 @@ footer{
     background-color: rgb(39, 39, 39);
 
 }
-
         .footer-cnt{
             display: flex;
             align-items: flex-end;
@@ -739,15 +688,11 @@ footer{
                     padding-left: 2em;
         }
 .footer-caja{
-    
     color: floralwhite;
-
-
             display: flex;
             align-items: flex-start;
             justify-content: center;
-        flex-direction: column;
-   
+        flex-direction: column; 
     padding-bottom: 3em;
     gap: 10px; 
 
@@ -786,21 +731,17 @@ footer{
     flex-direction: row;
     height: 30px;
     width: 300px;   
-  
 }
 
 #text{
     position: absolute;
-  
     transform: translateY(30px);
    display: flex;
    align-items: center;
    justify-content: center;
     height: 30px;
     width: 250px;
-   
     text-align: center;
-
 }
 
 #titulo-news{
@@ -823,10 +764,6 @@ footer{
     background-color: rgb(246, 255, 233);
 }
 
-
-
-
-
 .btn-submit-news{
     background-color: var(--color-blue-huinganco);    
     border-bottom-right-radius: 8px ;
@@ -843,13 +780,9 @@ footer{
     cursor: pointer;
     transition: 0.3s ease-out;
 }
-
 .btn-submit-news:hover{
-   /*  border-bottom-right-radius: 0px ;
-    border-top-right-radius: 0px; */
     width: 160px;
 }
-
 .footer-caja-redes{
     display: flex;
     align-items: center;
@@ -858,9 +791,7 @@ footer{
     width: 100%;
     padding: 1em 1em;
     border-top: #858585 1px solid;
- 
     gap: 2em;
-   
 }
 
 .ctn-rights{
@@ -885,24 +816,12 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* color:red */
 
 
 
 
-/* MOBILE */
+/* =====MOBILE===== */
 @media  (max-width:891px)
 {
 :root{
@@ -971,7 +890,7 @@ justify-content: center;
         padding-bottom: 40px;
     }
 
-/* DESPLEGABLE */
+/* -------------------DesplegableMobile-------------------  */
 
 .dropdown{
     position: absolute;
@@ -1080,7 +999,7 @@ height: 100%;
     transform: scale(0);
   }
   
-  /* ANIMACION */
+/* -------------------AnimacionBurger-------------------  */
   @keyframes rotate-1 { /* X */
     0% {
       transform: translateY(-6px);
@@ -1138,48 +1057,36 @@ height: 100%;
 
 
         /* FOOTER */
-   
         .footer-cnt{
                 padding-left: 0;
         }
-
         #form-news{
             width: 270px;
            
         }
-            
-
         .footer-caja{
             padding-left: 1.5em;
         }
         .ctn-form{
             width: 90%;
         }
-        
-
     .ctn-rights{
         font-size: 10px;
        }
-
        #btn-mobile-theme{
         display: none;
        }
      
-
 /* WAVE */
        .custom-shape-divider-bottom-1664583424 svg {
         width: calc(240% + 500.3px);
         height: 50px;
     }
     
-
-
     .label-theme{
         width: 100%;
     }
 }
-
-
 
 
 /*  --------------------------DARK LIGHTTHEMES---------------------------- */
@@ -1190,11 +1097,8 @@ height: 100%;
     justify-content: center;
     cursor: pointer;
    transition: 0.2s;
-   
    height: 100%;
- 
 }
-
 .sun-icon{
     font-size: 24px;
     transition: 1s  ease-in-out;
@@ -1205,7 +1109,6 @@ height: 100%;
 .sun-icon:hover{
     color: #0a485f;
 }
-
 .moon-icon{
         margin-top: 2px;
         margin-right: 5px;
@@ -1217,23 +1120,15 @@ height: 100%;
     transition: 0.2s ease-in-out;
     position: absolute;
     color: var(--color-blue-huinganco);
-   
 }
 .moon-icon:hover{
     fill: #46ceff;
 }
-
 .theme{
     opacity: 0;
     position: absolute;
 }
 
-/* nav */
-body:has(input[value="theme"]:checked)
-{
-    background-color: #2b2b2d;
-    transition: 0.3s ease-in-out;
-}
 
 body:has(input[value="theme"]:checked) .moon-icon
 {
@@ -1254,8 +1149,6 @@ body:has(input[value="theme"]:checked) .moon-icon
         transform: rotate(0deg);
     }}
 
-
-
 body:has(input[value="theme"]:checked) .sun-icon
 {
     scale: 0.5;
@@ -1272,66 +1165,3 @@ body:has(input[value="theme"]:checked) .sun-icon
     100%{
         transform: rotate(0deg);
     }}
-
-
-body:has(input[value="theme"]:checked) .header
-{
-    background-color: #272727;
-    transition: 0.2s linear;
-}
-
-body:has(input[value="theme"]:checked) .btn-nav
-{
-  color: white;
-  transition: 0.2s linear;
-}
-body:has(input[value="theme"]:checked) .btn-nav:hover
-{
-  color: #c5ff6e;
-}
-
-
-/* JOYAS */
-body:has(input[value="theme"]:checked)  .bloque-joyas
-{
-    background-color: #272727;
-    color: white;
-}
-body:has(input[value="theme"]:checked) .anchor-titulo-bloque-joyas 
-{
-    color: #75b418;
-}
-body:has(input[value="theme"]:checked) .anchor-titulo-bloque-joyas:hover
-{
-    color: #c5ff6e;
-}
-
-
-/* github */
-body:has(input[value="theme"]:checked) .github-a
-{
-    fill: rgb(148, 66, 230);
-}
-body:has(input[value="theme"]:checked) #btn-th
-{
-    background-color: #272727;
-  
-    transition: 0.5s;
-    outline-color:#333 ;
-}
-body:has(input[value="theme"]:checked) .btn-menu-dropdown
-{
-    background-color: #333;
-    outline-color:#333 ;
-   
-    
-    color: white;
-}
-
-body:has(input[value="theme"]:checked) .prueba
-{
-    --prueba: red;
-}
-
-
-
