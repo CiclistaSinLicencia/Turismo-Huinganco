@@ -254,21 +254,26 @@
 
 <div class="form-reserva">
     <div class="ctn-form-reserva">
-
     <div class="ctn-form-doble" id="ctn-form-doble-nombre">
- 
-  
-<input type="text"  class="input-form-reserva" id="nombre-form-reserva" required>
+
+
+<div class="ctn-input">
+<input type="text"  class="input-form-reserva" required>
 <span class="input-toolkit">Nombre</span> 
+</div>
 
-
-<input type="text" class="input-form-reserva"  id="apellido-form-reserva" placeholder="Apellido">
+<div class="ctn-input">
+<input type="text" class="input-form-reserva" required>
+<span class="input-toolkit">Apellido</span> 
+</div>
 
 </div>
 
 <!-- email -->
-<input type="mail" class="input-form-reserva"  id="mail-form-reserva" placeholder="eMail">
- 
+<div class="ctn-input" id="ctn-input-mail">
+<input type="mail" class="input-form-reserva"  id="mail-form-reserva" required>
+<span class="input-toolkit">eMail</span> 
+</div>
 <!-- telefono -->
 <!-- <div class="ctn-form-doble">
     <div class="ctn-label">
@@ -353,6 +358,7 @@
 </div>
 <p id="txt-cod-descuento">Metele un Ciclista</p>
 <div class="ctn-cod-totalPagar">
+    
     <input autocomplete="off" id="cod-descuento-reserva" type="text" class="input-form-reserva" placeholder="Codigo de descuento" >
 
     <div class="ctn-TotalPagar-Reserva">

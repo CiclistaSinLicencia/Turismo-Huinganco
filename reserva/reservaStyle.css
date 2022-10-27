@@ -247,6 +247,11 @@ width: 100%;
   
 }
 
+.ctn-input{
+    width: 48%;
+
+}
+
 .input-form-reserva{
     font-size: 18px;
     border-radius: 8px;
@@ -263,51 +268,29 @@ width: 100%;
 
  .input-toolkit{
     position: absolute;
-    transform: translateX(10px) ;
+    transform: translateX(10px)translateY(10px) ;
     color: #777;
     font-weight: 500;
+    font-size: 18px;
     pointer-events: none;
     border-radius: 8px;
     transition: 0.5s;
     padding: 0px 3px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10px;
 }
 
-
-#nombre-form-reserva{
-width: 48%;
-
-}
-#nombre-form-reserva:focus-visible + span,
-#nombre-form-reserva:valid + span
+.input-form-reserva:focus-visible ~  span,
+.input-form-reserva:valid ~ span
 {
-
     font-size: 14px;
-    transform: translateX(10px) translateY(-24px) ;
+    transform: translateX(15px) translateY(-10px) ;
     color: var(--clr-darkGreen-huin);
-    background-color: white;
- /*    border-left: 2px solid #cdcdcd;
-    border-right: 2px solid #cdcdcd */
+    background-color: white
     }
 
-#apellido-form-reserva{
-    width: 48%;
-}
-
-/* number mail */
-#number-form-reserva{
+#ctn-input-maxWidth{
     width: 100%;
 }
-
-#mail-form-reserva{
-  
-    width: 100%;
-}
-
+    
 /* date */
 .ctn-label{
   position: relative;
@@ -585,4 +568,12 @@ styled-select
             #txt-cod-descuento{
                 text-align: center;
             }
+     
+
+            .ctn-input{
+                width: 100%;
+            }
+
+
+
 }
