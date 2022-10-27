@@ -248,10 +248,11 @@ width: 100%;
 .input-form-reserva{
     font-size: 18px;
     border-radius: 8px;
-    border: 0.05px solid rgb(215, 215, 215);
+    border: 1px solid rgb(215, 215, 215);
     padding: 9px 8px;
     width: 100%;
     background-color: #ffffff;
+    transition: 0.1s;
  }
  .input-form-reserva:focus-visible{
     outline: 2px solid var(--color-huignanco);
@@ -261,7 +262,8 @@ width: 100%;
  .input-toolkit{
     position: absolute;
     transform: translateX(10px) ;
-
+    color: #777;
+    font-weight: 500;
     pointer-events: none;
     border-radius: 8px;
     transition: 0.5s;
@@ -270,6 +272,7 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10px;
 }
 
 
@@ -280,9 +283,10 @@ width: 48%;
 #nombre-form-reserva:focus-visible + span,
 #nombre-form-reserva:valid + span
 {
+
     font-size: 14px;
-    transform: translateX(15px) translateY(-25px) ;
-    color: #333;
+    transform: translateX(8px) translateY(-23px) ;
+    color: var(--clr-darkGreen-huin);
     background-color: white;
     border-left: 2px solid #cdcdcd;
     border-right: 2px solid #cdcdcd
