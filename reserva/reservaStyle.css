@@ -451,7 +451,7 @@ select{
     5px 5px,
     1px 1.5em;
   background-repeat: no-repeat;
-  transition: 0.5s;
+
 }
 select:focus{
     background-image:
@@ -466,19 +466,8 @@ select:focus{
   5px 5px,
   1px 1.5em;
   background-repeat: no-repeat;
-  border-color: green;
-  outline: 0;
-  transform: transtlate;
-}
 
-
-option{
-border-radius: 8px;
-
-}
-styled-select
-{
-    background-color: green;
+  transition: 0.5s;
 }
 
 
