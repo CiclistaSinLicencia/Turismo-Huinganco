@@ -274,8 +274,9 @@ width: 100%;
     font-size: 18px;
     pointer-events: none;
     border-radius: 8px;
+    height: 18px;
     transition: 0.5s;
-    padding: 0px 3px;
+    padding: 0px 4px;
 }
 
 .input-form-reserva:focus-visible ~  span,
@@ -285,6 +286,15 @@ width: 100%;
     transform: translateX(15px) translateY(-10px) ;
     color: var(--clr-darkGreen-huin);
     background-color: white
+    }
+    .input-form-reserva ~  span span{
+        transition: 0.2s ;
+    }
+    .input-form-reserva:focus-visible ~  span span,
+    .input-form-reserva:valid ~ span span{
+        opacity: 0;
+       font-size: 0px;
+
     }
 
 #ctn-input-maxWidth{
