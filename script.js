@@ -1,3 +1,9 @@
+/* themeToggle */
+document.getElementById("theme").addEventListener
+("change",() =>{
+    document.body.classList.toggle("dark")
+})
+
 /* btn sound */
 const audio = new Audio();
 audio.src = "./audio/click.wav";

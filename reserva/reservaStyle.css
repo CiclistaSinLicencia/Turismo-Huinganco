@@ -20,6 +20,7 @@
 /* -------------------Themes-------------------  */
 body{
     background-color: var(--backG-clr);
+   
     /* variables */
     --backG-clr:  #f9fbfd;
      --card-backG-clr: #ffff;
@@ -44,7 +45,7 @@ body{
       --form-inputToolkit-FOCUS-txt:#689f16;
 /* formJava */
 --form-valid-txt:#689f16;
---form-valid-border:#76b41850
+--form-valid-border:#76b41850;
 }
 
 
@@ -75,6 +76,7 @@ body.dark{
     /* formJava */
 --form-valid-txt: #7dc446;
 --form-valid-border: #abff6a71;
+
 }
 /* -------------------endThemes-------------------  */
 
