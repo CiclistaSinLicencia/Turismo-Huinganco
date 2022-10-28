@@ -61,8 +61,9 @@ body{
     --joyas-txt:#222;
         /* form */
         --form-input-backG:#fff;
-
-
+        --form-input-txt: black;
+        --form-input-border:#d7d7d7;
+    
 }
 body.dark{
     /* fondo */
@@ -77,8 +78,9 @@ body.dark{
     --joyas-title-btn:var(--color-btn-hover);
     --joyas-title-btn-hover:#c5ff6e;
     /* form */
-    --form-input-backG:#333;
-
+    --form-input-backG:#222;
+    --form-input-txt:#fff;
+    --form-input-border:#666;
 }
 /* -------------------endThemes-------------------  */
 
@@ -580,11 +582,13 @@ background-position: center;
     padding-left: 10px;
     transition: 0.2s;
     border-radius: 8px;
-    border: 1px solid  #c1c1c1;
+    border: 1px solid  var(--form-input-border);
     background-color: var(--form-input-backG);
+    color: var(--form-input-txt) ;
 }
 .form-input ::placeholder{
     font-size: 1em;
+    color: var(--);
 }
 .form-input:focus {
  outline: 1px solid var(--color-huignanco);
@@ -599,13 +603,16 @@ background-position: center;
   resize: none;
   transition: 0.2s;
   border-radius: 8px;
-border: 1px solid  #c1c1c1;
+border: 1px solid  var(--form-input-border);
+
 background-color: var(--form-input-backG);
+color: var(--form-input-txt) ;
 }
 
 .textarea::placeholder{
     font-size: 1em;
     font-weight: 500;
+
 }
 
 .textarea:focus{
@@ -1129,7 +1136,7 @@ height: 100%;
     position: absolute;
 }
 
-
+/* theme Animation */
 body:has(input[value="theme"]:checked) .moon-icon
 {
     opacity: 1;

@@ -85,8 +85,8 @@ function validationConsul()
                     formConsul.classList.add("valid");
                     formConsul.classList.remove("invalid");
                     
-                    emailConsul2.style.border = "1.5px solid #75b418";
-                    emailConsul2.style.outline = "1.5px solid #75b418"
+                    emailConsul2.style.border = "0px";
+                    emailConsul2.style.outline = "2px solid #75b418"
                     btnConsul.style.backgroundColor = " #75b418";;
                 }
                 else
@@ -94,8 +94,8 @@ function validationConsul()
                     formConsul.classList.remove("valid");
                     formConsul.classList.add("invalid");
                   
-                    emailConsul2.style.border = "1.5px solid #fa7373";
-                    emailConsul2.style.outline = "1.5px solid #fa7373";
+                    emailConsul2.style.border = "0px";
+                    emailConsul2.style.outline = "2px solid #fa7373";
                     btnConsul.style.backgroundColor = " #fa7373";
                 }
                 if (emailConsul == "")
@@ -103,9 +103,10 @@ function validationConsul()
                     formConsul.classList.remove("valid");
                     formConsul.classList.remove("invalid");
                
-                    emailConsul2.style.backgroundColor = "#ffff";
-                    emailConsul2.style.outline = "1px solid #999";
-                    emailConsul2.style.border = "1px solid #999";
+                    emailConsul2.style.backgroundColor = "var(--form-input-backG)";
+                    emailConsul2.style.border = "0px";
+                    emailConsul2.style.outline = "1px solid var(--form-input-border)";
+
                     btnConsul.style.backgroundColor = " #75b418";;
                  
                 }
