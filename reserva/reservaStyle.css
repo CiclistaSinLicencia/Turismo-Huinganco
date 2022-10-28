@@ -18,7 +18,7 @@
 }
 
 /* -------------------Themes-------------------  */
-body{
+html{
     background-color: var(--backG-clr);
    
     /* variables */
@@ -51,7 +51,7 @@ body{
 }
 
 
-body.dark{
+html[data-theme='dark']{
 
     --backG-clr: #333;
 
