@@ -172,32 +172,48 @@ function funDescuento(){
        
                  let emailReserva = document.getElementById("mail-form-reserva");  
                  emailReserva.addEventListener("input", validationReserva)
-                 let valEmailReserva = emailReserva.value
 
+                 let formReserva = document.getElementById("form-Reserva");
+
+                let btnReserva = document.getElementById("btn-submit-reserva")
+
+
+                 let patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
                 function validationReserva()
                 {
-                    let patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
-
+                    mailValue = emailReserva.value
+                    
+                  
                 if 
-                (valEmailReserva.match(patternConsul))
+                (mailValue.match(patternConsul))
                 {
-              
-                    emailReserva.style.outline = "1.5px solid #75b418";
-                    btnConsul.style.backgroundColor = " #75b418";;
+                    formReserva.classList.add("valid");
+                    formReserva.classList.remove("invalid");
+
+                    btnReserva.style.backgroundColor = "#75b418"
+                    emailReserva.style.outline = "2px solid #75b418";
+                    console.log("FUNCIONA!")
                 }
-                if (emailConsul == "")
+                  
+                if(!mailValue.match(patternConsul))
                 {
-                    emailReserva.style.outline = "1px solid #999"; 
-                    btnConsul.style.backgroundColor = " #75b418";;
-                }
-                else
-                {
-                    emailReserva.style.outline = "1.5px solid #fa7373";
-                    btnConsul.style.backgroundColor = " #fa7373";
-   
-                }
+                    formReserva.classList.remove("valid");
+                    formReserva.classList.remove("invalid");
+
+                    btnReserva.style.backgroundColor = "#fa7373"
+                    emailReserva.style.outline = "2px solid #fa7373";
+                } 
              
+                if (mailValue === "")
+                {
+                    formReserva.classList.remove("valid");
+                    formReserva.classList.add("invalid");
+                    emailReserva.style.outline = "0px;" 
+                    emailReserva.style.border = "0.5px solid var(--form-input-border)"; 
+                }
+
+              
 }
 
 

@@ -38,10 +38,12 @@ body{
       --form-input-txt: black;
       --form-label-txt:black;;
       --form-input-border:#d7d7d7;
+
       --form-total-backG:#2596be;
       --form-total-border-backG:##46beea;
-
       --form-inputToolkit-txt:#999;
+      --form-right-outline:#689f16;
+
       --form-inputToolkit-FOCUS-txt:#689f16;
 /* formJava */
 --form-valid-txt:#689f16;
@@ -79,6 +81,18 @@ body.dark{
 
 }
 /* -------------------endThemes-------------------  */
+
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: rgb(255, 99, 99);
+        background: transparent;
+    }
+}
+
+
+
+
 
 .separador-header{
     height: 3.5em;
@@ -326,9 +340,8 @@ width: 100%;
     transition: 0.2s;
  }
  .input-form-reserva:focus-visible{
-    outline: 0px solid var(--color-huignanco);
-    border: 1px solid var(--color-huignanco);
-    box-shadow: 0px 0px 2px 1px   var(--color-huignanco);
+    outline: 2px solid var(--color-huignanco);
+    outline-offset: -1px;
  }
 
  .input-toolkit{
@@ -366,22 +379,11 @@ width: 100%;
     width: 100%;
 }
     
-/* date */
-.ctn-label{
-  position: relative;
-    width: 48%;
+/* mail */
+#ctn-input-mail{
+    width: 100%;
 }
-#label-date{
-position: absolute;
-bottom: calc(35px + 10px);
-left: 5px;
-}
-#date-form-reserva{
-    width: 100%
-}
-#form-especifique{
-    margin-top: 10px;
-}
+
 /* rights */
 .ctn-rights-reserva{
     padding-top: 20px;
