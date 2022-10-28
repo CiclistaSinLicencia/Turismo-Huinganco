@@ -239,8 +239,8 @@ iframe{
     cursor: pointer;
    transition: 0.2s;
    height: 100%;
-   transform: translateY(-160%);
-   animation: loadNavLogos 500ms ease-in  forwards;
+  scale: 0;
+   animation: loadNavBtn 500ms ease-in  forwards;
    animation-delay: 700ms ;
 }
 .sun-icon{
