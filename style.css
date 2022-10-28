@@ -20,6 +20,9 @@
     --font-normal:14px;
     --fs-text-16:16px;
     --font-subtitle: 24px;
+
+    
+    --nav-loadTime:300ms;
 }
 input,
 textarea,
@@ -63,7 +66,7 @@ body{
         --form-input-backG:#fff;
         --form-input-txt: black;
         --form-input-border:#d7d7d7;
-    
+    transition: 0.5s;
 }
 body.dark{
     /* fondo */
@@ -81,6 +84,8 @@ body.dark{
     --form-input-backG:#222;
     --form-input-txt:#fff;
     --form-input-border:#666;
+
+
 }
 /* -------------------endThemes-------------------  */
 
@@ -104,21 +109,32 @@ iframe{
         justify-content: space-between;
         width: 100%;
         height: 3.5em;
-      
         top: 0;
         background-color: var(--header-backG);
-    
-        
+            animation: loadNav var( --nav-loadTime) ease-in forwards;
+       
+            transform: translateY(-100%);
 }
+
+@keyframes loadNav{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /* LOGO */
 .header img{
     margin-left: 20px;
-    width: 240px;  /* ORIGINAL 160px */
+    width: 230px;  /* ORIGINAL 160px */
     margin-top: 5px;
 }
 /* -------------------NAV-------------------  */
 
 .nav{
+    
     margin-right: 20px;
     height: 100%;
     display: flex;
@@ -166,6 +182,9 @@ iframe{
    height: 100%;
    transition: 0.2s linear;
    fill: var(--header-gitHub);
+   transform: translateY(-180%);
+   animation: loadNavLogos 300ms ease-in  forwards ;
+   animation-delay: 600ms ;
 }
 
 .ctn-github-btn:hover .github-a{
@@ -180,10 +199,112 @@ iframe{
     font-size: 17px;
     padding: 5px;
     transition: color 0.2s ease-in-out; 
+    scale: 0;
+    animation: loadNavBtn 500ms  ease-in forwards;
+    animation-delay:var(--nav-loadTime) ;
 }
+@keyframes loadNavBtn{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+@keyframes loadNavLogos{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
 .btn-nav:hover {
     color: rgb(117, 180, 24);
 }
+
+
+/*  --------------------------DARK LIGHTTHEMES---------------------------- */
+
+.label-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   transition: 0.2s;
+   height: 100%;
+   transform: translateY(-160%);
+   animation: loadNavLogos 500ms ease-in  forwards;
+   animation-delay: 700ms ;
+}
+.sun-icon{
+    font-size: 24px;
+    transition: 1s  ease-in-out;
+    margin-top: 2px;
+    margin-right: 5px;
+    color: var(--color-blue-huinganco);
+}
+.sun-icon:hover{
+    color: #0a485f;
+}
+.moon-icon{
+        margin-top: 2px;
+        margin-right: 5px;
+    fill: var(--color-blue-huinganco);
+    color: var(--color-blue-huinganco);
+    width: 50px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    color: var(--color-blue-huinganco);
+}
+.moon-icon:hover{
+    fill: #46ceff;
+}
+.theme{
+    opacity: 0;
+    position: absolute;
+}
+
+/* theme Animation */
+body:has(input[value="theme"]:checked) .moon-icon
+{
+    opacity: 1;
+    scale: 1;
+    transition: 1s ease-in-out ;
+    color: var(--color-blue-huinganco);
+    animation: 2s moon-rotate;
+}
+@keyframes moon-rotate{
+    0%{
+        transform: rotate(360deg);     
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }}
+
+body:has(input[value="theme"]:checked) .sun-icon
+{
+    scale: 0.5;
+    opacity: 0;
+    animation: 1s sun-rotate;
+}
+@keyframes sun-rotate{
+    0%{
+        transform: rotate(0deg);     
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }}
 
 
 /* -------------------BANNER-------------------  */
@@ -1096,79 +1217,3 @@ height: 100%;
 }
 
 
-/*  --------------------------DARK LIGHTTHEMES---------------------------- */
-
-.label-theme{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-   transition: 0.2s;
-   height: 100%;
-}
-.sun-icon{
-    font-size: 24px;
-    transition: 1s  ease-in-out;
-    margin-top: 2px;
-    margin-right: 5px;
-    color: var(--color-blue-huinganco);
-}
-.sun-icon:hover{
-    color: #0a485f;
-}
-.moon-icon{
-        margin-top: 2px;
-        margin-right: 5px;
-    fill: var(--color-blue-huinganco);
-    color: var(--color-blue-huinganco);
-    width: 50px;
-    opacity: 0;
-    scale: 0.5;
-    transition: 0.2s ease-in-out;
-    position: absolute;
-    color: var(--color-blue-huinganco);
-}
-.moon-icon:hover{
-    fill: #46ceff;
-}
-.theme{
-    opacity: 0;
-    position: absolute;
-}
-
-/* theme Animation */
-body:has(input[value="theme"]:checked) .moon-icon
-{
-    opacity: 1;
-    scale: 1;
-    transition: 1s ease-in-out ;
-    color: var(--color-blue-huinganco);
-    animation: 2s moon-rotate;
-}
-@keyframes moon-rotate{
-    0%{
-        transform: rotate(360deg);     
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }}
-
-body:has(input[value="theme"]:checked) .sun-icon
-{
-    scale: 0.5;
-    opacity: 0;
-    animation: 1s sun-rotate;
-}
-@keyframes sun-rotate{
-    0%{
-        transform: rotate(0deg);     
-    }
-    50%{
-        transform: rotate(-360deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }}

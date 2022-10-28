@@ -1,8 +1,23 @@
 /* themeToggle */
 document.getElementById("theme").addEventListener
 ("change",() =>{
-    document.body.classList.toggle("dark")
+  document.body.classList.toggle("dark")
 })
+
+ /* ------------------------------themeOnLOAD!------------------------------ */
+function setThemePreference(){
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+    {
+        console.warn("DARK THEME ON BABY!")
+        document.body.classList.toggle("dark")
+        return
+    }
+    else{
+        document.body.classList.toggle("")
+    }
+}
+document.onload = setThemePreference();
+
 
 /* btn sound */
 const audio = new Audio();
