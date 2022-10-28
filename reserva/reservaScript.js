@@ -6,6 +6,24 @@ document.getElementById("theme").addEventListener
 /* btn sound */
 const audio = new Audio();
 audio.src = "/audio/click.wav";
+
+
+ /* ------------------------------themeOnLOAD!------------------------------ */
+ function setThemePreference(){
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+    {
+        console.warn("DARK THEME ON BABY!")
+        document.body.classList.toggle("dark")
+        return
+    }
+    else{
+        document.body.classList.toggle("")
+    }
+}
+document.onload = setThemePreference();
+
+
+
 /*  */
 let cinco = document.getElementById("5km")
 cinco.addEventListener("change", five )
