@@ -147,9 +147,6 @@ function funDescuento() {
     }
 }
 
-
-
-
 /* FORMULARIO CONSULTA */
 
 let emailReserva = document.getElementById("mail-form-reserva");
@@ -158,34 +155,24 @@ let formReserva = document.getElementById("form-Reserva");
 let btnReserva = document.getElementById("btn-submit-reserva")
 
 
-let patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
 function validationReserva() {
-    mailValue = emailReserva.value
+    let mailValue = emailReserva.value
+    let patternConsul = /^[^ ]+@[^ ]+\.[a-z]{1,3}$/;
 
-    if
-        (mailValue.match(patternConsul)) {
-        emailReserva.classList.add("valid");
-        emailReserva.classList.remove("invalid");
-
+    if (mailValue == "") {
+        emailReserva.style.outline = "1px solid var( --form-input-border)";
         btnReserva.style.backgroundColor = "#75b418"
-        emailReserva.style.outline = "2px solid #75b418";
-        console.log("FUNCIONA!")
     }
 
-    if (!mailValue.match(patternConsul)) {
-        emailReserva.classList.remove("valid");
-        emailReserva.classList.remove("invalid");
-
+    else {
         btnReserva.style.backgroundColor = "#fa7373"
         emailReserva.style.outline = "2px solid #fa7373";
     }
-
-    if (mailValue === "") {
-        emailReserva.classList.remove("valid");
-        emailReserva.classList.add("invalid");
-        emailReserva.style.outline = "0px;"
-        emailReserva.style.border = "0.5px solid var(--form-input-border)";
+    if
+        (mailValue.match(patternConsul)) {
+        btnReserva.style.backgroundColor = "#75b418"
+        emailReserva.style.outline = "2px solid #75b418";
     }
 
 

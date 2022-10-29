@@ -20,14 +20,16 @@
 
 
 input:-webkit-autofill {
-  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-delay: 1s;
+  /* Safari support - any positive time runs instantly */
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active  {
+input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px var(--form-autocomplete-backG) inset !important;
   -webkit-text-fill-color: var(--form-autocomplete-txt);
 }
@@ -292,7 +294,7 @@ input:-webkit-autofill:active  {
 }
 
 .input-form-reserva:focus-visible {
-  outline: 2px solid var(--color-huignanco);
+  outline: 2px solid var(--form-input-border);
   outline-offset: -1px;
 }
 
@@ -309,14 +311,22 @@ input:-webkit-autofill:active  {
   padding: 0px 4px;
 }
 
+
 .input-form-reserva:focus-visible~span,
-.input-form-reserva:valid~span,
-.input-form-reserva:invalid~span {
+.input-form-reserva:valid~span {
   font-size: 14px;
   transform: translateX(15px) translateY(-10px);
   color: var(--form-inputToolkit-FOCUS-txt);
   background-color: var(--form-input-backG);
 }
+
+/* .input-form-reserva:invalid{
+  outline: 2px solid red;
+} */
+.input-form-reserva:valid {
+  outline: 2px solid var(--form-inputToolkit-FOCUS-txt);
+}
+
 
 .input-form-reserva~span span {
   transition: 0.2s;
@@ -335,6 +345,11 @@ input:-webkit-autofill:active  {
 /* mail */
 #ctn-input-mail {
   width: 100%;
+}
+
+#ctn-input-mail ::placeholder {
+  color: var(--form-inputToolkit-txt);
+  font-weight: 500;
 }
 
 /* rights */
@@ -446,7 +461,8 @@ input:-webkit-autofill:active  {
 
 /*  */
 .required {
-  color: red;
+  /* simbolo * del form */
+  color: #fa7373;
 }
 
 /* selectStyle */

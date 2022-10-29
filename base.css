@@ -1,8 +1,8 @@
-.base{
+.base {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 100vw;
     height: 100vh;
     color: rebeccapurple;
@@ -10,16 +10,17 @@
     text-align: center;
 
 }
-.cake-is-a-lie{
+
+.cake-is-a-lie {
     display: flex;
 
     text-align: center;
     align-items: center;
     justify-content: center;
     width: 300px;
-    height:90px;
+    height: 90px;
     margin-bottom: 300px;
-    
+
 }
 
 
@@ -27,17 +28,17 @@
                                 barra separadora                                   
 /////////////////////////////////////////////////// */
 
-.cake-title{
+.cake-title {
     width: 100%;
     height: 40%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 }
 
-.cake-btn{
+.cake-btn {
     text-decoration: none;
     padding: 1;
     height: 30px;
@@ -45,63 +46,76 @@
     background-color: rebeccapurple;
     color: floralwhite;
 
-    border-top-left-radius: left 100px  rgba(128, 128, 128, 0);
-    padding: 3px 3px;  
+    border-top-left-radius: left 100px rgba(128, 128, 128, 0);
+    padding: 3px 3px;
     width: 300px;
     cursor: not-allowed;
     font-weight: 700;
-   
+
 }
 
-.cake-pinche{
+.cake-pinche {
     content: '';
-        right: 101%;
-        position: absolute;
-     
-        border-top:10px;
-        border-bottom:10px;
-        border-left: 10px;
-        border-right:2em;
-    
+    right: 101%;
+    position: absolute;
 
-    border-top-color:  transparent;
-    border-bottom-color:  transparent; 
-    border-left-color:  transparent;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-right: 2em;
+
+
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
     border-right-color: rgb(102, 51, 153);
     border-style: solid;
-    
-     
- 
+
+
+
 }
-.cake-medio:hover{
+
+.cake-medio:hover {
     cursor: not-allowed;
 }
 
 
-.cake-medio:hover .cake-btn{
-    animation: cake-animation 1s  forwards infinite alternate;
+.cake-medio:hover .cake-btn {
+    animation: cake-animation 1s forwards infinite alternate;
 }
 
-@keyframes  cake-animation{
+@keyframes cake-animation {
 
-        0%{ transform: translateY(50%); 
-        
+    0% {
+        transform: translateY(50%);
+
     }
 
-        25%{ transform: translateX(100%); 
-            background-color: red;
-            scale: 1.1;
-  
-        }
+    25% {
+        transform: translateX(100%);
+        background-color: red;
+        scale: 1.1;
 
-        50%{transform: translateY(100%) translateX(100%);}
-        
-        75%{transform:  translateY(-100%) translateX(100%);}
+    }
 
-        80%{transform:  translateY(-30%) translateX(70%); }
+    50% {
+        transform: translateY(100%) translateX(100%);
+    }
 
-        90%{transform: translateY(30%) translateX(40%); }
+    75% {
+        transform: translateY(-100%) translateX(100%);
+    }
 
-        100% {transform: translateY(50%) translateX(100%);}
-   
+    80% {
+        transform: translateY(-30%) translateX(70%);
+    }
+
+    90% {
+        transform: translateY(30%) translateX(40%);
+    }
+
+    100% {
+        transform: translateY(50%) translateX(100%);
+    }
+
 }
