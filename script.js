@@ -61,12 +61,6 @@ buttons.forEach((button) => {
   });
 });
 
-/* ANIMACION boton dropdown */
-$(document).ready(function () {
-  $(".burger").on("click", function () {
-    $(this).toggleClass("active");
-  });
-});
 
 /* FORMULARIO NEWS */
 function validation() {

@@ -15,10 +15,9 @@
 
     <link rel="stylesheet" href="style.min.css">
 
-
-
     <!-- LOGOS -->
     <script defer src="script.min.js"></script>
+    
     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link defer rel="shortcut icon" type="image/x-icon" href="/huighnanco/favi-con.ico" />
     <link defer font-display: optional
@@ -34,12 +33,15 @@
     <header class="header">
 
     <!-- logoMobile -->
-    <a href="https://menucsl.netlify.app/" class="logo-mobile"><img src="huighnanco/justLogo.webp"
+    <a href="https://menucsl.netlify.app/" class="logo-mobile"><img width="220px" src="huighnanco/justLogo.webp"
         alt="logo huinganco"></a>
 
         <!-- MOBILE DROPDOWN-->
         <div class="dropdown">
-            <button class="burger">
+            <input type="checkbox" id="dropdown-mobile">
+            <label for="dropdown-mobile" id="label-dropdown-mobile"></label>
+            <label for="dropdown-mobile" class="label-dropdown-mobile2"></label>
+            <button  class="burger" >
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -51,7 +53,6 @@
                 <a href="#" class="btn-menu-dropdown">Temporadas </a>
                 <a href="#" class="btn-menu-dropdown">Noticias </a>
 
-                <!--  <button class="btn-menu-dropdown" id=" btn-theme-mobile" >  -->
 
                 <label for="theme" class="label-theme" title="theme" id="btn-themes-Mobile">
 
@@ -389,11 +390,6 @@
         </div>
     </footer>
     <!-- END FOOTER -->
-
-    <!-- jQuery CDN Link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
 </body>
 
 </html>

@@ -23,6 +23,9 @@
   --font-subtitle: 24px;
 
   --nav-loadTime: 300ms;
+
+  /* quita el color del touch en mobile */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 input,
@@ -69,17 +72,17 @@ html {
   --header-backG: #272727;
   --header-txtColor: #ffff;
   --header-gitHub: #9442e6;
-  --nav-btn-hover:#d7ff9c;
+  --nav-btn-hover: #d7ff9c;
   /* joyas */
   --joyas-card-backG: #222;
   --joyas-txt: #fff;
   --joyas-title-btn: #87c924;
   --joyas-title-btn-hover: #c5ff6e;
   /* octubre */
-  --octubre-backG:#272727;
-  --octubre-btn-backG:#111;
-/* form */
---form-consulta-title: #87c924;
+  --octubre-backG: #272727;
+  --octubre-btn-backG: #111;
+  /* form */
+  --form-consulta-title: #87c924;
 
   /* -------------------ReservaTheme-------------------  */
 
@@ -127,15 +130,15 @@ html[data-theme="dark"] {
   --header-backG: #ffffff;
   --header-txtColor: black;
   --header-gitHub: rebeccapurple;
-  --nav-btn-hover:#75b418;
+  --nav-btn-hover: #75b418;
   /* joyas */
   --joyas-card-backG: #fff;
   --joyas-txt: #222;
-    /* octubre */
-    --octubre-backG:#444;
-    --octubre-btn-backG:#383838;
+  /* octubre */
+  --octubre-backG: #444;
+  --octubre-btn-backG: #383838;
   /* form */
---form-consulta-title: #75b418;
+  --form-consulta-title: #75b418;
 
   /* -------------------RESERVA THEME-------------------  */
 
@@ -176,6 +179,7 @@ html[data-theme="dark"] {
 /* Mobile */
 .dropdown {
   display: none;
+
 }
 
 iframe {
@@ -193,7 +197,7 @@ iframe {
 
 .header {
   position: fixed;
-  z-index: 99;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -223,9 +227,9 @@ iframe {
 
   /* ORIGINAL 160px */
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -------------------NAV-------------------  */
@@ -237,6 +241,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
 }
 
 /* githubLogo */
@@ -458,7 +463,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   padding: 0.1em 0.8em;
   color: floralwhite;
   margin-top: 10px;
-  background-color: var( --octubre-btn-backG);
+  background-color: var(--octubre-btn-backG);
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
@@ -475,14 +480,14 @@ body:has(input[value="theme"]:checked) .sun-icon {
 }
 
 #btn-reserva {
-  color: var( --joyas-title-btn-hover);
-  outline-color: var( --joyas-title-btn-hover);
+  color: var(--joyas-title-btn-hover);
+  outline-color: var(--joyas-title-btn-hover);
   margin-left: 10px;
   font-weight: 800;
 }
 
 #btn-reserva:hover {
-  background-color: var( --joyas-title-btn-hover);
+  background-color: var(--joyas-title-btn-hover);
   color: #333;
   outline-offset: -2px;
   outline: 4px solid #333;
@@ -628,7 +633,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   /* Ancho caja texto */
   min-height: 100%;
   padding: 20px;
-  background-color: var(   --octubre-backG);
+  background-color: var(--octubre-backG);
   color: floralwhite;
 }
 
@@ -729,7 +734,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
 @media (max-width: 800px) {
   #banner-octubre {
     margin-bottom: 20px;
- 
+
     flex-wrap: wrap-reverse;
 
     height: 100%;
@@ -1087,10 +1092,6 @@ footer {
   }
 
   /* HEADER */
-  .header {
-    justify-content: left;
-
-  }
 
   .logo-mobile {
     z-index: 100;
@@ -1115,6 +1116,7 @@ footer {
 
   .nav {
     display: none;
+
   }
 
   /*  JOYAS*/
@@ -1156,7 +1158,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: right;
+
   }
+
+
+
   .burger {
     position: relative;
     width: 20px;
@@ -1165,8 +1171,9 @@ footer {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     margin-right: 20px;
+    z-index: 50;
+    pointer-events: none;
   }
-
 
   .dropdown-menu {
     position: absolute;
@@ -1177,7 +1184,6 @@ footer {
     transition: 0.5s ease-out;
     top: calc(100% + 1em);
     justify-content: right;
-
     display: flex;
     flex-direction: column;
     -webkit-transform: translate(100%);
@@ -1188,19 +1194,53 @@ footer {
     -moz-transition: 0.5s ease-out;
     -ms-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
+    z-index: 15;
+  }
+
+  .label-dropdown-mobile2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 45px;
+
+    bottom: -10px;
+    position: absolute;
+    cursor: pointer;
+
+    z-index: 999;
+  }
+
+  #label-dropdown-mobile {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
-  .dropdown>.burger.active+.dropdown-menu {
+  #dropdown-mobile:checked~ #label-dropdown-mobile {
+    position: fixed;
+    background-color: #0000007b;
+    z-index: -100;
+    height: 100vh;
+    width: 100%;
+    right: 0px;
+    top: 57px;
+  }
+
+  #dropdown-mobile {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  #dropdown-mobile:checked~.dropdown-menu {
     transform: translate(0px);
-    -webkit-transform: translate(0px);
-    -moz-transform: translate(0px);
-    -ms-transform: translate(0px);
-    -o-transform: translate(0px);
-}
+  }
 
   .btn-menu-dropdown {
 
-  width: 100%;
+    width: 100%;
     font-size: 14px;
     padding: 1em 2em 1em 2em;
     background-color: var(--backG);
@@ -1246,25 +1286,25 @@ footer {
     animation-fill-mode: forwards;
   }
 
-  .burger span:first-child {
+  #dropdown-mobile~.burger span:first-child {
     transform: translateY(-31.5px);
     animation-name: rotate-base-1;
   }
 
-  .burger.active span:first-child {
+  #dropdown-mobile:checked~.burger span:first-child {
     animation-name: rotate-1;
   }
 
-  .burger span:last-child {
+  #dropdown-mobile~.burger span:last-child {
     transform: translateY(31.5px);
     animation-name: rotate-base-2;
   }
 
-  .burger.active span:last-child {
+  #dropdown-mobile:checked~.burger span:last-child {
     animation-name: rotate-2;
   }
 
-  .burger.active span:nth-child(2) {
+  #dropdown-mobile:checked~.burger span:nth-child(2) {
     opacity: 0;
     transform: scale(0);
   }
