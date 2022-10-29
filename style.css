@@ -50,45 +50,45 @@ a {
      background-color: #777;
  }
 body{
-    transition: 0.5s;
     background-color: var(--backG);
 }
 
 /* -------------------Themes-------------------  */
 html{
-    /* fondo */
-    --backG:  #f9fbfd;
-
-    /* Header */
-    --header-backG:#ffffff;
-    --header-txtColor: black;
-    --header-gitHub:rebeccapurple;
-    /* joyas */
-    --joyas-card-backG:#fff;
-    --joyas-txt:#222;
-        /* form */
-        --form-input-backG:#fff;
-        --form-input-txt: black;
-        --form-input-border:#d7d7d7;
+       /* fondo */
+       --backG: #333;
+       /* header */
+       --header-backG:#272727;
+       --header-txtColor:#ffff;
+       --header-gitHub:#9442e6;
+       /* joyas */
+       --joyas-card-backG:#222;
+       --joyas-txt:#fff;
+       --joyas-title-btn:var(--color-btn-hover);
+       --joyas-title-btn-hover:#c5ff6e;
+       /* form */
+       --form-input-backG:#222;
+       --form-input-txt:#fff;
+       --form-input-border:#666;
+  
 
 }
 html[data-theme='dark']{
-    /* fondo */
-    --backG: #333;
-    /* header */
-    --header-backG:#272727;
-    --header-txtColor:#ffff;
-    --header-gitHub:#9442e6;
-    /* joyas */
-    --joyas-card-backG:#222;
-    --joyas-txt:#fff;
-    --joyas-title-btn:var(--color-btn-hover);
-    --joyas-title-btn-hover:#c5ff6e;
-    /* form */
-    --form-input-backG:#222;
-    --form-input-txt:#fff;
-    --form-input-border:#666;
+ 
+  /* fondo */
+  --backG:  #f9fbfd; 
 
+  /* Header */
+  --header-backG:#ffffff;
+  --header-txtColor: black;
+  --header-gitHub:rebeccapurple;
+  /* joyas */
+  --joyas-card-backG:#fff;
+  --joyas-txt:#222;
+      /* form */
+      --form-input-backG:#fff;
+      --form-input-txt: black;
+      --form-input-border:#d7d7d7;
 
 }
 /* -------------------endThemes-------------------  */
@@ -187,7 +187,7 @@ iframe{
    transition: 0.2s linear;
    fill: var(--header-gitHub);
    transform: translateY(-180%);
-   animation: loadNavLogos 300ms ease-in  forwards ;
+   animation: loadNavLogos 600ms ease-in  forwards ;
    animation-delay: 600ms ;
 }
 
@@ -217,7 +217,7 @@ iframe{
 }
 @keyframes loadNavLogos{
     0%{
-        transform: translateY(-100%);
+        transform: translateY(-180%);
     }
     100%{
         transform: translateY(0);
@@ -239,9 +239,9 @@ iframe{
     cursor: pointer;
    transition: 0.2s;
    height: 100%;
-  scale: 0;
-   animation: loadNavBtn 500ms ease-in  forwards;
-   animation-delay: 700ms ;
+   transform: translateY(-180%);
+   animation: loadNavLogos 500ms ease-in  forwards;
+   animation-delay: 800ms ;
 }
 .sun-icon{
     font-size: 24px;

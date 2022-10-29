@@ -1,18 +1,23 @@
 
-/* ------------------------------THEMES------------------------------ */
-/* btn sound */
-const audio = new Audio();
-audio.src = "/audio/click.wav";
-/*  */
+// Helper function
+let domReady = (cb) => {
+    document.readyState === 'interactive' || document.readyState === 'complete'
+      ? cb()
+      : document.addEventListener('DOMContentLoaded', cb);
+  };
+  
+  domReady(() => {
+    // Display body when DOM is loaded
+    document.body.style.visibility = 'visible';
+  });
 
-
+//Themes
 let theme = localStorage.getItem('data-theme');
 
 const changeThemeToDark = () => {
     document.documentElement.setAttribute("data-theme", "dark") 
     localStorage.setItem("data-theme", "dark") 
 }
-
 const changeThemeToLight = () => {
     document.documentElement.setAttribute("data-theme", "light") 
     localStorage.setItem("data-theme", 'light') 
@@ -31,6 +36,12 @@ checkbox.addEventListener('change', () => {
         changeThemeToDark()
     }   
 });
+
+//btnSound
+const audio = new Audio();
+audio.src = "/audio/click.wav";
+
+
 /* ------------------------------END THEME------------------------------ */
 
 

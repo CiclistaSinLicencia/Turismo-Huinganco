@@ -17,42 +17,12 @@
 
 }
 
-/* -------------------Themes-------------------  */
-html{
+body{
     background-color: var(--backG-clr);
-   
-    /* variables */
-    --backG-clr:  #f9fbfd;
-     --card-backG-clr: #ffff;
-
-    /* titles */
-    --title-color:#75b418 ;
-
-
-   /* card */
-   --card-km-txt: black;
-   --card-km-boxShadow: #d0d0d0;
-
-   /* form */
-      --form-input-backG:#fff;
-      --form-input-txt: black;
-      --form-label-txt:black;;
-      --form-input-border:#d7d7d7;
-
-      --form-total-backG:#2596be;
-      --form-total-border-backG:##46beea;
-      --form-inputToolkit-txt:#999;
-      --form-right-outline:#689f16;
-
-      --form-inputToolkit-FOCUS-txt:#689f16;
-/* formJava */
---form-valid-txt:#689f16;
---form-valid-border:#76b41850;
 }
 
-
-html[data-theme='dark']{
-
+/* -------------------Themes-------------------  */
+html{
     --backG-clr: #333;
 
     /* titles */
@@ -61,6 +31,9 @@ html[data-theme='dark']{
     --card-backG: #222;
     --card-km-txt:white;
     --card-km-boxShadow: #222;
+    --card-price-backG: #689f16;
+
+    --card-svg-backG:#161616;
     /* form */
     --form-txt-dtochile:#bab9b9;
 
@@ -79,6 +52,45 @@ html[data-theme='dark']{
 --form-valid-txt: #7dc446;
 --form-valid-border: #abff6a71;
 
+
+   
+
+}
+
+
+html[data-theme='dark']{ /* Light Theme cambiado por parpadeo blanco */
+
+    /* variables */
+    --backG-clr:  #f9fbfd;
+     --card-backG-clr: #ffff;
+
+    /* titles */
+    --title-color:#75b418 ;
+
+
+   /* card */
+   --card-backG: white;
+   --card-km-txt: black;
+   --card-km-boxShadow: #d0d0d0;
+   --card-price-backG: #75b418;
+
+   --card-svg-backG:rgb(241, 241, 241);
+
+   /* form */
+      --form-input-backG:#fff;
+      --form-input-txt: black;
+      --form-label-txt:black;;
+      --form-input-border:#d7d7d7;
+
+      --form-total-backG:#2596be;
+      --form-total-border-backG:##46beea;
+      --form-inputToolkit-txt:#999;
+      --form-right-outline:#689f16;
+
+      --form-inputToolkit-FOCUS-txt:#689f16;
+/* formJava */
+--form-valid-txt:#689f16;
+--form-valid-border:#76b41850;
 }
 /* -------------------endThemes-------------------  */
 
@@ -141,10 +153,13 @@ padding: 0px 20px;
 
 .km-reserva{    
      color: var(--color-blue-huinganco); 
-    font-size: 50px;
-    padding-top: 10px;
+    font-size: 55px;
+    padding-top: 0px;
+    padding-left: 20px;
     font-weight: 500;
     transition: 0.5s;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .txt-km{
@@ -155,12 +170,13 @@ padding: 0px 20px;
 .info-card-reserva{
     text-align: left;
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 30px;
     font-weight: 500;
     color: #333;
     gap: 8px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     color: var(--card-km-txt);
 }
 
@@ -214,8 +230,9 @@ padding: 0px 20px;
     position: absolute;
     bottom: 15px;
     right: -10px;
-    background-color: var(--color-huignanco);
-    width: 5em;
+ 
+    background-color: var(--card-price-backG);
+    width: 5.5em;
     font-size: 20px;
     border-radius: 2px;
     transition: 0.5s;
@@ -236,7 +253,7 @@ padding: 0px 20px;
     font-size: 17px;
     position: absolute;
     bottom: 20px;
-    left: 30px;
+    left: 20px;
     transition: 0.5s;
 }
 
@@ -249,7 +266,8 @@ padding: 0px 20px;
     height: 100%;
 }
 .check-card-reserva:checked{
-    box-shadow: 0px 0px 3px 1px var(--color-huignanco);
+    box-shadow: 0px 0px 5px 2px var(--color-huignanco);
+    border-radius: 8px;
 }
 .check-card-reserva:checked ~ .usd-reserva {
 scale: 1.1;
@@ -270,7 +288,8 @@ scale: 1.1;
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 50;
+    border-radius: 8px;
 }
 
 /* -------------------DESCUENTOS-------------------  */
@@ -465,7 +484,7 @@ color: floralwhite;
 }
 
 #btn-submit-reserva{
-    background-color: var(--color-huignanco);
+    background-color: var(--card-price-backG);
     color: floralwhite;
     font-size: 17px;
     font-weight: 800;
@@ -568,6 +587,7 @@ select:focus{
         }
         .ctn-label{
             width: 100%;
+    
         }
         .ctn-TotalPagar-Reserva{
             border-radius: 0px 0px 8px 8px;
@@ -596,4 +616,30 @@ select:focus{
                 width: 100%;
             }
 
+}
+
+
+
+
+
+.custom-shape-divider-top-1667010598 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1667010598 svg {
+    position: relative;
+    display: block;
+    width: calc(250% + 500px);
+    height: 170px;
+
+
+}
+
+.custom-shape-divider-top-1667010598 .shape-fill {
+    fill: var(--card-svg-backG);
 }
