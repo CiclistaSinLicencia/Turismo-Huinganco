@@ -7,6 +7,7 @@
 }
 
 :root {
+
   --color-huignanco: #75b418;
   --greenhover: #b8ff5c;
   --color-btn-hover: #7dc446;
@@ -59,21 +60,26 @@ body {
 /* -------------------Themes-------------------  */
 html {
   /* fondo */
-  --backG: #333;
+  --backG: #2d2d2d;
 
   /* titles */
   --title-color: #7dc446;
 
-  /* header */
+  /* header nav */
   --header-backG: #272727;
   --header-txtColor: #ffff;
   --header-gitHub: #9442e6;
+  --nav-btn-hover:#d7ff9c;
   /* joyas */
   --joyas-card-backG: #222;
   --joyas-txt: #fff;
-  --joyas-title-btn: var(--color-btn-hover);
+  --joyas-title-btn: #87c924;
   --joyas-title-btn-hover: #c5ff6e;
-
+  /* octubre */
+  --octubre-backG:#272727;
+  --octubre-btn-backG:#111;
+/* form */
+--form-consulta-title: #87c924;
 
   /* -------------------ReservaTheme-------------------  */
 
@@ -121,9 +127,15 @@ html[data-theme="dark"] {
   --header-backG: #ffffff;
   --header-txtColor: black;
   --header-gitHub: rebeccapurple;
+  --nav-btn-hover:#75b418;
   /* joyas */
   --joyas-card-backG: #fff;
   --joyas-txt: #222;
+    /* octubre */
+    --octubre-backG:#444;
+    --octubre-btn-backG:#383838;
+  /* form */
+--form-consulta-title: #75b418;
 
   /* -------------------RESERVA THEME-------------------  */
 
@@ -207,9 +219,13 @@ iframe {
 /* LOGO */
 .header img {
   margin-left: 20px;
-  width: 230px;
+  width: 220px;
+
   /* ORIGINAL 160px */
-  margin-top: 5px;
+
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 /* -------------------NAV-------------------  */
@@ -287,6 +303,12 @@ iframe {
   animation-delay: var(--nav-loadTime);
 }
 
+.btn-nav:hover {
+
+  color: var(--nav-btn-hover);
+
+}
+
 @keyframes loadNavBtn {
   0% {
     scale: 0;
@@ -307,9 +329,7 @@ iframe {
   }
 }
 
-.btn-nav:hover {
-  color: rgb(117, 180, 24);
-}
+
 
 /*  --------------------------DARK LIGHTTHEMES---------------------------- */
 
@@ -438,7 +458,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   padding: 0.1em 0.8em;
   color: floralwhite;
   margin-top: 10px;
-  background-color: #000000d2;
+  background-color: var( --octubre-btn-backG);
   font-weight: 600;
   display: inline-block;
   text-decoration: none;
@@ -455,14 +475,14 @@ body:has(input[value="theme"]:checked) .sun-icon {
 }
 
 #btn-reserva {
-  color: greenyellow;
-  outline-color: greenyellow;
+  color: var( --joyas-title-btn-hover);
+  outline-color: var( --joyas-title-btn-hover);
   margin-left: 10px;
   font-weight: 800;
 }
 
 #btn-reserva:hover {
-  background-color: greenyellow;
+  background-color: var( --joyas-title-btn-hover);
   color: #333;
   outline-offset: -2px;
   outline: 4px solid #333;
@@ -476,7 +496,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-huignanco);
+  color: var(--form-consulta-title);
   margin: 20px 0px;
   height: 80px;
   flex-direction: column;
@@ -587,12 +607,12 @@ body:has(input[value="theme"]:checked) .sun-icon {
 }
 
 .anchor-titulo-bloque-joyas:hover {
-  color: var(--color-btn-hover);
+  color: var(--nav-btn-hover);
 }
 
 /* End Joyas */
 
-/* -------------------BANNER OCTUBRE-------------------  */
+/* ------------------- OCTUBRE-------------------  */
 #banner-octubre {
   width: 100%;
   display: flex;
@@ -607,10 +627,8 @@ body:has(input[value="theme"]:checked) .sun-icon {
   width: 50%;
   /* Ancho caja texto */
   min-height: 100%;
-
   padding: 20px;
-
-  background-color: #272727;
+  background-color: var(   --octubre-backG);
   color: floralwhite;
 }
 
@@ -711,8 +729,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
 @media (max-width: 800px) {
   #banner-octubre {
     margin-bottom: 20px;
-    /*       height: 20em; */
-
+ 
     flex-wrap: wrap-reverse;
 
     height: 100%;
@@ -763,7 +780,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   justify-content: center;
   height: 80px;
   flex-direction: column;
-  color: var(--color-huignanco);
+  color: var(--form-consulta-title);
   margin-bottom: 20px;
 }
 
@@ -1071,7 +1088,8 @@ footer {
 
   /* HEADER */
   .header {
-    justify-content: center;
+    justify-content: left;
+
   }
 
   .logo-mobile {
@@ -1080,11 +1098,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
   }
 
   .logo-mobile img {
-    width: 40px;
-    size: 20px;
+    width: 35px;
     margin: auto;
   }
 
@@ -1136,62 +1154,9 @@ footer {
   .dropdown {
     position: absolute;
     width: 100%;
-    left: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: right;
   }
-
-  .dropdown-menu {
-    position: absolute;
-    background-color: gray;
-    height: 100%;
-    transform: translate(-280px);
-    transition: 0.5s ease-out;
-    top: calc(100% + 1em);
-    border: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dropdown>.burger.active+.dropdown-menu {
-    transform: translate(-32px);
-  }
-
-  .btn-menu-dropdown {
-    width: 250px;
-
-    font-size: 14px;
-    padding: 1em 2em 1em 2em;
-
-    background-color: white;
-    color: black;
-    border: none;
-    font-weight: 700;
-    transition: 0.5s linear;
-    cursor: pointer;
-    outline-width: 1px;
-    outline-color: white;
-    outline-style: solid;
-    text-decoration: none;
-  }
-
-  #btn-th {
-    padding: 0.5em 2em;
-    width: 250px;
-    height: 100px;
-    font-size: 14px;
-    background-color: white;
-    transition: 0.5s linear;
-    text-decoration: none;
-  }
-
-  .btn-menu-dropdown:hover {
-    color: black;
-    background-color: #e3fcbe;
-  }
-
-  /* end Desplegable */
-
   .burger {
     position: relative;
     width: 20px;
@@ -1199,7 +1164,73 @@ footer {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    margin-right: 20px;
   }
+
+
+  .dropdown-menu {
+    position: absolute;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    transform: translate(100%);
+    transition: 0.5s ease-out;
+    top: calc(100% + 1em);
+    justify-content: right;
+
+    display: flex;
+    flex-direction: column;
+    -webkit-transform: translate(100%);
+    -moz-transform: translate(100%);
+    -ms-transform: translate(100%);
+    -o-transform: translate(100%);
+    -webkit-transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -ms-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+}
+
+  .dropdown>.burger.active+.dropdown-menu {
+    transform: translate(0px);
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
+}
+
+  .btn-menu-dropdown {
+
+  width: 100%;
+    font-size: 14px;
+    padding: 1em 2em 1em 2em;
+    background-color: var(--backG);
+    color: var(--header-txtColor);
+    border: none;
+    font-weight: 700;
+    transition: 0.5s linear;
+    cursor: pointer;
+    outline-width: 1px;
+    outline-color: var(--backG);
+    outline-style: solid;
+    text-decoration: none;
+  }
+
+  #btn-themes-Mobile {
+    padding: 0.5em 2em;
+    width: 100%;
+    height: 100px;
+    background-color: var(--backG);
+    transition: 0.5s linear;
+  }
+
+  .btn-menu-dropdown:hover,
+  #btn-themes-Mobile:hover {
+    color: black;
+    background-color: #e3fcbe;
+  }
+
+
+
 
   .burger .bar {
     display: inline-block;
