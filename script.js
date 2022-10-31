@@ -36,9 +36,9 @@ checkbox.addEventListener("change", () => {
   }
 });
 
-//btnSound
-const audio = new Audio();
-audio.src = "/audio/click.wav";
+//btnSound removido por rendimiento
+/* const audio = new Audio();
+audio.src = "/audio/click.wav"; */
 
 /* ------------------------------END THEME------------------------------ */
 
