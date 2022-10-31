@@ -1,4 +1,4 @@
-// Helper function
+// espera a la carga del documento para no tener flashes
 let domReady = (cb) => {
   document.readyState === "interactive" || document.readyState === "complete"
     ? cb()

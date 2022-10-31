@@ -17,19 +17,17 @@ cincuenta.addEventListener("change", fifty)
 let txtTotalPagar = document.getElementById("txtTotalPagar")
 
 let montoPagar
-/* posicion inicial */
+// posicion inicial 
 let paisOrigen = "Argentina"
 let km = 0
-/*  */
 
-/* funciones resumidas */
+
+
 
 function funPaisOrigen(porcentajeDto, porcentajeSuma) {
 
     if (paisOrigen === "Argentina") {
-
         montoPagar = montoPagar * -porcentajeDto / 100 + montoPagar
-        console.log("Dto por ser Argentino " + montoPagar)
         msjDto = " + dto 30% = "
     }
     if (paisOrigen === "Chile") {
@@ -49,8 +47,8 @@ function txtMontoPagar() {
     txtTotalPagar.textContent = "Total " + msjDto + montoPagar + " Usd"
 }
 
-
-function calcKm() {
+//index de cual es la card seleccionada
+function calcKm() {  
 
     if (km === 1) {
         five()
@@ -66,7 +64,7 @@ function calcKm() {
     }
 }
 
-/* select pais */
+// saber cual es el pais seleccionado
 document.getElementsByTagName('select')[0].onchange = function () {
     var index = this.selectedIndex;
     var inputText = this.children[index].innerHTML.trim();
@@ -103,16 +101,10 @@ function fifty() {
     txtMontoPagar()
 }
 
-
+//codigo de descuento
 let inputDescuento = document.getElementById("cod-descuento-reserva")
-
-let txtCodDescuento = document.getElementById("txt-cod-descuento")
-
 inputDescuento.addEventListener("input", funDescuento)
-/* descuento */
-
-
-
+let txtCodDescuento = document.getElementById("txt-cod-descuento")
 
 let dtoCodigo = 0
 let dtoTrue = false
@@ -147,7 +139,9 @@ function funDescuento() {
     }
 }
 
-/* FORMULARIO CONSULTA */
+
+
+//Validacion eMail Reserva
 
 let emailReserva = document.getElementById("mail-form-reserva");
 emailReserva.addEventListener("input", validationReserva)

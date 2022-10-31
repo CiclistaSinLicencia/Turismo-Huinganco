@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Poppins;
+/*   src: url(/fonts/Poppins-Medium.ttf);
+  src: url(/fonts/Poppins-Bold.ttf);
+  */
+  src: url(/fonts/Poppins-Regular.ttf);
+
+}
+
+
 /* comentario de prueba */
 * {
   margin: 0;
@@ -205,25 +215,14 @@ iframe {
   height: 3.5em;
   top: 0;
   background-color: var(--header-backG);
-  animation: loadNav var(--nav-loadTime) ease-in forwards;
-
-  transform: translateY(-100%);
 }
 
-@keyframes loadNav {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 /* LOGO */
 .header img {
   margin-left: 20px;
   width: 220px;
+
 
   /* ORIGINAL 160px */
 
@@ -286,9 +285,6 @@ iframe {
   height: 100%;
   transition: 0.2s linear;
   fill: var(--header-gitHub);
-  transform: translateY(-180%);
-  animation: loadNavLogos 600ms ease-in forwards;
-  animation-delay: 600ms;
 }
 
 .ctn-github-btn:hover .github-a {
@@ -303,36 +299,12 @@ iframe {
   font-size: 17px;
   padding: 5px;
   transition: color 0.2s ease-in-out;
-  scale: 0;
-  animation: loadNavBtn 500ms ease-in forwards;
-  animation-delay: var(--nav-loadTime);
 }
 
 .btn-nav:hover {
-
   color: var(--nav-btn-hover);
-
 }
 
-@keyframes loadNavBtn {
-  0% {
-    scale: 0;
-  }
-
-  100% {
-    scale: 1;
-  }
-}
-
-@keyframes loadNavLogos {
-  0% {
-    transform: translateY(-180%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 
 
@@ -345,9 +317,6 @@ iframe {
   cursor: pointer;
   transition: 0.2s;
   height: 100%;
-  transform: translateY(-180%);
-  animation: loadNavLogos 500ms ease-in forwards;
-  animation-delay: 800ms;
 }
 
 .sun-icon {
@@ -1158,10 +1127,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: right;
-
   }
-
-
 
   .burger {
     position: relative;
