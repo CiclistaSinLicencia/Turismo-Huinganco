@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Poppins;
-/*   src: url(/fonts/Poppins-Medium.ttf);
-  src: url(/fonts/Poppins-Bold.ttf);
-  */
-  src: url(/fonts/Poppins-Regular.ttf);
-
-}
-
-
 /* comentario de prueba */
 * {
   margin: 0;

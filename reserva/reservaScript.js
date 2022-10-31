@@ -30,11 +30,11 @@ function funPaisOrigen(porcentajeDto, porcentajeSuma) {
         montoPagar = montoPagar * -porcentajeDto / 100 + montoPagar
         msjDto = " + dto 30% = "
     }
-    if (paisOrigen === "Chile") {
+    if (paisOrigen === "Extrangero") {
         montoPagar = montoPagar * porcentajeSuma / 100 + montoPagar
-        msjDto = " + 180% x chileno = "
+        msjDto = " + 180% extrangeros = "
     }
-    if (paisOrigen === "Otro") {
+    if (paisOrigen === "Aguas Internacionales") {
         montoPagar = montoPagar
         msjDto = " "
     }
