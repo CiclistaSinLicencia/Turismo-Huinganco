@@ -109,10 +109,9 @@ let txtCodDescuento = document.getElementById("txt-cod-descuento")
 let dtoCodigo = 0
 let dtoTrue = false
 function funDescuento() {
-    let inputValue = inputDescuento.value
+    let inputValue = inputDescuento.value.toLowerCase()
 
-    if (inputValue === "Ciclista" || inputValue === "ciclista") {
-
+    if (inputValue === "ciclista") {
         inputDescuento.style.border = "3px solid var(--form-valid-border)"
         dtoTrue = true
         dtoCodigo = -2
