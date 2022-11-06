@@ -114,7 +114,7 @@ html {
   --card-backG: #222;
   --card-km-txt: white;
   --card-km-boxShadow: #222;
-  --card-price-backG: #689f16;
+  
   --card-svg-backG: #161616
 }
 
@@ -168,7 +168,6 @@ html[data-theme="dark"] {
   --card-backG: white;
   --card-km-txt: black;
   --card-km-boxShadow: #d0d0d0;
-  --card-price-backG: #75b418;
 
   --card-svg-backG: rgb(241, 241, 241);
 
