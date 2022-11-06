@@ -17,15 +17,13 @@
 }
 
 
-
-
+/* elimina el estilo del autocomplete */
 input:-webkit-autofill {
   -webkit-animation-delay: 1s;
   /* Safari support - any positive time runs instantly */
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
