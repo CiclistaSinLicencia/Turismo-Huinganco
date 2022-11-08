@@ -1,7 +1,5 @@
 
 /* ======SCRIPT RESERVA====== */
-
-/*  */
 let cinco = document.getElementById("5km")
 cinco.addEventListener("change", five)
 
@@ -16,25 +14,49 @@ cincuenta.addEventListener("change", fifty)
 
 let txtTotalPagar = document.getElementById("txtTotalPagar")
 
+// Valores iniciales 
 let montoPagar
-// posicion inicial 
-let paisOrigen = "Argentina"
+let paisOrigen = "argentina"
 let km = 0
 
+//Detectar pais del select Duh!
+let selectCountry = document.getElementById("mySelect")
+selectCountry.addEventListener('change', () => {
 
+    countryValue = selectCountry.value
 
+    switch (countryValue) {
+        case '1':
+            paisOrigen = "argentina"
+            console.warn("Argentina")
+            calcKm()
+            break;
 
+        case '2':
+            console.warn("Extrangero")
+            paisOrigen = "extrangero"
+            calcKm()
+            break;
+        case '3':
+            console.warn("Extrangero")
+            paisOrigen = "aguas Internacionales"
+            calcKm()
+            break;
+    }
+})
+
+//funcion en base al pais seleccionado
 function funPaisOrigen(porcentajeDto, porcentajeSuma) {
 
-    if (paisOrigen === "Argentina") {
+    if (paisOrigen === "argentina") {
         montoPagar = montoPagar * -porcentajeDto / 100 + montoPagar
         msjDto = " + dto 30% = "
     }
-    if (paisOrigen === "Extrangero") {
+    else if (paisOrigen === "extrangero") {
         montoPagar = montoPagar * porcentajeSuma / 100 + montoPagar
         msjDto = " + 180% extrangeros = "
     }
-    if (paisOrigen === "Aguas Internacionales") {
+    else if (paisOrigen === "aguas Internacionales") {
         montoPagar = montoPagar
         msjDto = " "
     }
@@ -48,52 +70,44 @@ function txtMontoPagar() {
 }
 
 //index de cual es la card seleccionada
-function calcKm() {  
+function calcKm() {
 
     if (km === 1) {
         five()
     }
-    if (km === 2) {
+    else if (km === 2) {
         ten()
     }
-    if (km === 3) {
+    else if (km === 3) {
         twentyFive()
     }
-    if (km === 4) {
+    else if (km === 4) {
         fifty()
     }
 }
 
-// saber cual es el pais seleccionado
-document.getElementsByTagName('select')[0].onchange = function () {
-    var index = this.selectedIndex;
-    var inputText = this.children[index].innerHTML.trim();
-    paisOrigen = inputText
-    calcKm()
-}
-
-/* 1 */
+//cinco kilometros
 function five() {
     montoPagar = 25
     km = 1
     funPaisOrigen(30, 180)
     txtMontoPagar()
 }
-/* 2 */
+//diez kilometros
 function ten() {
     montoPagar = 85
     km = 2
     funPaisOrigen(30, 180)
     txtMontoPagar()
 }
-/* 3 */
+//25 kilometros
 function twentyFive() {
     montoPagar = 125
     km = 3
     funPaisOrigen(30, 180)
     txtMontoPagar()
 }
-/* 4 */
+//50 kilometros
 function fifty() {
     montoPagar = 199
     km = 4
@@ -146,8 +160,6 @@ let emailReserva = document.getElementById("mail-form-reserva");
 emailReserva.addEventListener("input", validationReserva)
 let formReserva = document.getElementById("form-Reserva");
 let btnReserva = document.getElementById("btn-submit-reserva")
-
-
 
 function validationReserva() {
     let mailValue = emailReserva.value
