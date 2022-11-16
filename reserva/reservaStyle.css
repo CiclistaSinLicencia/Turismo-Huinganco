@@ -24,6 +24,7 @@ input:-webkit-autofill {
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -155,7 +156,7 @@ input:-webkit-autofill:active {
 .usd-reserva {
 
   text-align: center;
-margin-top: 20px;
+  margin-top: 20px;
   color: #75b418;
   width: 5.5em;
   font-size: 25px;
@@ -179,19 +180,19 @@ margin-top: 20px;
   border-radius: 5px;
   position: absolute;
   appearance: none;
-  transition: 0.2s ;
+  transition: 0.2s;
   width: 100%;
   height: 100%;
 }
 
 .check-card-reserva:checked {
-outline: 4px solid #84c720;
+  outline: 4px solid #84c720;
 }
 
 .check-card-reserva:checked~.usd-reserva {
   scale: 1.1;
 
-color: #d1ff8b;
+  color: #d1ff8b;
 }
 
 .label-card {
@@ -415,7 +416,7 @@ color: #d1ff8b;
 }
 
 #btn-submit-reserva {
-  background-color: var(--card-price-backG);
+  background-color: #689f16;
   color: floralwhite;
   font-size: 17px;
   font-weight: 500;
@@ -433,7 +434,7 @@ color: #d1ff8b;
 }
 
 .radio-celiaco {
-  background-color: #689f16;
+  background-color: #67a836;
   padding: 20px;
 
   border-radius: 3px;

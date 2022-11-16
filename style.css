@@ -1,4 +1,3 @@
-/* comentario de prueba */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,6 @@
 }
 
 :root {
-
   --color-huignanco: #75b418;
   --greenhover: #b8ff5c;
   --color-btn-hover: #7dc446;
@@ -61,7 +59,9 @@ body {
   background-color: var(--backG);
 }
 
-/* -------------------Themes-------------------  */
+/*-------------------------
+          DARK THEME
+--------------------------*/
 html {
   /* fondo */
   --backG: #2d2d2d;
@@ -105,6 +105,8 @@ html {
   --form-autocomplete-txt: #fff;
 
   --form-inputToolkit-FOCUS-txt: #7dc446;
+
+  --form-submit-btn-backG: #67a836;
   /* animacion placeholder */
   /* formJava */
   --form-valid-txt: #7dc446;
@@ -114,11 +116,13 @@ html {
   --card-backG: #222;
   --card-km-txt: white;
   --card-km-boxShadow: #222;
-  
+
   --card-svg-backG: #161616
 }
 
-/* -------------------lightTheme-------------------  */
+/*-------------------------
+          LIGHT THEME
+--------------------------*/
 html[data-theme="dark"] {
 
   /* Titulos */
@@ -159,6 +163,8 @@ html[data-theme="dark"] {
   --form-autocomplete-backG: #effbff;
   --form-autocomplete-txt: #000000;
 
+  --form-submit-btn-backG: #67a836;
+
   /* formJava */
   --form-valid-txt: #689f16;
   --form-valid-border: #76b41850;
@@ -168,15 +174,14 @@ html[data-theme="dark"] {
   --card-backG: white;
   --card-km-txt: black;
   --card-km-boxShadow: #d0d0d0;
-
   --card-svg-backG: rgb(241, 241, 241);
 
 
 }
 
-/* -------------------endThemes-------------------  */
 
-/* Mobile */
+
+/* burger Mobile */
 .dropdown {
   display: none;
 
@@ -197,7 +202,7 @@ iframe {
 
 .header {
   position: fixed;
-  z-index: 9999;
+  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,9 +213,7 @@ iframe {
 }
 
 
-/* LOGO */
-
-#logoDesktop{
+#logoDesktop {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -218,9 +221,10 @@ iframe {
   text-decoration: none;
 
 }
-#logoDesktop span{
+
+#logoDesktop span {
   color: #2c77a8;
-text-align: end;
+  text-align: end;
 
   font-size: 30px;
   margin-left: 10px;
@@ -232,7 +236,11 @@ text-align: end;
   width: 40px;
 
 }
-/* -------------------NAV-------------------  */
+
+
+/*-------------------------
+          NAV BAR
+--------------------------*/
 
 .nav {
   margin-right: 20px;
@@ -244,7 +252,6 @@ text-align: end;
 
 }
 
-/* githubLogo */
 .ctn-github-btn {
   margin: 0;
   padding: 0;
@@ -308,8 +315,9 @@ text-align: end;
 
 
 
-
-/*  --------------------------DARK LIGHTTHEMES---------------------------- */
+/*-------------------------
+          ICON THEMES
+--------------------------*/
 
 .label-theme {
   display: flex;
@@ -397,7 +405,9 @@ body:has(input[value="theme"]:checked) .sun-icon {
   }
 }
 
-/* -------------------BANNER-------------------  */
+/*-------------------------
+          BANNER
+--------------------------*/
 .banner {
   width: 100%;
   height: 85vh;
@@ -439,7 +449,6 @@ body:has(input[value="theme"]:checked) .sun-icon {
   border-radius: 4px;
   transition: 0.2s;
   outline: 2px solid floralwhite;
-  /*  outline-offset: 0px; */
 }
 
 .btn-banner:hover {
@@ -464,7 +473,9 @@ body:has(input[value="theme"]:checked) .sun-icon {
 
 /* end Banner */
 
-/* -------------------JOYAS-------------------  */
+/*-------------------------
+      JOYAS HUINGANCO
+--------------------------*/
 #cnt-titulo-joyas {
   width: 100%;
   display: flex;
@@ -476,7 +487,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   flex-direction: column;
 }
 
-/* ImAGENES */
+
 .ctn-joyas {
   display: flex;
   align-items: center;
@@ -508,7 +519,6 @@ body:has(input[value="theme"]:checked) .sun-icon {
 }
 
 .texto-bloque-joyas {
-  /* font-size: var(--fs-text-16);  */
   font-size: var(--fs-text-16);
   color: var(--joyas-txt);
   margin-left: 30px;
@@ -584,9 +594,11 @@ body:has(input[value="theme"]:checked) .sun-icon {
   color: var(--nav-btn-hover);
 }
 
-/* End Joyas */
 
-/* ------------------- OCTUBRE-------------------  */
+
+/*-------------------------
+        OCTUBRE
+--------------------------*/
 #banner-octubre {
   width: 100%;
   display: flex;
@@ -621,7 +633,9 @@ body:has(input[value="theme"]:checked) .sun-icon {
   padding-top: 20px;
 }
 
-/* -------------------CAROUSEL-------------------  */
+/*-------------------------
+          CAROUSEL OCTUBRE
+--------------------------*/
 .section-carousel {
   width: 50%;
   /* ancho imagen */
@@ -642,7 +656,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
 
 .carousel-button {
   background: none;
-  z-index: 2;
+  z-index: 1;
   /* para ponerlo sobre los otros elementos */
   position: absolute;
   top: 50%;
@@ -729,7 +743,8 @@ body:has(input[value="theme"]:checked) .sun-icon {
     margin-bottom: 15px;
     font-size: 14px;
   }
- .octubre-huignanco h2{
+
+  .octubre-huignanco h2 {
     font-weight: 500;
   }
 
@@ -747,9 +762,10 @@ body:has(input[value="theme"]:checked) .sun-icon {
   }
 }
 
-/* END CAROUSEL */
 
-/* -------------------FORM--CONSULTA-------------------  */
+/*-------------------------
+   FORMULARIO CONSULTAS
+--------------------------*/
 
 .ctn-comentario {
   display: flex;
@@ -777,7 +793,6 @@ body:has(input[value="theme"]:checked) .sun-icon {
 
 .ctn-form {
   width: 50%;
-  /* 800px */
   height: 280px;
   margin-bottom: 20px;
   display: flex;
@@ -840,7 +855,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
 
 .btn-enviar {
   width: 100%;
-  background-color: rgb(103, 168, 54);
+  background-color: var(--form-submit-btn-backG);
   color: white;
   font-weight: 500;
   padding: 0.5em 0em;
@@ -868,7 +883,9 @@ body:has(input[value="theme"]:checked) .sun-icon {
   }
 }
 
-/* End Comentario */
+/*-------------------------
+          FOOTER
+--------------------------*/
 
 .footer-wave {
   position: relative;
@@ -897,7 +914,7 @@ body:has(input[value="theme"]:checked) .sun-icon {
   fill: #272727;
 }
 
-/* FOOTER */
+
 footer {
   width: 100%;
   height: 300px;
@@ -927,15 +944,15 @@ footer {
   gap: 10px;
 }
 
-h2{
+h2 {
   font-weight: 500;
 }
+
 .footer-caja h2 {
   color: var(--color-huignanco);
-  /* color: var(--color-blue-huinganco); */
-
 }
-.footer-caja h2 b{
+
+.footer-caja h2 b {
   font-weight: 500;
 }
 
@@ -1046,11 +1063,11 @@ h2{
 
   background-color: rgb(39, 39, 39);
   color: floralwhite;
-padding-top: 15px;
+  padding-top: 15px;
 }
 
-.ctn-rights img{
-width: 100px;
+.ctn-rights img {
+  width: 100px;
 }
 
 
@@ -1064,11 +1081,15 @@ width: 100px;
   font-size: 14px;
 }
 
-/* end Footer */
 
-/* color:red */
 
-/* =====MOBILE===== */
+
+
+
+
+/*-------------------------
+          RESPONSIVE
+--------------------------*/
 @media (max-width: 891px) {
   :root {
     --font-title: 24px;
@@ -1080,7 +1101,7 @@ width: 100px;
   /* HEADER */
 
   .logo-mobile {
-    z-index: 100;
+    z-index: 9;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1093,7 +1114,7 @@ width: 100px;
     margin: auto;
   }
 
-#logoDesktop {
+  #logoDesktop {
     display: none;
   }
 
@@ -1151,15 +1172,16 @@ width: 100px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     margin-right: 20px;
-    z-index: 50;
+    z-index: 9;
     pointer-events: none;
   }
 
   .dropdown-menu {
     position: absolute;
-    background-color: gray;
-    height: 100%;
-    width: 100%;
+    background-color: var(--backG);
+    height: 100vh;
+    width: 70%;
+    text-align: right;
     transform: translate(100%);
     transition: 0.5s ease-out;
     top: calc(100% + 1em);
@@ -1177,7 +1199,7 @@ width: 100px;
     z-index: 15;
   }
 
-  .label-dropdown-mobile2{
+  .label-dropdown-mobile2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1187,8 +1209,7 @@ width: 100px;
     bottom: -10px;
     position: absolute;
     cursor: pointer;
-
-    z-index: 999;
+    z-index: 1;
   }
 
   #label-dropdown-mobile {
@@ -1197,16 +1218,16 @@ width: 100px;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
+  }
 
-  #dropdown-mobile:checked~ #label-dropdown-mobile {
+  #dropdown-mobile:checked~#label-dropdown-mobile {
     position: fixed;
     background-color: #0000007b;
-    z-index: -100;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     right: 0px;
-    top: 57px;
+    top: 56px;
   }
 
   #dropdown-mobile {
@@ -1238,7 +1259,7 @@ width: 100px;
   #btn-themes-Mobile {
     padding: 0.5em 2em;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: var(--backG);
     transition: 0.5s linear;
   }
