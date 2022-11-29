@@ -164,18 +164,6 @@ input:-webkit-autofill:active {
   transition: 0.5s;
 }
 
-
-
-.txt-ahorre-oferta-reserva {
-  color: var(--clr-sweetBlue);
-  font-weight: 500;
-  font-size: 17px;
-  bottom: 20px;
-  left: 20px;
-  transition: 0.5s;
-  text-align: center;
-}
-
 .check-card-reserva {
   border-radius: 5px;
   position: absolute;
