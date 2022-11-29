@@ -186,12 +186,11 @@ input:-webkit-autofill:active {
 }
 
 .check-card-reserva:checked {
-  outline: 4px solid #84c720;
+  outline: 2px solid #d1ff8b;
+  box-shadow: 0px 0px 10px #d1ff8b;
 }
 
 .check-card-reserva:checked~.usd-reserva {
-  scale: 1.1;
-
   color: #d1ff8b;
 }
 
